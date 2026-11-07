@@ -158,3 +158,7 @@ discord-economy-bot/
 - A `/quest` system with daily goals
 - Selling items back to the shop
 - Gifting items to other players
+
+## License
+
+[MIT](LICENSE)
