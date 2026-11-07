@@ -1,7 +1,3 @@
-Here is a clean, standard Terms of Service template tailored for **Quackers Ecobot** that you can copy, tweak, and host.
-
----
-
 # Terms of Service for Quackers Ecobot
 
 **Last Updated:** November 7, 2026
