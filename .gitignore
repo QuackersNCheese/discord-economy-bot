@@ -1,0 +1,7 @@
+.env
+economy.json
+economy.json.tmp
+__pycache__/
+.venv/
+venv/
+backup/
