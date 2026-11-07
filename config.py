@@ -10,6 +10,7 @@ DAILY_COOLDOWN = 24 * 60 * 60  # seconds
 WORK_MIN = 50
 WORK_MAX = 200
 WORK_COOLDOWN = 60 * 60
+LAPTOP_BONUS = 1.5  # /work multiplier if you own a laptop
 
 JOBS = [
     "flipped burgers",
@@ -35,24 +36,36 @@ FISH = [
     ("💎 Sunken Treasure", 2000, 1),
 ]
 
-# Robbing
-ROB_COOLDOWN = 30 * 60
-ROB_SUCCESS_CHANCE = 0.45
-ROB_MIN_VICTIM_WALLET = 100
-ROB_STEAL_MIN = 0.10  # fraction of victim's wallet
-ROB_STEAL_MAX = 0.40
-ROB_FINE_MIN = 50
-ROB_FINE_MAX = 250
+# Bank: interest is paid into your bank each time you claim /daily
+BANK_INTEREST_RATE = 0.02  # 2%
+BANK_INTEREST_CAP = 1_000
 
-# Slots: (symbol, weight, payout multiplier for three of a kind)
-# Two of a kind refunds the bet. House edge works out to roughly 6%.
-SLOT_SYMBOLS = [
-    ("🍒", 40, 2),
-    ("🍋", 30, 4),
-    ("🍇", 20, 10),
-    ("💎", 8, 50),
-    ("7️⃣", 2, 250),
+# Trivia: answer with buttons, no betting
+TRIVIA_REWARD = 100
+TRIVIA_COOLDOWN = 2 * 60
+TRIVIA_TIMEOUT = 20  # seconds to answer
+# (question, correct answer, [wrong answers])
+TRIVIA_QUESTIONS = [
+    ("What does CPU stand for?", "Central Processing Unit",
+     ["Computer Personal Unit", "Central Program Utility", "Core Processing Utility"]),
+    ("Which planet is known as the Red Planet?", "Mars", ["Venus", "Jupiter", "Mercury"]),
+    ("What language is this bot written in?", "Python", ["JavaScript", "Java", "C++"]),
+    ("How many sides does a hexagon have?", "6", ["5", "7", "8"]),
+    ("What is the largest ocean on Earth?", "Pacific", ["Atlantic", "Indian", "Arctic"]),
+    ("What does HTML stand for?", "HyperText Markup Language",
+     ["HighText Machine Language", "HyperTool Markup Language", "Hyperlink Text Management Language"]),
+    ("What is 7 x 8?", "56", ["54", "63", "48"]),
+    ("Which animal is the fastest on land?", "Cheetah", ["Lion", "Horse", "Greyhound"]),
+    ("What number is 101 in binary?", "5", ["3", "6", "10"]),
+    ("Which gas do plants take in from the air?", "Carbon dioxide", ["Oxygen", "Nitrogen", "Helium"]),
+    ("What year did Discord launch?", "2015", ["2013", "2017", "2019"]),
+    ("What does MLH stand for?", "Major League Hacking",
+     ["Mega Linux Hub", "Main Line Hackers", "Modern Language Hub"]),
 ]
+
+# Rock paper scissors against the bot, no betting
+RPS_REWARD = 30
+RPS_COOLDOWN = 30
 
 # Shop
 SHOP_ITEMS = {
@@ -62,11 +75,11 @@ SHOP_ITEMS = {
         "price": 750,
         "description": "Lets you use /fish. Might break.",
     },
-    "padlock": {
-        "name": "Padlock",
-        "emoji": "🔒",
-        "price": 400,
-        "description": "Blocks one robbery attempt, then breaks.",
+    "laptop": {
+        "name": "Laptop",
+        "emoji": "💻",
+        "price": 1_500,
+        "description": "/work pays 50% more. Stacks? No. Worth it? Yes.",
     },
     "trophy": {
         "name": "Golden Trophy",

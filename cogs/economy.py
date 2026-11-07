@@ -7,7 +7,7 @@ from discord import app_commands
 from discord.ext import commands
 
 import config
-from utils import fmt, fmt_duration, parse_amount
+from utils import check_cooldown, fmt, parse_amount
 
 
 class Economy(commands.Cog):
@@ -20,8 +20,8 @@ class Economy(commands.Cog):
         await interaction.response.send_message(f"🏓 Pong! {round(self.bot.latency * 1000)}ms")
 
     # TODO: /balance [member]   - embed with wallet, bank, net worth
-    # TODO: /daily              - DAILY_AMOUNT, 24h cooldown
-    # TODO: /work               - random WORK_MIN..WORK_MAX + random job, 1h cooldown
+    # TODO: /daily              - DAILY_AMOUNT, 24h cooldown, plus bank interest (BANK_INTEREST_RATE)
+    # TODO: /work               - random WORK_MIN..WORK_MAX + random job, 1h cooldown, laptop bonus
     # TODO: /pay <member> <amount>
     # TODO: /deposit <amount>   - supports "all" / "half" via parse_amount
     # TODO: /withdraw <amount>

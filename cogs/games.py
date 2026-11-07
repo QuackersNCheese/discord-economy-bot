@@ -1,4 +1,4 @@
-"""Ways to win (and lose) money."""
+"""Mini-games that earn coins. No betting."""
 
 import random
 from typing import Literal
@@ -8,7 +8,11 @@ from discord import app_commands
 from discord.ext import commands
 
 import config
-from utils import fmt, fmt_duration
+from utils import check_cooldown, fmt
+
+
+# TODO: class TriviaView(discord.ui.View) - one button per answer, only the asker can click,
+#       turn the right answer green, time out after TRIVIA_TIMEOUT seconds
 
 
 class Games(commands.Cog):
@@ -16,9 +20,8 @@ class Games(commands.Cog):
         self.bot = bot
         self.db = bot.db
 
-    # TODO: /coinflip <heads|tails> <bet>  - double or nothing
-    # TODO: /slots <bet>                   - 3 reels using config.SLOT_SYMBOLS
-    # TODO: /rob <member>                  - padlock check, success chance, fine on failure
+    # TODO: /trivia                        - random config.TRIVIA_QUESTIONS, answer with buttons (TriviaView)
+    # TODO: /rps <rock|paper|scissors>     - beat the bot for RPS_REWARD
 
 
 async def setup(bot: commands.Bot):

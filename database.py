@@ -8,7 +8,7 @@ The file looks like this:
       "wallet": 100,
       "bank": 0,
       "cooldowns": {"daily": 1730000000.0},
-      "inventory": {"padlock": 1}
+      "inventory": {"laptop": 1}
     }
   }
 }
@@ -53,6 +53,10 @@ class Database:
 
     def add_wallet(self, user_id: int, amount: int) -> None:
         # TODO (remember self.save())
+        ...
+
+    def add_bank(self, user_id: int, amount: int) -> None:
+        # TODO
         ...
 
     def remove_wallet(self, user_id: int, amount: int) -> bool:

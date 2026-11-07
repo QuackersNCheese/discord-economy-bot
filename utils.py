@@ -2,6 +2,8 @@
 
 import math
 
+import discord
+
 from config import CURRENCY
 
 
@@ -35,3 +37,15 @@ def parse_amount(text: str, available: int) -> int | None:
     if text.isdigit():
         return int(text)
     return None
+
+
+async def check_cooldown(db, interaction: discord.Interaction, name: str, seconds: int) -> bool:
+    """If the user is on cooldown for /name, tell them and return True."""
+    remaining = db.cooldown_remaining(interaction.user.id, name, seconds)
+    if remaining > 0:
+        await interaction.response.send_message(
+            f"⏳ You can use `/{name}` again in **{fmt_duration(remaining)}**.",
+            ephemeral=True,
+        )
+        return True
+    return False
