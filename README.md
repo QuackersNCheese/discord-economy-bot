@@ -2,7 +2,7 @@
 
 A Discord economy bot built with Python, [discord.py](https://github.com/Rapptz/discord.py) slash commands. All the data is saved to a single JSON file, so there's no database to set up. Earn coins from jobs, fishing and mini-games, watch your savings grow in the bank, and spend it all in the shop.
 
-Built live in a 2 hour Discord bot workshop stream.
+Built live in a 2 hour Discord bot [workshop stream](https://www.youtube.com/watch?v=yb_-y73Za5o&pp=0gcJCUEMAYcqIYzv).
 
 ## Features
 
