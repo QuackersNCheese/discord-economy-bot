@@ -98,6 +98,7 @@ class Database:
         if self._user(user_id)["bank"] < amount:
             return False
         self._user(user_id)["bank"] -= amount
+        self._user(user_id)["wallet"] += amount
         self.save()
         return True
 

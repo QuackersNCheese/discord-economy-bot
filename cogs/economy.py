@@ -2,6 +2,7 @@
 
 import random
 
+import time
 import discord
 from discord import app_commands
 from discord.ext import commands
@@ -89,16 +90,39 @@ class Economy(commands.Cog):
 # TODO: /withdraw <amount>
     @app_commands.command(description="Withdraw money from your bank.")
     async def withdraw(self, interaction: discord.Interaction, amount: str):
-        available = self.db.get_balance(interaction.user.id)[1]
+        user_id = interaction.user.id
+        cooldown_duration = 6  # 6 hours in seconds
+        
+        # 1. Check database/time cooldown first
+        remaining = self.db.cooldown_remaining(user_id, "withdraw", cooldown_duration)
+        if remaining > 0:
+            await interaction.response.send_message(f"❌ You can't withdraw money for another {fmt_duration(remaining)}!", ephemeral=True)
+            return
+
+        # 2. Fetch balance and parse amount
+        available = self.db.get_balance(user_id)[1]
         parsed_amount = parse_amount(amount, available)
-        if self.db.withdraw(interaction.user.id, parsed_amount) == False:
-            await interaction.response.send_message("❌ You can't afford that!")
-        elif remaining := self.db.cooldown_remaining(interaction.user.id, "withdraw", 60*60*6) > 0:
-            await interaction.response.send_message(f"❌ You can't withdraw money for another {fmt_duration(remaining)}!")
+
+        # 3. Perform the withdrawal once
+        if not self.db.withdraw(user_id, parsed_amount):
+            await interaction.response.send_message("❌ You can't afford that!", ephemeral=True)
         else:
-            self.db.withdraw(interaction.user.id, parsed_amount)
-            self.db.set_cooldown(interaction.user.id, "withdraw")
-            await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.")
+            # 4. Set the cooldown timestamp
+            self.db.set_cooldown(user_id, "withdraw")
+            await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.", ephemeral=True)
+
+    # @app_commands.command(description="Withdraw money from your bank.")
+    # async def withdraw(self, interaction: discord.Interaction, amount: str):
+    #     available = self.db.get_balance(interaction.user.id)[1]
+    #     parsed_amount = parse_amount(amount, available)
+    #     if self.db.withdraw(interaction.user.id, parsed_amount) == False:
+    #         await interaction.response.send_message("❌ You can't afford that!")
+    #     elif remaining := self.db.cooldown_remaining(interaction.user.id, "withdraw", 60*60*6) > 0:
+    #         await interaction.response.send_message(f"❌ You can't withdraw money for another {fmt_duration(remaining)}!")
+    #     else:
+    #         self.db.withdraw(interaction.user.id, parsed_amount)
+    #         self.db.set_cooldown(interaction.user.id, "withdraw")
+    #         await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.")
 
 # TODO: /leaderboard        - top 10 by net worth
     @app_commands.command(description="See the top 10 richest members.")
