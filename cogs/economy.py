@@ -32,7 +32,7 @@ class Economy(commands.Cog):
         else:
             compliment = "💵 Not bad, not bad."
         await interaction.response.send_message(
-            f"{member.mention} has £{wallet} in their wallet 👛 and £{bank} in their bank 🏦, for a total of £{total}. {compliment}"
+            f"{member.mention} has ${wallet} in their wallet 👛 and ${bank} in their bank 🏦, for a total of ${total}. {compliment}"
         )
 
 # TODO: /daily              - DAILY_AMOUNT, 24h cooldown, plus bank interest (BANK_INTEREST_RATE)
@@ -42,7 +42,7 @@ class Economy(commands.Cog):
             self.db.add_wallet(interaction.user.id, config.DAILY_AMOUNT)
             self.db.set_cooldown(interaction.user.id, "daily")
             await interaction.response.send_message(
-                    f"💰 You claimed your daily £{config.DAILY_AMOUNT}!"
+                    f"💰 You claimed your daily ${config.DAILY_AMOUNT}!"
                 )
         else:
             remaining = self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60)
@@ -59,7 +59,7 @@ class Economy(commands.Cog):
                 self.db.add_wallet(member.id, amount)
                 self.db.set_cooldown(member.id, "work")
                 await interaction.response.send_message(
-                    f"💼 {member.mention} worked hard and earned £{amount}!"
+                    f"💼 {member.mention} worked hard and earned ${amount}!"
                 )
         else:
             remaining = self.db.cooldown_remaining(member.id, "work", config.WORK_COOLDOWN)
@@ -73,7 +73,7 @@ class Economy(commands.Cog):
         if self.db.transfer(interaction.user.id, member.id, amount) == False:
             await interaction.response.send_message("❌ You can't afford that!")
         else:
-            await interaction.response.send_message(f"💰 What a goat! {interaction.user.mention} paid {member.mention} £{amount}.")
+            await interaction.response.send_message(f"💰 What a goat! {interaction.user.mention} paid {member.mention} ${amount}.")
 
 # TODO: /deposit <amount>   - supports "all" / "half" via parse_amount
     @app_commands.command(description="Deposit money into your bank.")
@@ -84,7 +84,7 @@ class Economy(commands.Cog):
             await interaction.response.send_message("❌ You can't afford that!")
         else:
             self.db.deposit(interaction.user.id, parsed_amount)
-            await interaction.response.send_message(f"🏦 Deposited £{parsed_amount} into your bank.")
+            await interaction.response.send_message(f"🏦 Deposited ${parsed_amount} into your bank.")
 
 # TODO: /withdraw <amount>
     @app_commands.command(description="Withdraw money from your bank.")
@@ -98,7 +98,7 @@ class Economy(commands.Cog):
         else:
             self.db.withdraw(interaction.user.id, parsed_amount)
             self.db.set_cooldown(interaction.user.id, "withdraw")
-            await interaction.response.send_message(f"🏦 Withdrew £{parsed_amount} from your bank.")
+            await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.")
 
 # TODO: /leaderboard        - top 10 by net worth
     @app_commands.command(description="See the top 10 richest members.")
@@ -107,7 +107,7 @@ class Economy(commands.Cog):
         embed = discord.Embed(title="💰 Leaderboard", color=discord.Color.gold())
         for i, (user_id, net_worth) in enumerate(leaderboard):
             user = await self.bot.fetch_user(user_id)
-            embed.add_field(name=f"{i+1}. {user.name}", value=f"Net worth: £{net_worth}", inline=False)
+            embed.add_field(name=f"{i+1}. {user.name}", value=f"Net worth: ${net_worth}", inline=False)
         await interaction.response.send_message(embed=embed)
 
  
