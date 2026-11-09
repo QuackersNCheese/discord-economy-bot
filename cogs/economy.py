@@ -7,7 +7,7 @@ from discord import app_commands
 from discord.ext import commands
 
 import config
-from utils import check_cooldown, fmt, parse_amount
+from utils import check_cooldown, fmt, parse_amount, fmt_duration
 
 
 class Economy(commands.Cog):
