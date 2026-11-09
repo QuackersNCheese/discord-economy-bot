@@ -13,9 +13,9 @@ class Shop(commands.Cog):
         self.bot = bot
         self.db = bot.db
 
-    # TODO: /shop                     - embed listing config.SHOP_ITEMS
-    # TODO: /buy <item> [quantity]    - item as app_commands.choices
-    # TODO: /inventory [member]
+# TODO: /shop                     - embed listing config.SHOP_ITEMS
+# TODO: /buy <item> [quantity]    - item as app_commands.choices
+# TODO: /inventory [member]
 
 
 async def setup(bot: commands.Bot):

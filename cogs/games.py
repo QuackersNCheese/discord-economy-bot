@@ -20,8 +20,8 @@ class Games(commands.Cog):
         self.bot = bot
         self.db = bot.db
 
-    # TODO: /trivia                        - random config.TRIVIA_QUESTIONS, answer with buttons (TriviaView)
-    # TODO: /rps <rock|paper|scissors>     - beat the bot for RPS_REWARD
+# TODO: /trivia                        - random config.TRIVIA_QUESTIONS, answer with buttons (TriviaView)
+# TODO: /rps <rock|paper|scissors>     - beat the bot for RPS_REWARD
 
 
 async def setup(bot: commands.Bot):

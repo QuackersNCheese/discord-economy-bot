@@ -12,8 +12,8 @@ class Admin(commands.Cog):
         self.bot = bot
         self.db = bot.db
 
-    # TODO: /addmoney <member> <amount>   - @app_commands.default_permissions(administrator=True)
-    # TODO: /resetuser <member>
+# TODO: /addmoney <member> <amount>   - @app_commands.default_permissions(administrator=True)
+# TODO: /resetuser <member>
 
 
 async def setup(bot: commands.Bot):
