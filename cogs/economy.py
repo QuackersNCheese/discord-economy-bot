@@ -51,7 +51,7 @@ class Economy(commands.Cog):
         else:
             remaining = self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60)
             await interaction.response.send_message(
-                f"⏳ You can claim your daily again in {fmt_duration(remaining)} seconds."
+                f"⏳ You can claim your daily again in **{fmt_duration(remaining)}**."
             )
 
 # /work - random WORK_MIN..WORK_MAX + random job, 1h cooldown, laptop bonus
@@ -68,7 +68,7 @@ class Economy(commands.Cog):
         else:
             remaining = self.db.cooldown_remaining(member.id, "work", config.WORK_COOLDOWN)
             await interaction.response.send_message(
-                f"⏳ You can work again in {fmt_duration(remaining)} seconds."
+                f"⏳ You can work again in **{fmt_duration(remaining)}**."
             )
 
 # /pay <member> <amount>
