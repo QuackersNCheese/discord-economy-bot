@@ -46,12 +46,12 @@ class Economy(commands.Cog):
             self.db.deposit(interaction.user.id, interest_amount)
             self.db.set_cooldown(interaction.user.id, "daily")
             await interaction.response.send_message(
-                    f"💰 You claimed your daily ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
+                    f"💰 You claimed your per diem ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
                 )
         else:
             remaining = self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60)
             await interaction.response.send_message(
-                f"⏳ You can claim your daily again in **{fmt_duration(remaining)}**."
+                f"⏳ You can claim your per diem again in **{fmt_duration(remaining)}**."
             )
 
 # /work - random WORK_MIN..WORK_MAX + random job, 1h cooldown, laptop bonus
