@@ -13,8 +13,8 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = os.getenv("GUILD_ID")  # optional: syncs commands instantly to one server
 
-# TODO: add "cogs.games", "cogs.shop", "cogs.admin" as we build them
-COGS = ["cogs.economy"]
+# TODO: add "cogs.games" as we build it
+COGS = ["cogs.economy", "cogs.shop", "cogs.admin"]
 
 log = logging.getLogger("economy")
 
@@ -34,9 +34,20 @@ class EconomyBot(commands.Bot):
             guild = discord.Object(id=int(GUILD_ID))
             self.tree.copy_global_to(guild=guild)
             synced = await self.tree.sync(guild=guild)
+            log.info(
+                "Synced %d commands to guild %s: %s",
+                len(synced), GUILD_ID, ", ".join(c.name for c in synced),
+            )
         else:
             synced = await self.tree.sync()
-        log.info("Synced %d commands", len(synced))
+            log.info(
+                "Synced %d global commands: %s",
+                len(synced), ", ".join(c.name for c in synced),
+            )
+            log.warning(
+                "GUILD_ID is not set, so Discord may take up to an hour to show new "
+                "commands. Set GUILD_ID in .env to sync instantly while developing."
+            )
 
     async def on_ready(self) -> None:
         log.info("Logged in as %s (%s)", self.user, self.user.id)
