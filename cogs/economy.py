@@ -63,11 +63,11 @@ class Economy(commands.Cog):
                 bonus = ""
                 if self.db.get_item_count(member.id, "laptop") > 0:
                     amount = round(amount * config.LAPTOP_BONUS)
-                    bonus = f" 💻 Your laptop paid off: +{round((config.LAPTOP_BONUS - 1) * 100)}%!"
+                    bonus = f"\n💻 Your laptop paid off: +{round((config.LAPTOP_BONUS - 1) * 100)}%!"
                 self.db.add_wallet(member.id, amount)
                 self.db.set_cooldown(member.id, "work")
                 await interaction.response.send_message(
-                    f"💼 {member.mention} worked hard and earned ${amount}!"
+                    f"💼 {member.mention} worked hard and earned ${amount}!{bonus}"
                 )
         else:
             remaining = self.db.cooldown_remaining(member.id, "work", config.WORK_COOLDOWN)
