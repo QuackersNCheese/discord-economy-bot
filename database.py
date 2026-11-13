@@ -20,7 +20,7 @@ import json
 import os
 import time
 
-from config import STARTING_BALANCE
+from config import SHOP_ITEMS, STARTING_BALANCE
 
 
 class Database:
@@ -75,6 +75,7 @@ class Database:
             self._user(user_id)["wallet"] += amount  # revert
             self.save()
             return False
+        self.save()
         return True
 
     def transfer(self, sender_id: int, receiver_id: int, amount: int) -> bool:
@@ -130,17 +131,44 @@ class Database:
     # ---------- inventory ----------
 
     def add_item(self, user_id: int, item_id: str, quantity: int = 1) -> None:
-        # TODO
-        ...
+        user = self._user(user_id)
+        user["inventory"][item_id] = user["inventory"].get(item_id, 0) + quantity
+        self.save()
+
+    def buy_item(self, user_id: int, item_id: str, quantity: int = 1) -> bool:
+        """Buy an item from the shop. Return False if invalid or unaffordable."""
+        if quantity < 1:
+            return False
+        item = SHOP_ITEMS.get(item_id)
+        if item is None:
+            return False
+        if not self.remove_wallet(user_id, item["price"] * quantity):
+            return False
+        self.add_item(user_id, item_id, quantity)
+        return True
 
     def remove_item(self, user_id: int, item_id: str, quantity: int = 1) -> bool:
-        # TODO
-        ...
+        """Take items out of an inventory. Return False if they don't have enough."""
+        user = self._user(user_id)
+        count = user["inventory"].get(item_id, 0)
+        if count < quantity:
+            return False
+        if count == quantity:
+            del user["inventory"][item_id]
+        else:
+            user["inventory"][item_id] = count - quantity
+        self.save()
+        return True
 
     def get_item_count(self, user_id: int, item_id: str) -> int:
-        # TODO
-        ...
+        return self._user(user_id)["inventory"].get(item_id, 0)
 
     def get_inventory(self, user_id: int) -> list[tuple[str, int]]:
-        # TODO
-        ...
+        """Return [(item_id, count), ...] in the order items were obtained."""
+        return list(self._user(user_id)["inventory"].items())
+
+    def reset_user(self, user_id: int) -> None:
+        """Wipe someone's dollars, items and cooldowns, back to a fresh account."""
+        self.data["users"].pop(str(user_id), None)
+        self._user(user_id)
+        self.save()

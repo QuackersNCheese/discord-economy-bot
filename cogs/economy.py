@@ -60,10 +60,14 @@ class Economy(commands.Cog):
         member = interaction.user
         if self.db.cooldown_remaining(member.id, "work", config.WORK_COOLDOWN) == 0:
                 amount = random.randint(config.WORK_MIN, config.WORK_MAX)
+                bonus = ""
+                if self.db.get_item_count(member.id, "laptop") > 0:
+                    amount = round(amount * config.LAPTOP_BONUS)
+                    bonus = f"\n💻 Your laptop paid off: +{round((config.LAPTOP_BONUS - 1) * 100)}%!"
                 self.db.add_wallet(member.id, amount)
                 self.db.set_cooldown(member.id, "work")
                 await interaction.response.send_message(
-                    f"💼 {member.mention} worked hard and earned ${amount}!"
+                    f"💼 {member.mention} worked hard and earned ${amount}!{bonus}"
                 )
         else:
             remaining = self.db.cooldown_remaining(member.id, "work", config.WORK_COOLDOWN)
@@ -114,19 +118,6 @@ class Economy(commands.Cog):
             self.db.set_cooldown(user_id, "withdraw")
             await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.", ephemeral=True)
 
-    # @app_commands.command(description="Withdraw money from your bank.")
-    # async def withdraw(self, interaction: discord.Interaction, amount: str):
-    #     available = self.db.get_balance(interaction.user.id)[1]
-    #     parsed_amount = parse_amount(amount, available)
-    #     if self.db.withdraw(interaction.user.id, parsed_amount) == False:
-    #         await interaction.response.send_message("❌ You can't afford that!")
-    #     elif remaining := self.db.cooldown_remaining(interaction.user.id, "withdraw", 60*60*6) > 0:
-    #         await interaction.response.send_message(f"❌ You can't withdraw money for another {fmt_duration(remaining)}!")
-    #     else:
-    #         self.db.withdraw(interaction.user.id, parsed_amount)
-    #         self.db.set_cooldown(interaction.user.id, "withdraw")
-    #         await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.")
-
 # /leaderboard - top 10 by net worth
     @app_commands.command(description="See the top 10 richest members.")
     async def leaderboard(self, interaction: discord.Interaction):
@@ -137,8 +128,29 @@ class Economy(commands.Cog):
             embed.add_field(name=f"{i+1}. {user.name}", value=f"Net worth: ${net_worth}", inline=False)
         await interaction.response.send_message(embed=embed)
 
- 
-    # TODO: /fish               - needs a fishing_rod, uses config.FISH weights
+# /fish 
+    @app_commands.command(description="Catch something to sell (needs a fishing rod).")
+    async def fish(self, interaction: discord.Interaction):
+        user = interaction.user
+        if await check_cooldown(self.db, interaction, "fish", config.FISH_COOLDOWN):
+            return
+        if self.db.get_item_count(user.id, "fishing_rod") < 1:
+            await interaction.response.send_message(
+                f"🎣 You need a **Fishing Rod**! Buy one from the shop for ${config.SHOP_ITEMS['fishing_rod']['price']}.",
+                ephemeral=True,
+            )
+            return
+        self.db.set_cooldown(user.id, "fish")
+        name, value, _ = random.choices(config.FISH, weights=[f[2] for f in config.FISH])[0]
+        if value:
+            self.db.add_wallet(user.id, value)
+            message = f"🎣 {user.mention} reeled in a **{name}** and sold it for ${value}!"
+        else:
+            message = f"🎣 {user.mention} reeled in a **{name}**... it's worth nothing."
+        if random.random() < config.ROD_BREAK_CHANCE:
+            self.db.remove_item(user.id, "fishing_rod")
+            message += "\n💥 Your fishing rod snapped! Buy a new one in `/shop`."
+        await interaction.response.send_message(message)
 
 
 async def setup(bot: commands.Bot):
