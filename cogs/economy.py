@@ -46,7 +46,7 @@ class Economy(commands.Cog):
             self.db.deposit(interaction.user.id, interest_amount)
             self.db.set_cooldown(interaction.user.id, "daily")
             await interaction.response.send_message(
-                    f"💰 You claimed your per_diem ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
+                    f"💰 You claimed your per diem ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
                 )
         else:
             remaining = self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60)
