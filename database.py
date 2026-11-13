@@ -80,10 +80,11 @@ class Database:
 
     def transfer(self, sender_id: int, receiver_id: int, amount: int) -> bool:
         """Move money between wallets. Return False if the sender can't afford it."""
-        if self.remove_wallet(sender_id, amount) == False:
+        if amount <= 0 or sender_id == receiver_id:
             return False
-        self._user(receiver_id)["wallet"] += amount
-        self.save()
+        if not self.remove_wallet(sender_id, amount):
+            return False
+        self.add_wallet(receiver_id, amount)
         return True
 
     def deposit(self, user_id: int, amount: int) -> bool:
