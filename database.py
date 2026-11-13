@@ -65,8 +65,9 @@ class Database:
         self.save()
 
     def add_bank(self, user_id: int, amount: int) -> None:
-        # TODO
-        ...
+        self._user(user_id)["bank"] += amount
+        self._user(user_id)["bank"] = max(0, self._user(user_id)["bank"])  # no negative balances
+        self.save()
 
     def remove_wallet(self, user_id: int, amount: int) -> bool:
         """Take money from a wallet. Return False (change nothing) if they can't afford it."""

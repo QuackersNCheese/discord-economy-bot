@@ -43,7 +43,8 @@ class Economy(commands.Cog):
             wallet, bank = self.db.get_balance(interaction.user.id)
             interest_amount = round(bank * config.BANK_INTEREST_RATE)
             self.db.add_wallet(interaction.user.id, config.DAILY_AMOUNT)
-            self.db.deposit(interaction.user.id, interest_amount)
+            if interest_amount > 0:
+                self.db.add_bank(interaction.user.id, interest_amount)
             self.db.set_cooldown(interaction.user.id, "daily")
             await interaction.response.send_message(
                     f"💰 You claimed your per diem ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
