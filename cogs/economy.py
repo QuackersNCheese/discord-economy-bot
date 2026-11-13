@@ -20,7 +20,7 @@ class Economy(commands.Cog):
     async def ping(self, interaction: discord.Interaction):
         await interaction.response.send_message(f"🏓 Pong! {round(self.bot.latency * 1000)}ms")
 
-# TODO: /balance [member]   - embed with wallet, bank, net worth
+# /balance [member] - embed with wallet, bank, net worth
     @app_commands.command(description="Check your or another member's balance.")
     async def balance(self, interaction: discord.Interaction, member: discord.Member = None):
         member = member or interaction.user
@@ -36,14 +36,17 @@ class Economy(commands.Cog):
             f"{member.mention} has ${wallet} in their wallet 👛 and ${bank} in their bank 🏦, for a total of ${total}. {compliment}"
         )
 
-# TODO: /daily              - DAILY_AMOUNT, 24h cooldown, plus bank interest (BANK_INTEREST_RATE)
+# /daily - DAILY_AMOUNT, 24h cooldown, plus bank interest (BANK_INTEREST_RATE)
     @app_commands.command(description="Don't claim this, trust me.")
     async def daily(self, interaction: discord.Interaction):
         if self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60) == 0:
+            wallet, bank = self.db.get_balance(interaction.user.id)
+            interest_amount = round(bank * config.BANK_INTEREST_RATE)
             self.db.add_wallet(interaction.user.id, config.DAILY_AMOUNT)
+            self.db.deposit(interaction.user.id, interest_amount)
             self.db.set_cooldown(interaction.user.id, "daily")
             await interaction.response.send_message(
-                    f"💰 You claimed your daily ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
+                    f"💰 You claimed your per_diem ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
                 )
         else:
             remaining = self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60)
@@ -51,7 +54,7 @@ class Economy(commands.Cog):
                 f"⏳ You can claim your per diem again in **{fmt_duration(remaining)}**."
             )
 
-# TODO: /work               - random WORK_MIN..WORK_MAX + random job, 1h cooldown, laptop bonus
+# /work - random WORK_MIN..WORK_MAX + random job, 1h cooldown, laptop bonus
     @app_commands.command(description="Work for money.")
     async def work(self, interaction: discord.Interaction):
         member = interaction.user
@@ -72,7 +75,7 @@ class Economy(commands.Cog):
                 f"⏳ You can work again in **{fmt_duration(remaining)}**."
             )
 
-# TODO: /pay <member> <amount>
+# /pay <member> <amount>
     @app_commands.command(description="Give you pal some cash")
     async def pay(self, interaction: discord.Interaction, member: discord.Member, amount: int):
         if self.db.transfer(interaction.user.id, member.id, amount) == False:
@@ -80,7 +83,7 @@ class Economy(commands.Cog):
         else:
             await interaction.response.send_message(f"💰 What a goat! {interaction.user.mention} paid {member.mention} ${amount}.")
 
-# TODO: /deposit <amount>   - supports "all" / "half" via parse_amount
+# /deposit <amount> - supports "all" / "half" via parse_amount
     @app_commands.command(description="Deposit money into your bank.")
     async def deposit(self, interaction: discord.Interaction, amount: str):
         available = self.db.get_balance(interaction.user.id)[0]
@@ -91,11 +94,11 @@ class Economy(commands.Cog):
             self.db.deposit(interaction.user.id, parsed_amount)
             await interaction.response.send_message(f"🏦 Deposited ${parsed_amount} into your bank.")
 
-# TODO: /withdraw <amount>
+# /withdraw <amount>
     @app_commands.command(description="Withdraw money from your bank.")
     async def withdraw(self, interaction: discord.Interaction, amount: str):
         user_id = interaction.user.id
-        cooldown_duration = 6  # 6 hours in seconds
+        cooldown_duration = 6  # 6 seconds
         
         # 1. Check database/time cooldown first
         remaining = self.db.cooldown_remaining(user_id, "withdraw", cooldown_duration)
@@ -115,20 +118,7 @@ class Economy(commands.Cog):
             self.db.set_cooldown(user_id, "withdraw")
             await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.", ephemeral=True)
 
-    # @app_commands.command(description="Withdraw money from your bank.")
-    # async def withdraw(self, interaction: discord.Interaction, amount: str):
-    #     available = self.db.get_balance(interaction.user.id)[1]
-    #     parsed_amount = parse_amount(amount, available)
-    #     if self.db.withdraw(interaction.user.id, parsed_amount) == False:
-    #         await interaction.response.send_message("❌ You can't afford that!")
-    #     elif remaining := self.db.cooldown_remaining(interaction.user.id, "withdraw", 60*60*6) > 0:
-    #         await interaction.response.send_message(f"❌ You can't withdraw money for another {fmt_duration(remaining)}!")
-    #     else:
-    #         self.db.withdraw(interaction.user.id, parsed_amount)
-    #         self.db.set_cooldown(interaction.user.id, "withdraw")
-    #         await interaction.response.send_message(f"🏦 Withdrew ${parsed_amount} from your bank.")
-
-# TODO: /leaderboard        - top 10 by net worth
+# /leaderboard - top 10 by net worth
     @app_commands.command(description="See the top 10 richest members.")
     async def leaderboard(self, interaction: discord.Interaction):
         leaderboard = self.db.leaderboard()
@@ -138,7 +128,7 @@ class Economy(commands.Cog):
             embed.add_field(name=f"{i+1}. {user.name}", value=f"Net worth: ${net_worth}", inline=False)
         await interaction.response.send_message(embed=embed)
 
- 
+# /fish 
     @app_commands.command(description="Catch something to sell (needs a fishing rod).")
     async def fish(self, interaction: discord.Interaction):
         user = interaction.user
