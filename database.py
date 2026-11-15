@@ -169,6 +169,15 @@ class Database:
         """Return [(item_id, count), ...] in the order items were obtained."""
         return list(self._user(user_id)["inventory"].items())
 
+    def get_earn_bonus_items(self, user_id: int) -> list[dict]:
+        """Return each owned item that boosts earnings, once per item type."""
+        user = self._user(user_id)
+        return [
+            SHOP_ITEMS[item_id]
+            for item_id, count in user["inventory"].items()
+            if count > 0 and SHOP_ITEMS.get(item_id, {}).get("earn_bonus")
+        ]
+
     def reset_user(self, user_id: int) -> None:
         """Wipe someone's dollars, items and cooldowns, back to a fresh account."""
         self.data["users"].pop(str(user_id), None)

@@ -8,7 +8,7 @@ from discord import app_commands
 from discord.ext import commands
 
 import config
-from utils import check_cooldown, fmt, parse_amount, fmt_duration
+from utils import apply_earn_bonus, check_cooldown, fmt, parse_amount, fmt_duration
 
 
 class Economy(commands.Cog):
@@ -42,12 +42,15 @@ class Economy(commands.Cog):
         if self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60) == 0:
             wallet, bank = self.db.get_balance(interaction.user.id)
             interest_amount = round(bank * config.BANK_INTEREST_RATE)
-            self.db.add_wallet(interaction.user.id, config.DAILY_AMOUNT)
+            daily_amount, bonus = apply_earn_bonus(
+                self.db, interaction.user.id, config.DAILY_AMOUNT
+            )
+            self.db.add_wallet(interaction.user.id, daily_amount)
             if interest_amount > 0:
                 self.db.add_bank(interaction.user.id, interest_amount)
             self.db.set_cooldown(interaction.user.id, "daily")
             await interaction.response.send_message(
-                    f"💰 You claimed your per diem ${config.DAILY_AMOUNT} and earned ${interest_amount} in interest!"
+                    f"💰 You claimed your per diem ${daily_amount} and earned ${interest_amount} in interest!{bonus}"
                 )
         else:
             remaining = self.db.cooldown_remaining(interaction.user.id, "daily", 24*60*60)
@@ -55,16 +58,16 @@ class Economy(commands.Cog):
                 f"⏳ You can claim your per diem again in **{fmt_duration(remaining)}**."
             )
 
-# /work - random WORK_MIN..WORK_MAX + random job, 1h cooldown, laptop bonus
+# /work - random WORK_MIN..WORK_MAX + random job, 1h cooldown, item bonuses
     @app_commands.command(description="Work for money.")
     async def work(self, interaction: discord.Interaction):
         member = interaction.user
         if self.db.cooldown_remaining(member.id, "work", config.WORK_COOLDOWN) == 0:
-                amount = random.randint(config.WORK_MIN, config.WORK_MAX)
-                bonus = ""
-                if self.db.get_item_count(member.id, "laptop") > 0:
-                    amount = round(amount * config.LAPTOP_BONUS)
-                    bonus = f"\n💻 Your laptop paid off: +{round((config.LAPTOP_BONUS - 1) * 100)}%!"
+                amount, bonus = apply_earn_bonus(
+                    self.db,
+                    member.id,
+                    random.randint(config.WORK_MIN, config.WORK_MAX),
+                )
                 self.db.add_wallet(member.id, amount)
                 self.db.set_cooldown(member.id, "work")
                 await interaction.response.send_message(
@@ -144,8 +147,9 @@ class Economy(commands.Cog):
         self.db.set_cooldown(user.id, "fish")
         name, value, _ = random.choices(config.FISH, weights=[f[2] for f in config.FISH])[0]
         if value:
+            value, bonus = apply_earn_bonus(self.db, user.id, value)
             self.db.add_wallet(user.id, value)
-            message = f"🎣 {user.mention} reeled in a **{name}** and sold it for ${value}!"
+            message = f"🎣 {user.mention} reeled in a **{name}** and sold it for ${value}!{bonus}"
         else:
             message = f"🎣 {user.mention} reeled in a **{name}**... it's worth nothing."
         if random.random() < config.ROD_BREAK_CHANCE:

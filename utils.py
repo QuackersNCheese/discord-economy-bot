@@ -39,6 +39,19 @@ def parse_amount(text: str, available: int) -> int | None:
     return None
 
 
+def apply_earn_bonus(db, user_id: int, amount: int) -> tuple[int, str]:
+    """Apply owned item bonuses to a command reward."""
+    items = db.get_earn_bonus_items(user_id)
+    if not items or amount <= 0:
+        return amount, ""
+    total = sum(item["earn_bonus"] for item in items)
+    boosted = round(amount * (1 + total))
+    parts = ", ".join(
+        f"{item['emoji']} +{round(item['earn_bonus'] * 100)}%" for item in items
+    )
+    return boosted, f"\n✨ Earnings bonus: {parts} (+{round(total * 100)}%)"
+
+
 async def check_cooldown(db, interaction: discord.Interaction, name: str, seconds: int) -> bool:
     """If the user is on cooldown for /name, tell them and return True."""
     remaining = db.cooldown_remaining(interaction.user.id, name, seconds)

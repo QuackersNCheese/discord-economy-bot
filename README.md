@@ -9,7 +9,7 @@ Built live in a 2 hour Discord bot [workshop stream](https://www.youtube.com/wat
 - 💰 **Wallet and bank:** money in the bank earns interest every day
 - 📅 **Earning:** daily rewards, hourly jobs and fishing, each with its own cooldown
 - 🧠 **Mini-games:** trivia with clickable buttons and rock paper scissors. You earn coins for playing; nothing is ever bet
-- 🛒 **Shop and inventory:** items that actually do things (a fishing rod unlocks `/fish`, a laptop boosts `/work`)
+- 🛒 **Shop and inventory:** items that actually do things (a fishing rod unlocks `/fish`, while a laptop and charms boost your earnings)
 - 🏆 **Leaderboard** by net worth
 - ⚙️ **Everything tunable** from one `config.py` file
 
@@ -20,9 +20,9 @@ Built live in a 2 hour Discord bot [workshop stream](https://www.youtube.com/wat
 | Command | What it does |
 |---------|--------------|
 | `/balance [member]` | Show wallet, bank and net worth |
-| `/daily` | Claim 500 coins once every 24 hours, plus 2% interest on your bank |
-| `/work` | Earn 50–200 coins once an hour (50% more with a 💻 Laptop) |
-| `/fish` | Catch something to sell (needs a 🎣 Fishing Rod, which can break) |
+| `/daily` | Claim 100 coins once every 24 hours, plus 2% interest on your bank (charms boost the per diem, not the interest) |
+| `/work` | Earn 50–200 coins once an hour (a 💻 Laptop and charms pay more) |
+| `/fish` | Catch something to sell (needs a 🎣 Fishing Rod, which can break; charms boost the sale value) |
 | `/pay <member> <amount>` | Send coins to someone |
 | `/deposit <amount>` | Move coins into the bank to earn interest: a number, `half` or `all` |
 | `/withdraw <amount>` | Move coins back to your wallet |
@@ -46,8 +46,17 @@ Built live in a 2 hour Discord bot [workshop stream](https://www.youtube.com/wat
 | Item | Price | Effect |
 |------|-------|--------|
 | 🎣 Fishing Rod | 750 | Unlocks `/fish` |
-| 💻 Laptop | 1,500 | `/work` pays 50% more |
+| 💻 Laptop | 1,500 | Command earnings pay 50% more |
+| ❤️ Ruby Charm | 2,500 | Command earnings pay 10% more |
+| 💙 Sapphire Charm | 5,000 | Command earnings pay 20% more |
+| 💚 Emerald Charm | 10,000 | Command earnings pay 30% more |
+| 💜 Amethyst Charm | 20,000 | Command earnings pay 40% more |
+| 💎 Diamond Charm | 50,000 | Command earnings pay 60% more |
 | 🏆 Golden Trophy | 100,000 | Does nothing. Proves everything. |
+
+### Earning bonuses
+
+The 💻 Laptop and all charms increase direct command rewards: `/work`, the `/daily` per diem, and `/fish` sale values. Bonuses are additive and each item type only counts once. Laptops and charms are unique, so buying a second copy is blocked. Bank interest is not boosted.
 
 ### Admin
 
@@ -123,7 +132,7 @@ Player data is saved to `economy.json`, which is created automatically the first
 
 ## Customizing
 
-All the numbers live in [`config.py`](config.py): the currency emoji, starting balance, rewards, cooldowns, bank interest, fish, trivia questions and shop items. Add an item to `SHOP_ITEMS` and it appears in `/shop` and `/buy` automatically. Add a question to `TRIVIA_QUESTIONS` and it's in the game.
+All the numbers live in [`config.py`](config.py): the currency emoji, starting balance, rewards, cooldowns, bank interest, fish, trivia questions and shop items. Add an item to `SHOP_ITEMS` and it appears in `/shop` and `/buy` automatically. Set `earn_bonus` on an item to make it boost command earnings, and `unique: True` to limit players to one copy. Add a question to `TRIVIA_QUESTIONS` and it's in the game.
 
 ## Project structure
 
