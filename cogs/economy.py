@@ -144,6 +144,7 @@ class Economy(commands.Cog):
                 ephemeral=True,
             )
             return
+        await interaction.response.defer(thinking=True)
         self.db.set_cooldown(user.id, "fish")
         name, value, _ = random.choices(config.FISH, weights=[f[2] for f in config.FISH])[0]
         if value:
@@ -155,7 +156,7 @@ class Economy(commands.Cog):
         if random.random() < config.ROD_BREAK_CHANCE:
             self.db.remove_item(user.id, "fishing_rod")
             message += "\n💥 Your fishing rod snapped! Buy a new one in `/shop`."
-        await interaction.response.send_message(message)
+        await interaction.followup.send(message)
 
 
 async def setup(bot: commands.Bot):
