@@ -33,6 +33,18 @@ FISH = [
     ("🐠 Tropical Fish", 90, 25),
     ("🐡 Pufferfish", 150, 12),
     ("🦈 Shark", 600, 5),
+    ("🐢 Turtle", 250, 8),
+    ("🦆 Duck", 120, 10),
+    ("🦎 Iguana", 100, 10),
+    ("🐸 Frog", 60, 18),
+    ("🦐 Freshwater Shrimp", 80, 15),
+    ("🦞 Crayfish", 120, 12),
+    ("🐍 Water Snake", 200, 8),
+    ("🦫 Beaver", 350, 5),
+    ("🦦 Otter", 450, 4),
+    ("🦢 Swan", 550, 3),
+    ("🐊 Alligator", 1_200, 1),
+    ("🪱 Leech", 0, 8),
     ("💎 Sunken Treasure", 2000, 1),
 ]
 
