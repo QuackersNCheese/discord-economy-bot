@@ -10,7 +10,6 @@ DAILY_COOLDOWN = 24 * 60 * 60  # seconds
 WORK_MIN = 50
 WORK_MAX = 200
 WORK_COOLDOWN = 60 * 60
-LAPTOP_BONUS = 1.5  # /work multiplier if you own a laptop
 
 JOBS = [
     "flipped burgers",
@@ -79,7 +78,49 @@ SHOP_ITEMS = {
         "name": "Laptop",
         "emoji": "💻",
         "price": 1_500,
-        "description": "/work pays 50% more. Stacks? No. Worth it? Yes.",
+        "description": "All command earnings pay 50% more. Only one counts.",
+        "earn_bonus": 0.5,
+        "unique": True,
+    },
+    "ruby_charm": {
+        "name": "Ruby Charm",
+        "emoji": "❤️",
+        "price": 2_500,
+        "description": "Command earnings pay 10% more. Stacks with other charms.",
+        "earn_bonus": 0.10,
+        "unique": True,
+    },
+    "sapphire_charm": {
+        "name": "Sapphire Charm",
+        "emoji": "💙",
+        "price": 5_000,
+        "description": "Command earnings pay 20% more. Stacks with other charms.",
+        "earn_bonus": 0.20,
+        "unique": True,
+    },
+    "emerald_charm": {
+        "name": "Emerald Charm",
+        "emoji": "💚",
+        "price": 10_000,
+        "description": "Command earnings pay 30% more. Stacks with other charms.",
+        "earn_bonus": 0.30,
+        "unique": True,
+    },
+    "amethyst_charm": {
+        "name": "Amethyst Charm",
+        "emoji": "💜",
+        "price": 20_000,
+        "description": "Command earnings pay 40% more. Stacks with other charms.",
+        "earn_bonus": 0.40,
+        "unique": True,
+    },
+    "diamond_charm": {
+        "name": "Diamond Charm",
+        "emoji": "💎",
+        "price": 50_000,
+        "description": "Command earnings pay 60% more. Stacks with other charms.",
+        "earn_bonus": 0.60,
+        "unique": True,
     },
     "trophy": {
         "name": "Golden Trophy",

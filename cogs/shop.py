@@ -65,6 +65,16 @@ class Shop(commands.Cog):
             return
 
         shop_item = config.SHOP_ITEMS[item.value]
+        if shop_item.get("unique") and (
+            quantity > 1
+            or self.db.get_item_count(interaction.user.id, item.value) > 0
+        ):
+            await interaction.response.send_message(
+                f"❌ You can only own one **{shop_item['name']}** — its bonus doesn't stack.",
+                ephemeral=True,
+            )
+            return
+
         total = shop_item["price"] * quantity
 
         if not self.db.buy_item(interaction.user.id, item.value, quantity):
