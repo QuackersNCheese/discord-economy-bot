@@ -13,8 +13,7 @@ load_dotenv()
 TOKEN = os.getenv("DISCORD_TOKEN")
 GUILD_ID = os.getenv("GUILD_ID")  # optional: syncs commands instantly to one server
 
-# TODO: add "cogs.games" as we build it
-COGS = ["cogs.economy", "cogs.shop", "cogs.admin"]
+COGS = ["cogs.economy", "cogs.shop", "cogs.admin", "cogs.games"]
 
 log = logging.getLogger("economy")
 
