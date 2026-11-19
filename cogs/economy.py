@@ -33,7 +33,8 @@ class Economy(commands.Cog):
         else:
             compliment = "💵 Not bad, not bad."
         await interaction.response.send_message(
-            f"{member.mention} has ${wallet} in their wallet 👛 and ${bank} in their bank 🏦, for a total of ${total}. {compliment}"
+            f"{member.mention} has ${wallet} in their wallet 👛 and ${bank} in their bank 🏦, for a total of ${total}. {compliment}",
+            ephemeral=True,
         )
 
     # /daily - DAILY_AMOUNT, 24h cooldown, plus bank interest (BANK_INTEREST_RATE)
@@ -89,13 +90,15 @@ class Economy(commands.Cog):
     # /deposit <amount> - supports "all" / "half" via parse_amount
     @app_commands.command(description="Deposit money into your bank.")
     async def deposit(self, interaction: discord.Interaction, amount: str):
-        await interaction.response.defer(thinking=True)
+        await interaction.response.defer(ephemeral=True, thinking=True)
         available = self.db.get_balance(interaction.user.id)[0]
         parsed_amount = parse_amount(amount, available)
         if not self.db.deposit(interaction.user.id, parsed_amount):
-            await interaction.followup.send("❌ You can't afford that!")
+            await interaction.followup.send("❌ You can't afford that!", ephemeral=True)
         else:
-            await interaction.followup.send(f"🏦 Deposited ${parsed_amount} into your bank.")
+            await interaction.followup.send(
+                f"🏦 Deposited ${parsed_amount} into your bank.", ephemeral=True
+            )
 
     # /withdraw <amount>
     @app_commands.command(description="Withdraw money from your bank.")
