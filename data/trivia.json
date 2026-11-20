@@ -80,6 +80,164 @@
     "wrong": ["General Utility Input", "Global User Integration", "Guided Unit Interface"]
   },
   {
+    "question": "Which keyboard shortcut pastes copied or cut text on Windows?",
+    "correct": "Ctrl + V",
+    "wrong": ["Ctrl + P", "Ctrl + C", "Ctrl + X"]
+  },
+  {
+    "question": "Which keyboard shortcut cuts selected text on Windows?",
+    "correct": "Ctrl + X",
+    "wrong": ["Ctrl + C", "Ctrl + K", "Ctrl + D"]
+  },
+  {
+    "question": "What does USB stand for?",
+    "correct": "Universal Serial Bus",
+    "wrong": ["United System Board", "Universal Storage Bridge", "User Serial Backup"]
+  },
+  {
+    "question": "What does ISP stand for?",
+    "correct": "Internet Service Provider",
+    "wrong": ["Internal System Protocol", "Internet Security Program", "Integrated Server Portal"]
+  },
+  {
+    "question": "What is the small file a website stores in your browser to remember login state or preferences?",
+    "correct": "Cookie",
+    "wrong": ["Cache", "Bookmark", "Applet"]
+  },
+  {
+    "question": "What does Wi-Fi primarily use to transmit data wirelessly between a router and a device?",
+    "correct": "Radio waves",
+    "wrong": ["Infrared beams", "Ultrasonic sound", "Gamma rays"]
+  },
+  {
+    "question": "Which keyboard shortcut selects all items or text in the active window on Windows?",
+    "correct": "Ctrl + A",
+    "wrong": ["Ctrl + S", "Ctrl + E", "Ctrl + H"]
+  },
+  {
+    "question": "What is software that is provided free of charge to use and distribute called?",
+    "correct": "Freeware",
+    "wrong": ["Malware", "Firmware", "Bloatware"]
+  },
+  {
+    "question": "What does JPEG or JPG stand for in image file formats?",
+    "correct": "Joint Photographic Experts Group",
+    "wrong": [
+      "Java Pixel Encoding Graphics",
+      "Joined Photo Export Guide",
+      "Justified Picture Grid"
+    ]
+  },
+  {
+    "question": "What does DPI stand for when measuring printer or mouse resolution?",
+    "correct": "Dots Per Inch",
+    "wrong": ["Data Per Input", "Digital Pixel Index", "Display Points Integrated"]
+  },
+  {
+    "question": "What is a security system that monitors and filters incoming and outgoing network traffic called?",
+    "correct": "Firewall",
+    "wrong": ["Modem", "Router", "Repeater"]
+  },
+  {
+    "question": "Which key on a standard PC keyboard is commonly used to capture a screenshot of the screen?",
+    "correct": "Print Screen (PrtSc)",
+    "wrong": ["Scroll Lock", "Pause Break", "Insert"]
+  },
+  {
+    "question": "What does OCR stand for when converting scanned images of text into editable text?",
+    "correct": "Optical Character Recognition",
+    "wrong": [
+      "Online Content Reader",
+      "Output Character Rendering",
+      "Optical Code Registry"
+    ]
+  },
+  {
+    "question": "Which file extension typically indicates a plain, unformatted text file?",
+    "correct": ".txt",
+    "wrong": [".docx", ".csv", ".rtf"]
+  },
+  {
+    "question": "What is the name of the folder on Windows where deleted files are temporarily stored before permanent removal?",
+    "correct": "Recycle Bin",
+    "wrong": ["Trash Can", "System Cache", "Temp Archive"]
+  },
+  {
+    "question": "Which Python keyword skips the rest of the current loop iteration and moves to the next?",
+    "correct": "continue",
+    "wrong": ["break", "pass", "skip"]
+  },
+  {
+    "question": "Which built-in Python function returns both the index and value when iterating over a sequence?",
+    "correct": "enumerate()",
+    "wrong": ["zip()", "items()", "index()"]
+  },
+  {
+    "question": "What does 'a,b,c'.split(',') return in Python?",
+    "correct": "['a', 'b', 'c']",
+    "wrong": ["('a', 'b', 'c')", "'abc'", "{'a', 'b', 'c'}"]
+  },
+  {
+    "question": "Which Python dunder method is automatically called to initialize a newly created object?",
+    "correct": "__init__",
+    "wrong": ["__new__", "__start__", "__main__"]
+  },
+  {
+    "question": "Which Python operator is used for exponentiation (raising a number to a power)?",
+    "correct": "**",
+    "wrong": ["^", "//", "^^"]
+  },
+  {
+    "question": "Which built-in Python function checks whether an object is an instance of a given class?",
+    "correct": "isinstance()",
+    "wrong": ["typeof()", "hasclass()", "issubclass()"]
+  },
+  {
+    "question": "What prefix before a string literal enables inline variable interpolation in Python 3.6+?",
+    "correct": "f",
+    "wrong": ["r", "b", "u"]
+  },
+  {
+    "question": "Which Python keyword is used to manually trigger an exception?",
+    "correct": "raise",
+    "wrong": ["throw", "error", "except"]
+  },
+  {
+    "question": "Which Python keyword checks if a value exists inside a list, tuple, string, or set?",
+    "correct": "in",
+    "wrong": ["has", "contains", "exists"]
+  },
+  {
+    "question": "What does bool([]) evaluate to in Python?",
+    "correct": "False",
+    "wrong": ["True", "None", "TypeError"]
+  },
+  {
+    "question": "Which dictionary method returns an iterable view of (key, value) tuple pairs?",
+    "correct": "items()",
+    "wrong": ["keys()", "values()", "pairs()"]
+  },
+  {
+    "question": "What symbol is placed above a function definition to apply a decorator in Python?",
+    "correct": "@",
+    "wrong": ["#", "$", "&"]
+  },
+  {
+    "question": "What is the standard name of the Python package installer?",
+    "correct": "pip",
+    "wrong": ["npm", "cargo", "apt"]
+  },
+  {
+    "question": "Which built-in Python function returns a new sorted list from any iterable without modifying the original?",
+    "correct": "sorted()",
+    "wrong": ["sort()", "order()", "arrange()"]
+  },
+  {
+    "question": "Which Python standard library module provides functions for working with JSON data?",
+    "correct": "json",
+    "wrong": ["pickle", "csv", "marshal"]
+  },
+  {
     "question": "Which Python keyword is used to define a function?",
     "correct": "def",
     "wrong": ["func", "function", "define"]
@@ -617,6 +775,81 @@
     "question": "What was the name of the ancient trade network connecting East Asia with the Mediterranean?",
     "correct": "Silk Road",
     "wrong": ["Spice Route", "Amber Road", "Incense Trail"]
+  },
+  {
+    "question": "What synchronization variable uses a counter to control access to a shared resource pool by multiple threads?",
+    "correct": "Semaphore",
+    "wrong": ["Mutex", "Spinlock", "Deadlock"]
+  },
+  {
+    "question": "What bug occurs when multiple threads access shared data concurrently and the outcome depends on execution timing?",
+    "correct": "Race condition",
+    "wrong": ["Memory leak", "Thrashing", "Starvation"]
+  },
+  {
+    "question": "What is a background process that runs continuously without direct user interaction on Unix-like systems called?",
+    "correct": "Daemon",
+    "wrong": ["Zombie process", "Shell", "Thread"]
+  },
+  {
+    "question": "What is a running process whose parent process has terminated without waiting for it called?",
+    "correct": "Orphan process",
+    "wrong": ["Zombie process", "Daemon", "Child thread"]
+  },
+  {
+    "question": "What happens when a low-priority process is indefinitely denied CPU time because higher-priority processes keep arriving?",
+    "correct": "Starvation",
+    "wrong": ["Deadlock", "Thrashing", "Swapping"]
+  },
+  {
+    "question": "Which standard Linux filesystem has been the default for most major distributions since 2008?",
+    "correct": "ext4",
+    "wrong": ["NTFS", "APFS", "exFAT"]
+  },
+  {
+    "question": "Which proprietary file system is used by default on modern macOS devices?",
+    "correct": "APFS",
+    "wrong": ["ext4", "NTFS", "ZFS"]
+  },
+  {
+    "question": "What signal sent by a hardware device tells the CPU to pause its current work and handle an urgent event?",
+    "correct": "Interrupt",
+    "wrong": ["System call", "Context switch", "Page fault"]
+  },
+  {
+    "question": "What is the command-line or graphical interface that allows users to interact with an operating system called?",
+    "correct": "Shell",
+    "wrong": ["Kernel", "Hypervisor", "Bootloader"]
+  },
+  {
+    "question": "What software layer creates and manages virtual machines on a host computer?",
+    "correct": "Hypervisor",
+    "wrong": ["Bootloader", "Linker", "Scheduler"]
+  },
+  {
+    "question": "Which Unix/Linux system call creates a new child process by duplicating the calling process?",
+    "correct": "fork()",
+    "wrong": ["exec()", "wait()", "kill()"]
+  },
+  {
+    "question": "What hardware component translates virtual memory addresses into physical RAM addresses?",
+    "correct": "Memory Management Unit (MMU)",
+    "wrong": ["Arithmetic Logic Unit (ALU)", "Northbridge", "DMA Controller"]
+  },
+  {
+    "question": "What technique moves entire inactive processes between RAM and disk storage to free up memory?",
+    "correct": "Swapping",
+    "wrong": ["Spooling", "Pipelining", "Fragmentation"]
+  },
+  {
+    "question": "What is the Unix-like virtual file system (often mounted at /proc) that exposes kernel and process info as files?",
+    "correct": "procfs",
+    "wrong": ["tmpfs", "FAT32", "SMB"]
+  },
+  {
+    "question": "In POSIX systems, which process ID (PID) is traditionally assigned to the first user-space init process?",
+    "correct": "1",
+    "wrong": ["0", "-1", "255"]
   },
   {
     "question": "What does HTML stand for?",
@@ -1594,5 +1827,2429 @@
     "question": "In Star Wars, what ship made the Kessel Run in less than twelve parsecs?",
     "correct": "Millennium Falcon",
     "wrong": ["X-Wing", "Slave I", "Enterprise"]
+  },
+  {
+    "question": "In algebra, what do you call a symbol (usually a letter) that represents an unknown value?",
+    "correct": "Variable",
+    "wrong": ["Coefficient", "Constant", "Exponent"]
+  },
+  {
+    "question": "In the algebraic term 7x, what is the number 7 called?",
+    "correct": "Coefficient",
+    "wrong": ["Variable", "Exponent", "Constant"]
+  },
+  {
+    "question": "In algebra, what is a fixed numerical value with no variable attached called?",
+    "correct": "Constant",
+    "wrong": ["Coefficient", "Factor", "Parameter"]
+  },
+  {
+    "question": "In the expression 5^3, what is the number 3 called?",
+    "correct": "Exponent",
+    "wrong": ["Base", "Coefficient", "Radical"]
+  },
+  {
+    "question": "In the slope-intercept form y = mx + b, what does 'm' represent?",
+    "correct": "Slope",
+    "wrong": ["y-intercept", "x-intercept", "Vertex"]
+  },
+  {
+    "question": "In the slope-intercept form y = mx + b, what does 'b' represent?",
+    "correct": "y-intercept",
+    "wrong": ["Slope", "x-intercept", "Axis of symmetry"]
+  },
+  {
+    "question": "What is the U-shaped curve formed by graphing a quadratic function called?",
+    "correct": "Parabola",
+    "wrong": ["Hyperbola", "Ellipse", "Asymptote"]
+  },
+  {
+    "question": "What is the highest or lowest point on a parabola called?",
+    "correct": "Vertex",
+    "wrong": ["Origin", "Intercept", "Focus"]
+  },
+  {
+    "question": "In a quadratic equation ax^2 + bx + c = 0, what is the expression b^2 - 4ac called?",
+    "correct": "Discriminant",
+    "wrong": ["Determinant", "Denominator", "Derivative"]
+  },
+  {
+    "question": "What is a polynomial with exactly two terms (such as x + 5) called?",
+    "correct": "Binomial",
+    "wrong": ["Monomial", "Trinomial", "Quadratic"]
+  },
+  {
+    "question": "What is a polynomial with exactly three terms (such as x^2 + 3x + 2) called?",
+    "correct": "Trinomial",
+    "wrong": ["Binomial", "Monomial", "Cubic"]
+  },
+  {
+    "question": "What is the highest power of the variable in a single-variable polynomial called?",
+    "correct": "Degree",
+    "wrong": ["Leading coefficient", "Order of operations", "Magnitude"]
+  },
+  {
+    "question": "Which algebraic property states that a(b + c) = ab + ac?",
+    "correct": "Distributive property",
+    "wrong": ["Associative property", "Commutative property", "Identity property"]
+  },
+  {
+    "question": "Which property states that changing the order of addition or multiplication does not change the result?",
+    "correct": "Commutative property",
+    "wrong": ["Associative property", "Distributive property", "Inverse property"]
+  },
+  {
+    "question": "Which property states that changing how numbers are grouped in addition or multiplication does not change the result?",
+    "correct": "Associative property",
+    "wrong": ["Commutative property", "Distributive property", "Reflexive property"]
+  },
+  {
+    "question": "What is the set of all valid input values (x-values) for a function called?",
+    "correct": "Domain",
+    "wrong": ["Range", "Codomain", "Intercept"]
+  },
+  {
+    "question": "What is the set of all possible output values (y-values) of a function called?",
+    "correct": "Range",
+    "wrong": ["Domain", "Slope", "Asymptote"]
+  },
+  {
+    "question": "What is a line that a graph approaches closer and closer without ever touching called?",
+    "correct": "Asymptote",
+    "wrong": ["Tangent", "Secant", "Axis of symmetry"]
+  },
+  {
+    "question": "What is the multiplicative inverse of a nonzero number x (written as 1/x) called?",
+    "correct": "Reciprocal",
+    "wrong": ["Opposite", "Conjugate", "Absolute value"]
+  },
+  {
+    "question": "What does the notation |x| represent in algebra?",
+    "correct": "Absolute value",
+    "wrong": ["Factorial", "Determinant", "Square root"]
+  },
+  {
+    "question": "What is the slope of any horizontal line on a coordinate plane?",
+    "correct": "0",
+    "wrong": ["1", "-1", "Undefined"]
+  },
+  {
+    "question": "What is the slope of any vertical line on a coordinate plane?",
+    "correct": "Undefined",
+    "wrong": ["0", "1", "-1"]
+  },
+  {
+    "question": "What is the point (0, 0) where the x-axis and y-axis intersect called?",
+    "correct": "Origin",
+    "wrong": ["Vertex", "Midpoint", "Quadrant"]
+  },
+  {
+    "question": "In algebra, what are terms with the exact same variables raised to the exact same powers called?",
+    "correct": "Like terms",
+    "wrong": ["Conjugates", "Factors", "Coefficients"]
+  },
+  {
+    "question": "What is the acronym FOIL used to remember when multiplying two binomials?",
+    "correct": "First, Outer, Inner, Last",
+    "wrong": [
+      "Factor, Order, Invert, Limit",
+      "First, Opposite, Inside, Left",
+      "Formula, Operation, Index, Line"
+    ]
+  },
+  {
+    "question": "What is the inverse operation of exponentiation (such as solving 2^x = 8 for x)?",
+    "correct": "Logarithm",
+    "wrong": ["Factorial", "Absolute value", "Reciprocal"]
+  },
+  {
+    "question": "What do you call a set of two or more equations with the same variables solved together?",
+    "correct": "System of equations",
+    "wrong": ["Polynomial sequence", "Matrix identity", "Inequality chain"]
+  },
+  {
+    "question": "What is the product of (a + b) and (a - b) equal to?",
+    "correct": "a^2 - b^2",
+    "wrong": ["a^2 + b^2", "a^2 - 2ab + b^2", "a^2 + 2ab - b^2"]
+  },
+  {
+    "question": "Which visual test checks whether a graph represents a function?",
+    "correct": "Vertical line test",
+    "wrong": ["Horizontal line test", "Leading coefficient test", "Ratio test"]
+  },
+  {
+    "question": "What is the imaginary unit 'i' defined as in algebra?",
+    "correct": "The square root of -1",
+    "wrong": ["The square root of 0", "A negative infinity value", "The reciprocal of pi"]
+  },
+  {
+    "question": "What do you call an angle that measures strictly less than 90 degrees?",
+    "correct": "Acute angle",
+    "wrong": ["Obtuse angle", "Right angle", "Reflex angle"]
+  },
+  {
+    "question": "What do you call an angle that measures greater than 90 degrees and less than 180 degrees?",
+    "correct": "Obtuse angle",
+    "wrong": ["Acute angle", "Straight angle", "Complementary angle"]
+  },
+  {
+    "question": "What is the exact measure of a right angle in degrees?",
+    "correct": "90 degrees",
+    "wrong": ["45 degrees", "180 degrees", "360 degrees"]
+  },
+  {
+    "question": "What do you call two angles whose measures add up to 90 degrees?",
+    "correct": "Complementary angles",
+    "wrong": ["Supplementary angles", "Vertical angles", "Congruent angles"]
+  },
+  {
+    "question": "What do you call two angles whose measures add up to 180 degrees?",
+    "correct": "Supplementary angles",
+    "wrong": ["Complementary angles", "Adjacent angles", "Acute angles"]
+  },
+  {
+    "question": "What is a triangle with all three sides of equal length called?",
+    "correct": "Equilateral triangle",
+    "wrong": ["Isosceles triangle", "Scalene triangle", "Right triangle"]
+  },
+  {
+    "question": "What is a triangle with at least two sides of equal length called?",
+    "correct": "Isosceles triangle",
+    "wrong": ["Scalene triangle", "Equilateral triangle", "Obtuse triangle"]
+  },
+  {
+    "question": "What is a triangle with all three sides of different lengths called?",
+    "correct": "Scalene triangle",
+    "wrong": ["Isosceles triangle", "Equilateral triangle", "Regular triangle"]
+  },
+  {
+    "question": "What is the longest side of a right triangle, opposite the right angle, called?",
+    "correct": "Hypotenuse",
+    "wrong": ["Adjacent", "Median", "Altitude"]
+  },
+  {
+    "question": "What is the sum of the interior angles of any triangle in Euclidean geometry?",
+    "correct": "180 degrees",
+    "wrong": ["90 degrees", "270 degrees", "360 degrees"]
+  },
+  {
+    "question": "Which theorem states that a^2 + b^2 = c^2 for the sides of a right triangle?",
+    "correct": "Pythagorean theorem",
+    "wrong": ["Binomial theorem", "Thales's theorem", "Law of cosines"]
+  },
+  {
+    "question": "What is the distance from the center of a circle to any point on its edge called?",
+    "correct": "Radius",
+    "wrong": ["Diameter", "Chord", "Circumference"]
+  },
+  {
+    "question": "What is a straight line segment passing through the center of a circle with endpoints on the circle called?",
+    "correct": "Diameter",
+    "wrong": ["Radius", "Secant", "Tangent"]
+  },
+  {
+    "question": "What is the perimeter (distance around the outside) of a circle called?",
+    "correct": "Circumference",
+    "wrong": ["Arc length", "Sector", "Diameter"]
+  },
+  {
+    "question": "What is a line segment whose endpoints both lie on a circle called?",
+    "correct": "Chord",
+    "wrong": ["Radius", "Tangent", "Normal"]
+  },
+  {
+    "question": "What is a line that touches a circle at exactly one point without crossing it called?",
+    "correct": "Tangent",
+    "wrong": ["Secant", "Chord", "Bisector"]
+  },
+  {
+    "question": "What is a line that intersects a circle at two distinct points called?",
+    "correct": "Secant",
+    "wrong": ["Tangent", "Radius", "Asymptote"]
+  },
+  {
+    "question": "What is the pie-slice-shaped region of a circle bounded by two radii and an arc called?",
+    "correct": "Sector",
+    "wrong": ["Segment", "Quadrant", "Annulus"]
+  },
+  {
+    "question": "How many degrees are in a full circle?",
+    "correct": "360 degrees",
+    "wrong": ["180 degrees", "270 degrees", "400 degrees"]
+  },
+  {
+    "question": "What do you call two lines in the same plane that never intersect?",
+    "correct": "Parallel lines",
+    "wrong": ["Perpendicular lines", "Skew lines", "Transversal lines"]
+  },
+  {
+    "question": "What do you call two lines that intersect at a 90-degree angle?",
+    "correct": "Perpendicular lines",
+    "wrong": ["Parallel lines", "Tangent lines", "Collinear lines"]
+  },
+  {
+    "question": "What do you call a line that intersects two or more other lines at distinct points?",
+    "correct": "Transversal",
+    "wrong": ["Bisector", "Perpendicular", "Chord"]
+  },
+  {
+    "question": "What is a ray or line segment that divides an angle into two equal halves called?",
+    "correct": "Angle bisector",
+    "wrong": ["Altitude", "Median", "Hypotenuse"]
+  },
+  {
+    "question": "What do you call geometric figures that have the exact same shape and size?",
+    "correct": "Congruent",
+    "wrong": ["Similar", "Symmetrical", "Collinear"]
+  },
+  {
+    "question": "What do you call geometric figures that have the same shape and proportional sides, but not necessarily the same size?",
+    "correct": "Similar",
+    "wrong": ["Congruent", "Equilateral", "Coplanar"]
+  },
+  {
+    "question": "What is a flat, two-dimensional surface that extends infinitely in all directions called?",
+    "correct": "Plane",
+    "wrong": ["Ray", "Line segment", "Vertex"]
+  },
+  {
+    "question": "What part of a line starts at one endpoint and extends infinitely in one direction?",
+    "correct": "Ray",
+    "wrong": ["Line segment", "Chord", "Vector"]
+  },
+  {
+    "question": "What do you call three or more points that all lie on the same straight line?",
+    "correct": "Collinear points",
+    "wrong": ["Coplanar points", "Congruent points", "Concentric points"]
+  },
+  {
+    "question": "What do you call circles that share the exact same center point?",
+    "correct": "Concentric circles",
+    "wrong": ["Congruent circles", "Tangent circles", "Coplanar circles"]
+  },
+  {
+    "question": "What is the formula for the area of a circle with radius r?",
+    "correct": "pi * r^2",
+    "wrong": ["2 * pi * r", "pi * d^2", "4/3 * pi * r^3"]
+  },
+  {
+    "question": "Which measure of central tendency is calculated by adding all values and dividing by the count?",
+    "correct": "Mean",
+    "wrong": ["Median", "Mode", "Range"]
+  },
+  {
+    "question": "Which measure of central tendency represents the middle value in an ordered dataset?",
+    "correct": "Median",
+    "wrong": ["Mean", "Mode", "Variance"]
+  },
+  {
+    "question": "Which statistical measure represents the value that appears most frequently in a dataset?",
+    "correct": "Mode",
+    "wrong": ["Median", "Mean", "Quartile"]
+  },
+  {
+    "question": "Which statistic measures the average amount of spread or dispersion around the mean?",
+    "correct": "Standard deviation",
+    "wrong": ["Median", "Correlation", "Percentile"]
+  },
+  {
+    "question": "What is the square of the standard deviation called in statistics?",
+    "correct": "Variance",
+    "wrong": ["Interquartile range", "Skewness", "Covariance"]
+  },
+  {
+    "question": "What do you call a data point that differs drastically from other observations in a dataset?",
+    "correct": "Outlier",
+    "wrong": ["Parameter", "Mode", "Centroid"]
+  },
+  {
+    "question": "Which measure of spread equals the difference between the 75th percentile (Q3) and 25th percentile (Q1)?",
+    "correct": "Interquartile range (IQR)",
+    "wrong": ["Standard deviation", "Z-score", "Sample variance"]
+  },
+  {
+    "question": "What is the symmetrical, bell-shaped probability distribution centered around its mean called?",
+    "correct": "Normal distribution",
+    "wrong": ["Uniform distribution", "Poisson distribution", "Binomial distribution"]
+  },
+  {
+    "question": "What does a z-score measure for a data point?",
+    "correct": "How many standard deviations it is from the mean",
+    "wrong": [
+      "Its percentage rank from zero",
+      "The total sample size of the dataset",
+      "The probability of a Type I error"
+    ]
+  },
+  {
+    "question": "What is the probability of an event that is guaranteed to happen?",
+    "correct": "1",
+    "wrong": ["0", "0.5", "100% only in large samples"]
+  },
+  {
+    "question": "What do you call two events that cannot happen at the exact same time?",
+    "correct": "Mutually exclusive events",
+    "wrong": ["Independent events", "Conditional events", "Complementary samples"]
+  },
+  {
+    "question": "What do you call two events where the outcome of one does not affect the probability of the other?",
+    "correct": "Independent events",
+    "wrong": ["Mutually exclusive events", "Correlated events", "Biased events"]
+  },
+  {
+    "question": "Which theorem updates the probability of a hypothesis as new evidence becomes available?",
+    "correct": "Bayes' theorem",
+    "wrong": ["Central Limit Theorem", "Law of Large Numbers", "Pythagorean theorem"]
+  },
+  {
+    "question": "Which theorem states that sample means approach a normal distribution as sample size grows large?",
+    "correct": "Central Limit Theorem",
+    "wrong": ["Bayes' theorem", "Chebyshev's inequality", "Fermat's Last Theorem"]
+  },
+  {
+    "question": "In hypothesis testing, what is the default assumption that there is no effect or no difference called?",
+    "correct": "Null hypothesis",
+    "wrong": ["Alternative hypothesis", "Confidence interval", "Confounding variable"]
+  },
+  {
+    "question": "In hypothesis testing, what is a Type I error?",
+    "correct": "Rejecting a true null hypothesis (false positive)",
+    "wrong": [
+      "Failing to reject a false null hypothesis",
+      "Using a sample size that is too large",
+      "Dividing by zero during normalization"
+    ]
+  },
+  {
+    "question": "In hypothesis testing, what is a Type II error?",
+    "correct": "Failing to reject a false null hypothesis (false negative)",
+    "wrong": [
+      "Rejecting a true null hypothesis",
+      "Overfitting a linear regression line",
+      "Selecting a random stratified sample"
+    ]
+  },
+  {
+    "question": "What value range can Pearson's correlation coefficient (r) take?",
+    "correct": "-1 to +1",
+    "wrong": ["0 to 1", "0 to 100", "-infinity to +infinity"]
+  },
+  {
+    "question": "What classic statistical warning reminds analysts that two variables moving together does not prove one causes the other?",
+    "correct": "Correlation does not imply causation",
+    "wrong": [
+      "Regression toward the mean",
+      "Simpson's paradox",
+      "Survivorship bias"
+    ]
+  },
+  {
+    "question": "What is a hidden third variable that influences both the independent and dependent variables called?",
+    "correct": "Confounding variable",
+    "wrong": ["Control variable", "Categorical variable", "Dummy variable"]
+  },
+  {
+    "question": "Which chart uses rectangular bars to show the frequency distribution of continuous numerical data binned into intervals?",
+    "correct": "Histogram",
+    "wrong": ["Scatter plot", "Pie chart", "Line graph"]
+  },
+  {
+    "question": "Which chart plots individual data points along an x-axis and y-axis to show relationships between two numeric variables?",
+    "correct": "Scatter plot",
+    "wrong": ["Box plot", "Histogram", "Stacked bar chart"]
+  },
+  {
+    "question": "Which chart displays a dataset's minimum, Q1, median, Q3, and maximum using a box and whiskers?",
+    "correct": "Box plot",
+    "wrong": ["Violin plot", "Area chart", "Pareto chart"]
+  },
+  {
+    "question": "What does KPI stand for in business intelligence and data analytics?",
+    "correct": "Key Performance Indicator",
+    "wrong": [
+      "Kernel Process Integration",
+      "Known Parameter Index",
+      "Key Predictive Interval"
+    ]
+  },
+  {
+    "question": "What does ETL stand for in data engineering pipelines?",
+    "correct": "Extract, Transform, Load",
+    "wrong": [
+      "Evaluate, Test, Launch",
+      "Encode, Transfer, Log",
+      "Export, Tabulate, Link"
+    ]
+  },
+  {
+    "question": "What is the statistical technique used to model the relationship between a dependent variable and one or more predictors?",
+    "correct": "Regression analysis",
+    "wrong": ["Cluster sampling", "Dimensionality reduction", "Bootstrapping"]
+  },
+  {
+    "question": "Which controlled experiment compares two versions (A and B) of a feature to see which performs better?",
+    "correct": "A/B testing",
+    "wrong": ["Cross-validation", "Monte Carlo simulation", "Factor analysis"]
+  },
+  {
+    "question": "What kind of bias occurs when a sample is collected in a way that some members of the population are less likely to be included?",
+    "correct": "Selection bias",
+    "wrong": ["Confirmation bias", "Hindsight bias", "Anchoring bias"]
+  },
+  {
+    "question": "What is the 50th percentile of any dataset equal to?",
+    "correct": "Median",
+    "wrong": ["Mean", "Mode", "Standard deviation"]
+  },
+  {
+    "question": "In a right triangle, what is the ratio of the opposite side to the hypotenuse called?",
+    "correct": "Sine",
+    "wrong": ["Cosine", "Tangent", "Secant"]
+  },
+  {
+    "question": "In a right triangle, what is the ratio of the adjacent side to the hypotenuse called?",
+    "correct": "Cosine",
+    "wrong": ["Sine", "Tangent", "Cosecant"]
+  },
+  {
+    "question": "In a right triangle, what is the ratio of the opposite side to the adjacent side called?",
+    "correct": "Tangent",
+    "wrong": ["Cotangent", "Secant", "Cosine"]
+  },
+  {
+    "question": "What mnemonic helps remember the definitions of sine, cosine, and tangent in a right triangle?",
+    "correct": "SOH-CAH-TOA",
+    "wrong": ["PEMDAS", "FOIL", "ASTC"]
+  },
+  {
+    "question": "What is the reciprocal trigonometric function of sine (1 / sin)?",
+    "correct": "Cosecant (csc)",
+    "wrong": ["Secant (sec)", "Cotangent (cot)", "Arcsine (arcsin)"]
+  },
+  {
+    "question": "What is the reciprocal trigonometric function of cosine (1 / cos)?",
+    "correct": "Secant (sec)",
+    "wrong": ["Cosecant (csc)", "Cotangent (cot)", "Arccosine (arccos)"]
+  },
+  {
+    "question": "What is the reciprocal trigonometric function of tangent (1 / tan)?",
+    "correct": "Cotangent (cot)",
+    "wrong": ["Secant (sec)", "Cosecant (csc)", "Arctangent (arctan)"]
+  },
+  {
+    "question": "What is the radius of the standard unit circle used in trigonometry?",
+    "correct": "1",
+    "wrong": ["0", "2", "pi"]
+  },
+  {
+    "question": "On the unit circle, which coordinate of a point corresponds to cos(theta)?",
+    "correct": "x-coordinate",
+    "wrong": ["y-coordinate", "Slope", "Arc length"]
+  },
+  {
+    "question": "On the unit circle, which coordinate of a point corresponds to sin(theta)?",
+    "correct": "y-coordinate",
+    "wrong": ["x-coordinate", "Radius", "Tangent length"]
+  },
+  {
+    "question": "How many radians are equal to 180 degrees?",
+    "correct": "pi radians",
+    "wrong": ["2 * pi radians", "pi / 2 radians", "pi / 4 radians"]
+  },
+  {
+    "question": "How many radians are in a full 360-degree rotation?",
+    "correct": "2 * pi radians",
+    "wrong": ["pi radians", "pi / 2 radians", "4 * pi radians"]
+  },
+  {
+    "question": "What is 90 degrees expressed in radians?",
+    "correct": "pi / 2",
+    "wrong": ["pi / 4", "pi / 3", "2 * pi"]
+  },
+  {
+    "question": "What is 45 degrees expressed in radians?",
+    "correct": "pi / 4",
+    "wrong": ["pi / 2", "pi / 6", "pi / 3"]
+  },
+  {
+    "question": "Which fundamental trigonometric identity states that sin^2(theta) + cos^2(theta) equals a constant?",
+    "correct": "1",
+    "wrong": ["0", "-1", "pi"]
+  },
+  {
+    "question": "What is the value of sin(0 degrees)?",
+    "correct": "0",
+    "wrong": ["1", "-1", "Undefined"]
+  },
+  {
+    "question": "What is the value of cos(0 degrees)?",
+    "correct": "1",
+    "wrong": ["0", "-1", "0.5"]
+  },
+  {
+    "question": "What is the value of sin(90 degrees)?",
+    "correct": "1",
+    "wrong": ["0", "-1", "Undefined"]
+  },
+  {
+    "question": "What is the value of cos(90 degrees)?",
+    "correct": "0",
+    "wrong": ["1", "-1", "0.5"]
+  },
+  {
+    "question": "What is the value of tan(45 degrees)?",
+    "correct": "1",
+    "wrong": ["0", "Undefined", "0.5"]
+  },
+  {
+    "question": "What is the value of tan(90 degrees)?",
+    "correct": "Undefined",
+    "wrong": ["0", "1", "-1"]
+  },
+  {
+    "question": "In a sine or cosine wave, what is half the vertical distance between the maximum and minimum values called?",
+    "correct": "Amplitude",
+    "wrong": ["Period", "Frequency", "Phase shift"]
+  },
+  {
+    "question": "What is the horizontal length of one complete cycle of a periodic trigonometric function called?",
+    "correct": "Period",
+    "wrong": ["Amplitude", "Phase shift", "Vertical shift"]
+  },
+  {
+    "question": "What is the standard period of y = sin(x) and y = cos(x) in radians?",
+    "correct": "2 * pi",
+    "wrong": ["pi", "pi / 2", "1"]
+  },
+  {
+    "question": "What is the standard period of y = tan(x) in radians?",
+    "correct": "pi",
+    "wrong": ["2 * pi", "pi / 2", "4 * pi"]
+  },
+  {
+    "question": "What is a horizontal translation of a sine or cosine wave called?",
+    "correct": "Phase shift",
+    "wrong": ["Amplitude", "Period", "Midline"]
+  },
+  {
+    "question": "What do you call two angles in standard position that share the exact same terminal side?",
+    "correct": "Coterminal angles",
+    "wrong": ["Complementary angles", "Reference angles", "Supplementary angles"]
+  },
+  {
+    "question": "What is the acute angle formed between the terminal side of an angle and the horizontal x-axis called?",
+    "correct": "Reference angle",
+    "wrong": ["Coterminal angle", "Central angle", "Inscribed angle"]
+  },
+  {
+    "question": "Which trigonometric law relates the lengths of a triangle's sides to the sines of its opposite angles?",
+    "correct": "Law of Sines",
+    "wrong": ["Law of Cosines", "Pythagorean theorem", "Law of Tangents"]
+  },
+  {
+    "question": "Which trigonometric law generalizes the Pythagorean theorem to any triangle using c^2 = a^2 + b^2 - 2ab*cos(C)?",
+    "correct": "Law of Cosines",
+    "wrong": ["Law of Sines", "De Moivre's theorem", "Heron's formula"]
+  },
+  {
+    "question": "In calculus, what measures the instantaneous rate of change of a function at a point?",
+    "correct": "Derivative",
+    "wrong": ["Integral", "Limit", "Asymptote"]
+  },
+  {
+    "question": "In calculus, what operation represents the signed area under a curve over an interval?",
+    "correct": "Definite integral",
+    "wrong": ["Derivative", "Partial fraction", "Second derivative"]
+  },
+  {
+    "question": "What calculus concept describes the value a function approaches as its input approaches a point?",
+    "correct": "Limit",
+    "wrong": ["Derivative", "Inflection point", "Secant line"]
+  },
+  {
+    "question": "Which differentiation rule is used to find the derivative of a composite function f(g(x))?",
+    "correct": "Chain rule",
+    "wrong": ["Product rule", "Quotient rule", "Power rule"]
+  },
+  {
+    "question": "Which differentiation rule states that the derivative of x^n is n * x^(n - 1)?",
+    "correct": "Power rule",
+    "wrong": ["Chain rule", "Product rule", "L'Hopital's rule"]
+  },
+  {
+    "question": "Which rule finds the derivative of two multiplied functions f(x) * g(x)?",
+    "correct": "Product rule",
+    "wrong": ["Quotient rule", "Chain rule", "Simpson's rule"]
+  },
+  {
+    "question": "Which rule finds the derivative of one function divided by another, f(x) / g(x)?",
+    "correct": "Quotient rule",
+    "wrong": ["Product rule", "Power rule", "Trapezoidal rule"]
+  },
+  {
+    "question": "What is the derivative of any constant function f(x) = c?",
+    "correct": "0",
+    "wrong": ["1", "c", "Undefined"]
+  },
+  {
+    "question": "What is the derivative of e^x with respect to x?",
+    "correct": "e^x",
+    "wrong": ["x * e^(x - 1)", "ln(x)", "1 / x"]
+  },
+  {
+    "question": "What is the derivative of ln(x) for x greater than 0?",
+    "correct": "1 / x",
+    "wrong": ["e^x", "ln(x) / x", "-1 / x^2"]
+  },
+  {
+    "question": "What is the derivative of sin(x) with respect to x?",
+    "correct": "cos(x)",
+    "wrong": ["-cos(x)", "-sin(x)", "tan(x)"]
+  },
+  {
+    "question": "What is the derivative of cos(x) with respect to x?",
+    "correct": "-sin(x)",
+    "wrong": ["sin(x)", "-cos(x)", "sec^2(x)"]
+  },
+  {
+    "question": "What is a point on a curve where the concavity changes from up to down (or vice versa) called?",
+    "correct": "Inflection point",
+    "wrong": ["Critical point", "Stationary point", "Saddle point"]
+  },
+  {
+    "question": "What do you call an interior point in a function's domain where f'(x) = 0 or f'(x) is undefined?",
+    "correct": "Critical point",
+    "wrong": ["Inflection point", "Discontinuity", "Asymptote"]
+  },
+  {
+    "question": "Which derivative describes the concavity of a function and the acceleration of a moving object?",
+    "correct": "Second derivative",
+    "wrong": ["First derivative", "Antiderivative", "Partial derivative"]
+  },
+  {
+    "question": "Which theorem links differentiation and integration as inverse processes?",
+    "correct": "Fundamental Theorem of Calculus",
+    "wrong": ["Mean Value Theorem", "Intermediate Value Theorem", "Squeeze Theorem"]
+  },
+  {
+    "question": "Which rule uses derivatives to evaluate limits of indeterminate forms like 0/0 or infinity/infinity?",
+    "correct": "L'Hopital's rule",
+    "wrong": ["Chain rule", "Rolle's theorem", "Cramer's rule"]
+  },
+  {
+    "question": "What is the arbitrary constant '+ C' added to an indefinite integral called?",
+    "correct": "Constant of integration",
+    "wrong": ["Coefficient of variation", "Euler's constant", "Boundary constant"]
+  },
+  {
+    "question": "What is another common name for an indefinite integral of a function f(x)?",
+    "correct": "Antiderivative",
+    "wrong": ["Differential", "Secant slope", "Gradient"]
+  },
+  {
+    "question": "What method approximates the area under a curve by summing the areas of thin rectangles?",
+    "correct": "Riemann sum",
+    "wrong": ["Taylor series", "Partial fractions", "Implicit differentiation"]
+  },
+  {
+    "question": "What is a line that touches a curve at a single point and matches its instantaneous slope called?",
+    "correct": "Tangent line",
+    "wrong": ["Secant line", "Normal line", "Horizontal asymptote"]
+  },
+  {
+    "question": "What is a straight line connecting two distinct points on a curve (giving average rate of change) called?",
+    "correct": "Secant line",
+    "wrong": ["Tangent line", "Vertical asymptote", "Directrix"]
+  },
+  {
+    "question": "What property describes a function with no breaks, jumps, or holes at a point?",
+    "correct": "Continuity",
+    "wrong": ["Differentiability", "Linearity", "Periodicity"]
+  },
+  {
+    "question": "Which theorem guarantees a continuous function takes on every value between f(a) and f(b)?",
+    "correct": "Intermediate Value Theorem",
+    "wrong": ["Mean Value Theorem", "Extreme Value Theorem", "Fundamental Theorem of Calculus"]
+  },
+  {
+    "question": "Which integration technique reverses the Chain Rule by replacing an inner expression with a new variable?",
+    "correct": "u-substitution",
+    "wrong": ["Integration by parts", "Partial fractions", "Trigonometric substitution"]
+  },
+  {
+    "question": "Which integration technique is derived from the Product Rule for differentiation?",
+    "correct": "Integration by parts",
+    "wrong": ["u-substitution", "Long division", "Implicit integration"]
+  },
+  {
+    "question": "What is an infinite series representation of a smooth function built from its derivatives at a single point?",
+    "correct": "Taylor series",
+    "wrong": ["Geometric series", "Harmonic series", "Riemann sum"]
+  },
+  {
+    "question": "In multivariable calculus, what is the derivative of a function with respect to one variable while holding others constant?",
+    "correct": "Partial derivative",
+    "wrong": ["Total differential", "Implicit derivative", "Directional integral"]
+  },
+  {
+    "question": "In multivariable calculus, what vector points in the direction of a function's steepest ascent?",
+    "correct": "Gradient",
+    "wrong": ["Divergence", "Curl", "Laplacian"]
+  },
+  {
+    "question": "Who are the two mathematicians credited with independently inventing calculus in the late 17th century?",
+    "correct": "Isaac Newton and Gottfried Wilhelm Leibniz",
+    "wrong": [
+      "Leonhard Euler and Carl Friedrich Gauss",
+      "Rene Descartes and Pierre de Fermat",
+      "Bernhard Riemann and Augustin-Louis Cauchy"
+    ]
+  },
+  {
+    "question": "What does ODE stand for in mathematics?",
+    "correct": "Ordinary Differential Equation",
+    "wrong": [
+      "Ordered Derivative Expression",
+      "Orthogonal Differential Element",
+      "Operational Domain Equation"
+    ]
+  },
+  {
+    "question": "What does PDE stand for in mathematics?",
+    "correct": "Partial Differential Equation",
+    "wrong": [
+      "Polynomial Differential Expression",
+      "Parametric Derivative Equation",
+      "Primary Domain Evaluation"
+    ]
+  },
+  {
+    "question": "What is the order of a differential equation?",
+    "correct": "The order of the highest derivative appearing in the equation",
+    "wrong": [
+      "The highest exponent on the dependent variable",
+      "The total number of variables in the equation",
+      "The number of arbitrary constants after integrating"
+    ]
+  },
+  {
+    "question": "What do you call a differential equation whose dependent variable and derivatives appear only to the first power and are not multiplied together?",
+    "correct": "Linear differential equation",
+    "wrong": [
+      "Separable differential equation",
+      "Autonomous differential equation",
+      "Exact differential equation"
+    ]
+  },
+  {
+    "question": "What is a differential equation with the right-hand side equal to zero (such as y'' + 4y = 0) called?",
+    "correct": "Homogeneous",
+    "wrong": ["Nonhomogeneous", "Separable", "Inhomogeneous"]
+  },
+  {
+    "question": "What is an ODE of the form dy/dx = g(x) * h(y) called?",
+    "correct": "Separable equation",
+    "wrong": ["Bernoulli equation", "Exact equation", "Cauchy-Euler equation"]
+  },
+  {
+    "question": "What function is multiplied through a first-order linear ODE to make the left-hand side match the product rule?",
+    "correct": "Integrating factor",
+    "wrong": ["Characteristic root", "Wronskian", "Lagrange multiplier"]
+  },
+  {
+    "question": "What do you call a differential equation together with specified values of the unknown function and its derivatives at a single point?",
+    "correct": "Initial value problem (IVP)",
+    "wrong": [
+      "Boundary value problem (BVP)",
+      "Eigenvalue problem",
+      "Cauchy sequence"
+    ]
+  },
+  {
+    "question": "What do you call a differential equation with conditions specified at two or more different points of the interval?",
+    "correct": "Boundary value problem (BVP)",
+    "wrong": [
+      "Initial value problem (IVP)",
+      "Singular solution",
+      "Autonomous system"
+    ]
+  },
+  {
+    "question": "What is an ODE called when the independent variable (such as time t) does not explicitly appear in the equation?",
+    "correct": "Autonomous",
+    "wrong": ["Homogeneous", "Exact", "Linear"]
+  },
+  {
+    "question": "In an autonomous ODE dy/dt = f(y), what is a constant value y* where f(y*) = 0 called?",
+    "correct": "Equilibrium solution",
+    "wrong": ["Singular integral", "Particular solution", "Transient solution"]
+  },
+  {
+    "question": "What graphical tool displays short line segments showing the tangent slope dy/dx at many points in the plane?",
+    "correct": "Slope field (direction field)",
+    "wrong": ["Phase portrait", "Bifurcation diagram", "Contour map"]
+  },
+  {
+    "question": "Which determinant is used to test whether a set of solutions to a linear homogeneous ODE is linearly independent?",
+    "correct": "Wronskian",
+    "wrong": ["Jacobian", "Hessian", "Discriminant"]
+  },
+  {
+    "question": "Which principle states that any linear combination of solutions to a linear homogeneous ODE is also a solution?",
+    "correct": "Principle of superposition",
+    "wrong": [
+      "Picard-Lindelof theorem",
+      "Separation of variables",
+      "Variation of parameters"
+    ]
+  },
+  {
+    "question": "What algebraic equation is formed by substituting y = e^(rt) into a constant-coefficient linear homogeneous ODE?",
+    "correct": "Characteristic equation",
+    "wrong": ["Indicial equation", "Bernoulli equation", "Riccati equation"]
+  },
+  {
+    "question": "Which method finds a particular solution to a nonhomogeneous ODE by guessing a form matching the forcing term?",
+    "correct": "Method of undetermined coefficients",
+    "wrong": ["Euler's method", "Integrating factor", "Laplace inversion"]
+  },
+  {
+    "question": "Which general method finds a particular solution to a linear nonhomogeneous ODE by replacing constants in the complementary solution with functions?",
+    "correct": "Variation of parameters",
+    "wrong": [
+      "Separation of variables",
+      "Reduction of order",
+      "Power series method"
+    ]
+  },
+  {
+    "question": "Which integral transform converts linear constant-coefficient ODEs into algebraic equations in the complex frequency domain s?",
+    "correct": "Laplace transform",
+    "wrong": ["Fourier series", "Z-transform", "Hilbert transform"]
+  },
+  {
+    "question": "What is the simplest numerical method for approximating solutions to a first-order IVP using tangent-line steps?",
+    "correct": "Euler's method",
+    "wrong": ["Runge-Kutta 4", "Newton's method", "Bisection method"]
+  },
+  {
+    "question": "Which family of numerical methods (especially the 4th-order RK4) achieves high accuracy by averaging multiple slope evaluations per step?",
+    "correct": "Runge-Kutta methods",
+    "wrong": ["Picard iterations", "Frobenius methods", "Galerkin methods"]
+  },
+  {
+    "question": "What is the classic differential equation dP/dt = kP used to model?",
+    "correct": "Exponential growth or decay",
+    "wrong": [
+      "Simple harmonic motion",
+      "Damped wave propagation",
+      "Logistic carrying capacity"
+    ]
+  },
+  {
+    "question": "Which differential equation modifies exponential growth by adding a maximum carrying capacity K?",
+    "correct": "Logistic equation",
+    "wrong": ["Heat equation", "Wave equation", "Bernoulli equation"]
+  },
+  {
+    "question": "Which second-order ODE y'' + omega^2 * y = 0 models an undamped mass-spring system?",
+    "correct": "Simple harmonic oscillator equation",
+    "wrong": ["Diffusion equation", "Laplace's equation", "Airy's equation"]
+  },
+  {
+    "question": "In a damped harmonic oscillator, what term describes the regime where the system returns to equilibrium as fast as possible without oscillating?",
+    "correct": "Critically damped",
+    "wrong": ["Underdamped", "Overdamped", "Resonant"]
+  },
+  {
+    "question": "What phenomenon occurs when an external periodic forcing frequency matches the natural frequency of an undamped oscillator?",
+    "correct": "Resonance",
+    "wrong": ["Bifurcation", "Damping", "Convergence"]
+  },
+  {
+    "question": "In a system of autonomous ODEs, what is a plot showing trajectories of solutions in the state space called?",
+    "correct": "Phase portrait",
+    "wrong": ["Slope field", "Bode plot", "Scatter matrix"]
+  },
+  {
+    "question": "What qualitative change occurs in a dynamical system when a small variation in a parameter causes equilibrium points to appear, disappear, or change stability?",
+    "correct": "Bifurcation",
+    "wrong": ["Linearization", "Superposition", "Normalization"]
+  },
+  {
+    "question": "Which famous partial differential equation u_t = alpha * u_xx models how temperature diffuses through a solid rod over time?",
+    "correct": "Heat equation",
+    "wrong": ["Wave equation", "Laplace's equation", "Poisson's equation"]
+  },
+  {
+    "question": "Which famous partial differential equation u_tt = c^2 * u_xx models vibrating strings and sound waves?",
+    "correct": "Wave equation",
+    "wrong": ["Heat equation", "Schrodinger equation", "Transport equation"]
+  },
+  {
+    "question": "Which theorem guarantees a unique local solution to dy/dt = f(t, y) when f and df/dy are continuous near the initial point?",
+    "correct": "Picard-Lindelof existence and uniqueness theorem",
+    "wrong": [
+      "Fundamental Theorem of Calculus",
+      "Cayley-Hamilton theorem",
+      "Sturm-Liouville theorem"
+    ]
+  },
+  {
+    "question": "What do you call a rectangular array of numbers arranged in rows and columns?",
+    "correct": "Matrix",
+    "wrong": ["Scalar", "Determinant", "Eigenvalue"]
+  },
+  {
+    "question": "In linear algebra, what is a single real or complex number (as opposed to a vector or matrix) called?",
+    "correct": "Scalar",
+    "wrong": ["Tensor", "Basis", "Pivot"]
+  },
+  {
+    "question": "What is a square matrix with 1s on the main diagonal and 0s everywhere else called?",
+    "correct": "Identity matrix",
+    "wrong": ["Zero matrix", "Orthogonal matrix", "Skew-symmetric matrix"]
+  },
+  {
+    "question": "What matrix operation flips a matrix over its main diagonal, turning rows into columns?",
+    "correct": "Transpose",
+    "wrong": ["Inverse", "Determinant", "Trace"]
+  },
+  {
+    "question": "What is the sum of the elements on the main diagonal of a square matrix called?",
+    "correct": "Trace",
+    "wrong": ["Determinant", "Rank", "Nullity"]
+  },
+  {
+    "question": "What scalar value computed from a square matrix equals zero if and only if the matrix is non-invertible?",
+    "correct": "Determinant",
+    "wrong": ["Trace", "Norm", "Rank"]
+  },
+  {
+    "question": "What do you call a square matrix whose determinant is zero and therefore has no inverse?",
+    "correct": "Singular matrix",
+    "wrong": ["Identity matrix", "Orthogonal matrix", "Diagonal matrix"]
+  },
+  {
+    "question": "What is a nonzero vector v called when multiplying it by a matrix A only scales it (Av = lambda * v)?",
+    "correct": "Eigenvector",
+    "wrong": ["Unit vector", "Normal vector", "Null vector"]
+  },
+  {
+    "question": "In the equation Av = lambda * v, what is the scalar factor lambda called?",
+    "correct": "Eigenvalue",
+    "wrong": ["Determinant", "Pivot", "Singular value"]
+  },
+  {
+    "question": "What operation takes two vectors of equal length and returns a single scalar equal to the sum of component products?",
+    "correct": "Dot product (inner product)",
+    "wrong": ["Cross product", "Outer product", "Tensor product"]
+  },
+  {
+    "question": "What is the dot product of two orthogonal (perpendicular) vectors equal to?",
+    "correct": "0",
+    "wrong": ["1", "-1", "Undefined"]
+  },
+  {
+    "question": "Which vector operation in 3D space produces a new vector perpendicular to both input vectors?",
+    "correct": "Cross product",
+    "wrong": ["Dot product", "Scalar projection", "Hadmard product"]
+  },
+  {
+    "question": "What is a vector with a magnitude (length) equal to 1 called?",
+    "correct": "Unit vector",
+    "wrong": ["Zero vector", "Basis vector", "Eigenvalue"]
+  },
+  {
+    "question": "What function assigns a non-negative length or magnitude to a vector in a vector space?",
+    "correct": "Norm",
+    "wrong": ["Trace", "Rank", "Span"]
+  },
+  {
+    "question": "What is the set of all possible linear combinations of a given set of vectors called?",
+    "correct": "Span",
+    "wrong": ["Kernel", "Basis", "Complement"]
+  },
+  {
+    "question": "What property holds when no vector in a set can be written as a linear combination of the others?",
+    "correct": "Linear independence",
+    "wrong": ["Orthogonality", "Symmetry", "Invertibility"]
+  },
+  {
+    "question": "What do you call a linearly independent set of vectors that spans an entire vector space?",
+    "correct": "Basis",
+    "wrong": ["Null space", "Column space", "Echelon form"]
+  },
+  {
+    "question": "What is the number of vectors in any basis of a vector space called?",
+    "correct": "Dimension",
+    "wrong": ["Nullity", "Order", "Magnitude"]
+  },
+  {
+    "question": "What is the number of linearly independent rows or columns in a matrix called?",
+    "correct": "Rank",
+    "wrong": ["Trace", "Nullity", "Determinant"]
+  },
+  {
+    "question": "What is the set of all vectors x that satisfy the homogeneous matrix equation Ax = 0 called?",
+    "correct": "Null space (kernel)",
+    "wrong": ["Column space", "Row space", "Eigenspace"]
+  },
+  {
+    "question": "Which theorem states that rank(A) + nullity(A) equals the number of columns of matrix A?",
+    "correct": "Rank-nullity theorem",
+    "wrong": [
+      "Cayley-Hamilton theorem",
+      "Spectral theorem",
+      "Pythagorean theorem"
+    ]
+  },
+  {
+    "question": "Which systematic algorithm uses elementary row operations to reduce a matrix to row echelon form?",
+    "correct": "Gaussian elimination",
+    "wrong": [
+      "Gram-Schmidt process",
+      "Power iteration",
+      "Singular value decomposition"
+    ]
+  },
+  {
+    "question": "Which algorithm converts a set of linearly independent vectors into an orthonormal basis?",
+    "correct": "Gram-Schmidt process",
+    "wrong": ["Gaussian elimination", "Cramer's rule", "LU decomposition"]
+  },
+  {
+    "question": "What do you call a square matrix Q whose columns are orthonormal vectors, meaning Q^T * Q = I?",
+    "correct": "Orthogonal matrix",
+    "wrong": ["Symmetric matrix", "Singular matrix", "Nilpotent matrix"]
+  },
+  {
+    "question": "What do you call a square matrix that is equal to its own transpose (A = A^T)?",
+    "correct": "Symmetric matrix",
+    "wrong": ["Skew-symmetric matrix", "Orthogonal matrix", "Triangular matrix"]
+  },
+  {
+    "question": "What is a square matrix called when all entries below its main diagonal are zero?",
+    "correct": "Upper triangular matrix",
+    "wrong": [
+      "Lower triangular matrix",
+      "Diagonal matrix",
+      "Symmetric matrix"
+    ]
+  },
+  {
+    "question": "What does SVD stand for in matrix factorization?",
+    "correct": "Singular Value Decomposition",
+    "wrong": [
+      "Symmetric Vector Diagonalization",
+      "Scalar Variable Determinant",
+      "Standard Vector Division"
+    ]
+  },
+  {
+    "question": "Under what condition is the matrix product AB defined for an m x n matrix A and a p x q matrix B?",
+    "correct": "n equals p",
+    "wrong": ["m equals q", "m equals p", "n equals q"]
+  },
+  {
+    "question": "Which method solves a system of linear equations using ratios of determinants?",
+    "correct": "Cramer's rule",
+    "wrong": ["Chain rule", "L'Hopital's rule", "Simpson's rule"]
+  },
+  {
+    "question": "Which theorem guarantees that every real symmetric matrix can be diagonalized by an orthogonal matrix?",
+    "correct": "Spectral theorem",
+    "wrong": [
+      "Rank-nullity theorem",
+      "Central Limit Theorem",
+      "Fundamental Theorem of Algebra"
+    ]
+  },
+  {
+    "question": "What does CAD stand for in engineering and product design?",
+    "correct": "Computer-Aided Design",
+    "wrong": [
+      "Calculated Assembly Diagram",
+      "Central Architecture Drawing",
+      "Circuit Analysis Device"
+    ]
+  },
+  {
+    "question": "In mechanics of materials, what measures internal force per unit area within a material?",
+    "correct": "Stress",
+    "wrong": ["Strain", "Torque", "Viscosity"]
+  },
+  {
+    "question": "In materials engineering, what measures the relative deformation (change in length divided by original length) of a material?",
+    "correct": "Strain",
+    "wrong": ["Stress", "Modulus", "Inertia"]
+  },
+  {
+    "question": "What material property measures a solid's stiffness (ratio of tensile stress to tensile strain)?",
+    "correct": "Young's modulus",
+    "wrong": ["Poisson's ratio", "Yield strength", "Thermal conductivity"]
+  },
+  {
+    "question": "What is the rotational equivalent of linear force in mechanical engineering?",
+    "correct": "Torque",
+    "wrong": ["Momentum", "Impulse", "Shear force"]
+  },
+  {
+    "question": "Which law of thermodynamics states that energy cannot be created or destroyed, only transformed?",
+    "correct": "First Law of Thermodynamics",
+    "wrong": [
+      "Second Law of Thermodynamics",
+      "Third Law of Thermodynamics",
+      "Zeroth Law of Thermodynamics"
+    ]
+  },
+  {
+    "question": "Which thermodynamic quantity measures the level of disorder or unavailable thermal energy in a system?",
+    "correct": "Entropy",
+    "wrong": ["Enthalpy", "Specific heat", "Conductance"]
+  },
+  {
+    "question": "What is a fluid's internal resistance to flow called?",
+    "correct": "Viscosity",
+    "wrong": ["Density", "Buoyancy", "Turbulence"]
+  },
+  {
+    "question": "Which dimensionless number predicts whether fluid flow will be laminar or turbulent?",
+    "correct": "Reynolds number",
+    "wrong": ["Mach number", "Avogadro's number", "Prandtl number"]
+  },
+  {
+    "question": "Which aerodynamic principle explains how faster-moving fluid exerts lower static pressure?",
+    "correct": "Bernoulli's principle",
+    "wrong": ["Pascal's principle", "Archimedes' principle", "Hooke's law"]
+  },
+  {
+    "question": "Which law states that voltage equals current multiplied by resistance (V = IR)?",
+    "correct": "Ohm's law",
+    "wrong": ["Faraday's law", "Kirchhoff's voltage law", "Coulomb's law"]
+  },
+  {
+    "question": "Which passive electrical component stores energy in an electric field between two conductive plates?",
+    "correct": "Capacitor",
+    "wrong": ["Inductor", "Resistor", "Transistor"]
+  },
+  {
+    "question": "Which passive electrical component stores energy in a magnetic field when current flows through a coil?",
+    "correct": "Inductor",
+    "wrong": ["Capacitor", "Diode", "Potentiometer"]
+  },
+  {
+    "question": "Which semiconductor component allows electric current to flow easily in only one direction?",
+    "correct": "Diode",
+    "wrong": ["Resistor", "Capacitor", "Transformer"]
+  },
+  {
+    "question": "Which three-terminal semiconductor device is used to amplify or switch electronic signals?",
+    "correct": "Transistor",
+    "wrong": ["Diode", "Inductor", "Thermistor"]
+  },
+  {
+    "question": "What does PWM stand for when controlling motor speed or LED brightness electronically?",
+    "correct": "Pulse-Width Modulation",
+    "wrong": [
+      "Power Wave Management",
+      "Phase-Weighted Multiplexing",
+      "Parallel Wire Metering"
+    ]
+  },
+  {
+    "question": "In control systems engineering, what does PID stand for?",
+    "correct": "Proportional-Integral-Derivative",
+    "wrong": [
+      "Primary Input Device",
+      "Phase-Induced Damping",
+      "Programmable Interface Driver"
+    ]
+  },
+  {
+    "question": "In civil and structural engineering, what is a rigid framework of triangles used to support roofs and bridges called?",
+    "correct": "Truss",
+    "wrong": ["Cantilever", "Pier", "Culvert"]
+  },
+  {
+    "question": "What is a rigid structural beam anchored at only one end while extending horizontally into space called?",
+    "correct": "Cantilever",
+    "wrong": ["Arch", "Truss", "Buttress"]
+  },
+  {
+    "question": "What structural force pulls or stretches a material apart?",
+    "correct": "Tension",
+    "wrong": ["Compression", "Torsion", "Bending moment"]
+  },
+  {
+    "question": "What structural force pushes or squeezes a material together?",
+    "correct": "Compression",
+    "wrong": ["Tension", "Shear", "Torque"]
+  },
+  {
+    "question": "In engineering design, what is the ratio of a structure's maximum load capacity to its expected working load called?",
+    "correct": "Factor of safety",
+    "wrong": ["Elastic limit", "Tolerance", "Duty cycle"]
+  },
+  {
+    "question": "In manufacturing, what is the permissible limit of variation in a physical dimension called?",
+    "correct": "Tolerance",
+    "wrong": ["Clearance", "Pitch", "Fillet"]
+  },
+  {
+    "question": "What does CNC stand for in automated subtractive manufacturing?",
+    "correct": "Computer Numerical Control",
+    "wrong": [
+      "Central Network Calibration",
+      "Controlled Nozzle Cutting",
+      "Continuous Numerical Casting"
+    ]
+  },
+  {
+    "question": "What does FEA stand for when simulating physical stresses on a 3D model?",
+    "correct": "Finite Element Analysis",
+    "wrong": [
+      "Fluid Energy Approximation",
+      "Force Equilibrium Assessment",
+      "Fast Engineering Algorithm"
+    ]
+  },
+  {
+    "question": "What does BOM stand for in manufacturing and hardware engineering?",
+    "correct": "Bill of Materials",
+    "wrong": [
+      "Base Operating Manual",
+      "Batch Order Management",
+      "Blueprint of Mechanisms"
+    ]
+  },
+  {
+    "question": "What does PCB stand for in electronics hardware?",
+    "correct": "Printed Circuit Board",
+    "wrong": [
+      "Programmable Control Block",
+      "Primary Capacitor Bus",
+      "Parallel Connection Base"
+    ]
+  },
+  {
+    "question": "What is the progressive weakening of a material caused by repeated cyclic loading called?",
+    "correct": "Fatigue",
+    "wrong": ["Creep", "Yielding", "Brittle fracture"]
+  },
+  {
+    "question": "Which manufacturing process builds 3D parts layer by layer directly from a digital model?",
+    "correct": "Additive manufacturing (3D printing)",
+    "wrong": ["Injection molding", "Die casting", "CNC milling"]
+  },
+  {
+    "question": "Which quality methodology developed by Motorola aims to reduce process defects to fewer than 3.4 per million opportunities?",
+    "correct": "Six Sigma",
+    "wrong": ["Kanban", "Kaizen", "ISO 9001"]
+  },
+  {
+    "question": "Which law of motion states that an object at rest stays at rest unless acted on by a net external force?",
+    "correct": "Newton's First Law (Law of Inertia)",
+    "wrong": [
+      "Newton's Second Law",
+      "Newton's Third Law",
+      "Law of Universal Gravitation"
+    ]
+  },
+  {
+    "question": "Which equation expresses Newton's Second Law of Motion for constant mass?",
+    "correct": "F = ma",
+    "wrong": ["E = mc^2", "p = mv", "W = Fd"]
+  },
+  {
+    "question": "Which law states that for every action force, there is an equal and opposite reaction force?",
+    "correct": "Newton's Third Law",
+    "wrong": [
+      "Newton's First Law",
+      "Hooke's Law",
+      "Kepler's Third Law"
+    ]
+  },
+  {
+    "question": "What is the SI unit of force?",
+    "correct": "Newton (N)",
+    "wrong": ["Joule (J)", "Watt (W)", "Pascal (Pa)"]
+  },
+  {
+    "question": "What is the SI unit of work and energy?",
+    "correct": "Joule (J)",
+    "wrong": ["Newton (N)", "Watt (W)", "Coulomb (C)"]
+  },
+  {
+    "question": "What is the SI unit of power (the rate at which work is done)?",
+    "correct": "Watt (W)",
+    "wrong": ["Joule (J)", "Volt (V)", "Tesla (T)"]
+  },
+  {
+    "question": "What is the energy an object possesses due to its motion called?",
+    "correct": "Kinetic energy",
+    "wrong": ["Potential energy", "Thermal energy", "Rest mass energy"]
+  },
+  {
+    "question": "What is the product of an object's mass and its velocity (p = mv) called?",
+    "correct": "Momentum",
+    "wrong": ["Impulse", "Torque", "Inertia"]
+  },
+  {
+    "question": "What is the change in an object's momentum caused by a force acting over a time interval called?",
+    "correct": "Impulse",
+    "wrong": ["Work", "Power", "Angular velocity"]
+  },
+  {
+    "question": "Which law states that the force needed to extend or compress a spring is proportional to the displacement (F = -kx)?",
+    "correct": "Hooke's law",
+    "wrong": ["Coulomb's law", "Snell's law", "Boyle's law"]
+  },
+  {
+    "question": "What is the approximate acceleration due to gravity near Earth's surface?",
+    "correct": "9.8 m/s^2",
+    "wrong": ["6.67 m/s^2", "3.0 m/s^2", "12.4 m/s^2"]
+  },
+  {
+    "question": "Which conservation law explains why an ice skater spins faster when pulling their arms inward?",
+    "correct": "Conservation of angular momentum",
+    "wrong": [
+      "Conservation of electric charge",
+      "Conservation of linear momentum",
+      "Conservation of mass"
+    ]
+  },
+  {
+    "question": "What is the SI unit of electric charge?",
+    "correct": "Coulomb (C)",
+    "wrong": ["Ampere (A)", "Volt (V)", "Farad (F)"]
+  },
+  {
+    "question": "What is the SI unit of electric current?",
+    "correct": "Ampere (A)",
+    "wrong": ["Coulomb (C)", "Ohm (Omega)", "Henry (H)"]
+  },
+  {
+    "question": "What is the SI unit of magnetic flux density (magnetic field strength)?",
+    "correct": "Tesla (T)",
+    "wrong": ["Weber (Wb)", "Henry (H)", "Farad (F)"]
+  },
+  {
+    "question": "Which law describes the electrostatic force between two stationary point charges?",
+    "correct": "Coulomb's law",
+    "wrong": ["Faraday's law", "Ampere's law", "Lenz's law"]
+  },
+  {
+    "question": "Which law states that a changing magnetic flux through a loop induces an electromotive force (voltage)?",
+    "correct": "Faraday's law of induction",
+    "wrong": ["Gauss's law", "Ohm's law", "Coulomb's law"]
+  },
+  {
+    "question": "Which law states that an induced electric current opposes the change in magnetic flux that produced it?",
+    "correct": "Lenz's law",
+    "wrong": ["Hooke's law", "Snell's law", "Kirchhoff's current law"]
+  },
+  {
+    "question": "Who unified electricity, magnetism, and light into four foundational equations of electromagnetism?",
+    "correct": "James Clerk Maxwell",
+    "wrong": ["Michael Faraday", "Nikola Tesla", "Heinrich Hertz"]
+  },
+  {
+    "question": "What type of wave oscillates perpendicular to the direction the wave travels (such as light)?",
+    "correct": "Transverse wave",
+    "wrong": ["Longitudinal wave", "Standing wave", "Shock wave"]
+  },
+  {
+    "question": "What type of wave oscillates parallel to the direction the wave travels (such as sound in air)?",
+    "correct": "Longitudinal wave",
+    "wrong": ["Transverse wave", "Electromagnetic wave", "Surface wave"]
+  },
+  {
+    "question": "What is the distance between two consecutive crests or troughs of a wave called?",
+    "correct": "Wavelength",
+    "wrong": ["Amplitude", "Frequency", "Wave speed"]
+  },
+  {
+    "question": "What is the SI unit of frequency, equal to one cycle per second?",
+    "correct": "Hertz (Hz)",
+    "wrong": ["Decibel (dB)", "Radian (rad)", "Newton (N)"]
+  },
+  {
+    "question": "What phenomenon causes the observed frequency of a wave to shift when the source and observer move relative to each other?",
+    "correct": "Doppler effect",
+    "wrong": ["Photoelectric effect", "Refraction", "Diffraction"]
+  },
+  {
+    "question": "What is the bending of a wave as it passes from one medium into another with a different speed called?",
+    "correct": "Refraction",
+    "wrong": ["Reflection", "Diffraction", "Polarization"]
+  },
+  {
+    "question": "Which optical law relates the angles of incidence and refraction to the refractive indices of two media?",
+    "correct": "Snell's law",
+    "wrong": ["Bragg's law", "Beer-Lambert law", "Wien's displacement law"]
+  },
+  {
+    "question": "What phenomenon occurs when waves bend around obstacles or spread out after passing through a narrow opening?",
+    "correct": "Diffraction",
+    "wrong": ["Refraction", "Dispersion", "Total internal reflection"]
+  },
+  {
+    "question": "What occurs when two waves overlap and combine to produce a wave of greater amplitude?",
+    "correct": "Constructive interference",
+    "wrong": [
+      "Destructive interference",
+      "Total internal reflection",
+      "Chromatic aberration"
+    ]
+  },
+  {
+    "question": "Which region of the electromagnetic spectrum has shorter wavelengths than visible light but longer wavelengths than X-rays?",
+    "correct": "Ultraviolet (UV)",
+    "wrong": ["Infrared (IR)", "Microwave", "Radio wave"]
+  },
+  {
+    "question": "Why can sound waves not travel through the vacuum of outer space?",
+    "correct": "Sound is a mechanical wave that requires a physical medium",
+    "wrong": [
+      "Space has too much magnetic interference",
+      "Sound travels faster than the speed of light",
+      "Gravity absorbs all acoustic frequencies"
+    ]
+  },
+  {
+    "question": "Which subatomic particle carries a positive electric charge inside an atom's nucleus?",
+    "correct": "Proton",
+    "wrong": ["Neutron", "Electron", "Positron"]
+  },
+  {
+    "question": "What does an element's atomic number represent on the periodic table?",
+    "correct": "Number of protons in the nucleus",
+    "wrong": [
+      "Total protons plus neutrons",
+      "Number of electron shells",
+      "Average atomic mass in grams"
+    ]
+  },
+  {
+    "question": "What do you call atoms of the same element that have different numbers of neutrons?",
+    "correct": "Isotopes",
+    "wrong": ["Isomers", "Ions", "Allotropes"]
+  },
+  {
+    "question": "What is a positively charged ion formed when an atom loses electrons called?",
+    "correct": "Cation",
+    "wrong": ["Anion", "Isotope", "Radical"]
+  },
+  {
+    "question": "What is a negatively charged ion formed when an atom gains electrons called?",
+    "correct": "Anion",
+    "wrong": ["Cation", "Neutron", "Valence shell"]
+  },
+  {
+    "question": "What are the electrons in the outermost energy shell of an atom called?",
+    "correct": "Valence electrons",
+    "wrong": ["Core electrons", "Free radicals", "Beta particles"]
+  },
+  {
+    "question": "Which type of chemical bond is formed when two atoms share one or more pairs of electrons?",
+    "correct": "Covalent bond",
+    "wrong": ["Ionic bond", "Metallic bond", "Hydrogen bond"]
+  },
+  {
+    "question": "Which type of chemical bond forms via electrostatic attraction between oppositely charged ions?",
+    "correct": "Ionic bond",
+    "wrong": ["Covalent bond", "Van der Waals bond", "Peptide bond"]
+  },
+  {
+    "question": "What property measures an atom's ability to attract shared electrons in a chemical bond?",
+    "correct": "Electronegativity",
+    "wrong": ["Ionization energy", "Atomic radius", "Electron affinity"]
+  },
+  {
+    "question": "Which element has the highest electronegativity on the Pauling scale?",
+    "correct": "Fluorine",
+    "wrong": ["Oxygen", "Chlorine", "Nitrogen"]
+  },
+  {
+    "question": "How many particles (atoms, ions, or molecules) are in one mole according to Avogadro's constant?",
+    "correct": "6.022 x 10^23",
+    "wrong": ["3.14 x 10^23", "9.81 x 10^22", "1.602 x 10^19"]
+  },
+  {
+    "question": "What is a substance with a pH value less than 7 at 25 degrees Celsius classified as?",
+    "correct": "Acid",
+    "wrong": ["Base", "Neutral salt", "Buffer"]
+  },
+  {
+    "question": "What is the pH of pure neutral water at 25 degrees Celsius?",
+    "correct": "7",
+    "wrong": ["0", "14", "5.5"]
+  },
+  {
+    "question": "What substance speeds up a chemical reaction without being consumed in the process?",
+    "correct": "Catalyst",
+    "wrong": ["Reactant", "Inhibitor", "Solvent"]
+  },
+  {
+    "question": "What is a chemical reaction that releases heat energy into its surroundings called?",
+    "correct": "Exothermic reaction",
+    "wrong": ["Endothermic reaction", "Isothermal process", "Adiabatic expansion"]
+  },
+  {
+    "question": "What is a chemical reaction that absorbs heat energy from its surroundings called?",
+    "correct": "Endothermic reaction",
+    "wrong": ["Exothermic reaction", "Combustion reaction", "Precipitation reaction"]
+  },
+  {
+    "question": "In thermodynamics, what quantity (H = U + PV) represents total heat content at constant pressure?",
+    "correct": "Enthalpy",
+    "wrong": ["Entropy", "Activation energy", "Specific heat"]
+  },
+  {
+    "question": "Which thermodynamic quantity predicts whether a reaction is spontaneous at constant temperature and pressure?",
+    "correct": "Gibbs free energy",
+    "wrong": ["Internal energy", "Latent heat", "Heat capacity"]
+  },
+  {
+    "question": "Which law of thermodynamics states that the total entropy of an isolated system never decreases over time?",
+    "correct": "Second Law of Thermodynamics",
+    "wrong": [
+      "First Law of Thermodynamics",
+      "Zeroth Law of Thermodynamics",
+      "Hess's Law"
+    ]
+  },
+  {
+    "question": "Which law states that if two systems are each in thermal equilibrium with a third, they are in equilibrium with each other?",
+    "correct": "Zeroth Law of Thermodynamics",
+    "wrong": [
+      "Third Law of Thermodynamics",
+      "Boyle's Law",
+      "Dalton's Law"
+    ]
+  },
+  {
+    "question": "Which law of thermodynamics states that the entropy of a perfect crystal approaches zero at absolute zero?",
+    "correct": "Third Law of Thermodynamics",
+    "wrong": [
+      "First Law of Thermodynamics",
+      "Second Law of Thermodynamics",
+      "Charles's Law"
+    ]
+  },
+  {
+    "question": "What temperature equals absolute zero (0 Kelvin) in degrees Celsius?",
+    "correct": "-273.15 degrees C",
+    "wrong": ["-100 degrees C", "-459.67 degrees C", "0 degrees C"]
+  },
+  {
+    "question": "What is the minimum energy required for colliding reactants to undergo a chemical reaction called?",
+    "correct": "Activation energy",
+    "wrong": ["Ionization energy", "Lattice energy", "Bond enthalpy"]
+  },
+  {
+    "question": "Which principle states that a system at equilibrium shifts to counteract an applied change in concentration, temperature, or pressure?",
+    "correct": "Le Chatelier's principle",
+    "wrong": ["Pauli exclusion principle", "Aufbau principle", "Heisenberg uncertainty principle"]
+  },
+  {
+    "question": "Which principle states that no two electrons in an atom can have the exact same four quantum numbers?",
+    "correct": "Pauli exclusion principle",
+    "wrong": ["Hund's rule", "Le Chatelier's principle", "Archimedes' principle"]
+  },
+  {
+    "question": "In chemistry, what does oxidation represent in terms of electron transfer?",
+    "correct": "Loss of electrons",
+    "wrong": ["Gain of electrons", "Sharing of protons", "Capture of neutrons"]
+  },
+  {
+    "question": "Which gas law states that pressure and volume of a gas are inversely proportional at constant temperature?",
+    "correct": "Boyle's law",
+    "wrong": ["Charles's law", "Avogadro's law", "Gay-Lussac's law"]
+  },
+  {
+    "question": "What is the phase transition directly from a solid to a gas without passing through the liquid state called?",
+    "correct": "Sublimation",
+    "wrong": ["Deposition", "Condensation", "Evaporation"]
+  },
+  {
+    "question": "Which group on the periodic table contains inert gases like helium, neon, and argon?",
+    "correct": "Noble gases (Group 18)",
+    "wrong": ["Halogens (Group 17)", "Alkali metals (Group 1)", "Transition metals"]
+  },
+  {
+    "question": "What is the heat required to raise the temperature of 1 gram of a substance by 1 degree Celsius called?",
+    "correct": "Specific heat capacity",
+    "wrong": ["Latent heat of fusion", "Thermal conductivity", "Molar enthalpy"]
+  },
+  {
+    "question": "Which organelle is known as the powerhouse of the cell because it generates most of the cell's ATP?",
+    "correct": "Mitochondrion",
+    "wrong": ["Ribosome", "Golgi apparatus", "Lysosome"]
+  },
+  {
+    "question": "Which cellular organelle is responsible for synthesizing proteins by translating mRNA?",
+    "correct": "Ribosome",
+    "wrong": ["Peroxisome", "Vacuole", "Centrosome"]
+  },
+  {
+    "question": "Which organelle in plant cells carries out photosynthesis using chlorophyll?",
+    "correct": "Chloroplast",
+    "wrong": ["Mitochondrion", "Endoplasmic reticulum", "Nucleolus"]
+  },
+  {
+    "question": "What is the main structural difference between prokaryotic and eukaryotic cells?",
+    "correct": "Prokaryotes lack a membrane-bound nucleus",
+    "wrong": [
+      "Prokaryotes have multiple nuclei per cell",
+      "Eukaryotes lack a plasma membrane",
+      "Prokaryotes contain chloroplasts and mitochondria"
+    ]
+  },
+  {
+    "question": "What does DNA stand for in genetics and molecular biology?",
+    "correct": "Deoxyribonucleic acid",
+    "wrong": [
+      "Dipeptide nucleotide array",
+      "Dynamic nuclear antigen",
+      "Dual nitrogenous acid"
+    ]
+  },
+  {
+    "question": "In double-stranded DNA, which nitrogenous base always pairs with adenine (A)?",
+    "correct": "Thymine (T)",
+    "wrong": ["Cytosine (C)", "Guanine (G)", "Uracil (U)"]
+  },
+  {
+    "question": "Which nitrogenous base replaces thymine (T) in RNA molecules?",
+    "correct": "Uracil (U)",
+    "wrong": ["Adenine (A)", "Guanine (G)", "Cytosine (C)"]
+  },
+  {
+    "question": "What is the process of copying a segment of DNA into messenger RNA (mRNA) called?",
+    "correct": "Transcription",
+    "wrong": ["Translation", "Replication", "Transformation"]
+  },
+  {
+    "question": "What is the process where ribosomes decode mRNA to build a polypeptide chain of amino acids?",
+    "correct": "Translation",
+    "wrong": ["Transcription", "Mitosis", "Mutation"]
+  },
+  {
+    "question": "Which type of cell division produces two genetically identical diploid daughter cells?",
+    "correct": "Mitosis",
+    "wrong": ["Meiosis", "Binary fission", "Budding"]
+  },
+  {
+    "question": "Which type of cell division reduces chromosome number by half to produce four haploid gametes?",
+    "correct": "Meiosis",
+    "wrong": ["Mitosis", "Cytokinesis", "Endocytosis"]
+  },
+  {
+    "question": "What do you call alternative versions of the same gene located at the same position on homologous chromosomes?",
+    "correct": "Alleles",
+    "wrong": ["Codons", "Chromatids", "Introns"]
+  },
+  {
+    "question": "What term describes an organism's observable physical or biochemical traits resulting from its genes and environment?",
+    "correct": "Phenotype",
+    "wrong": ["Genotype", "Karyotype", "Haplotype"]
+  },
+  {
+    "question": "What is an organism with two identical alleles for a specific gene (such as AA or aa) called?",
+    "correct": "Homozygous",
+    "wrong": ["Heterozygous", "Polygenic", "Codominant"]
+  },
+  {
+    "question": "Who is widely recognized as the father of modern genetics for his pea plant inheritance experiments?",
+    "correct": "Gregor Mendel",
+    "wrong": ["Charles Darwin", "Louis Pasteur", "Rosalind Franklin"]
+  },
+  {
+    "question": "What is the passive movement of water molecules across a semipermeable membrane from high to low water concentration?",
+    "correct": "Osmosis",
+    "wrong": ["Active transport", "Phagocytosis", "Exocytosis"]
+  },
+  {
+    "question": "What is the primary energy-carrying molecule used by cells to power biological work?",
+    "correct": "ATP (Adenosine triphosphate)",
+    "wrong": ["DNA", "NADPH", "Glucose-6-phosphate"]
+  },
+  {
+    "question": "What is a biological catalyst—usually a protein—that speeds up chemical reactions in living organisms?",
+    "correct": "Enzyme",
+    "wrong": ["Hormone", "Antibody", "Lipid"]
+  },
+  {
+    "question": "What is the ability of an organism or cell to maintain a stable internal environment despite external changes?",
+    "correct": "Homeostasis",
+    "wrong": ["Metabolism", "Adaptation", "Symbiosis"]
+  },
+  {
+    "question": "Which evolutionary mechanism proposed by Charles Darwin favors traits that improve survival and reproduction?",
+    "correct": "Natural selection",
+    "wrong": ["Genetic drift", "Artificial selection", "Gene flow"]
+  },
+  {
+    "question": "In ecology, what do you call an organism (such as a plant or algae) that produces its own food from sunlight or chemicals?",
+    "correct": "Autotroph (producer)",
+    "wrong": ["Heterotroph", "Decomposer", "Detritivore"]
+  },
+  {
+    "question": "What type of symbiotic relationship benefits one species while neither helping nor harming the other?",
+    "correct": "Commensalism",
+    "wrong": ["Mutualism", "Parasitism", "Competition"]
+  },
+  {
+    "question": "What type of symbiotic relationship benefits both participating species?",
+    "correct": "Mutualism",
+    "wrong": ["Parasitism", "Commensalism", "Predation"]
+  },
+  {
+    "question": "What is a species that has a disproportionately large effect on its ecosystem relative to its abundance called?",
+    "correct": "Keystone species",
+    "wrong": ["Invasive species", "Pioneer species", "Endemic species"]
+  },
+  {
+    "question": "What is the maximum population size of a species that an environment can sustainably support called?",
+    "correct": "Carrying capacity",
+    "wrong": ["Trophic level", "Biomass", "Ecological niche"]
+  },
+  {
+    "question": "Roughly what percentage of energy is transferred from one trophic level to the next in an ecological food chain?",
+    "correct": "10%",
+    "wrong": ["50%", "25%", "90%"]
+  },
+  {
+    "question": "What is the role and position a species has in its environment, including how it meets its needs for food and shelter?",
+    "correct": "Ecological niche",
+    "wrong": ["Habitat", "Biome", "Biosphere"]
+  },
+  {
+    "question": "Which organelle modifies, sorts, and packages proteins and lipids for secretion or delivery to other organelles?",
+    "correct": "Golgi apparatus",
+    "wrong": ["Smooth ER", "Centriole", "Flagellum"]
+  },
+  {
+    "question": "Which cellular organelle contains digestive enzymes to break down waste materials and cellular debris?",
+    "correct": "Lysosome",
+    "wrong": ["Ribosome", "Chloroplast", "Nucleolus"]
+  },
+  {
+    "question": "How many chromosomes are normally found in a human somatic (body) cell?",
+    "correct": "46 (23 pairs)",
+    "wrong": ["23", "44", "48"]
+  },
+  {
+    "question": "Which planet in our solar system has the shortest orbital period around the Sun, at just 88 Earth days?",
+    "correct": "Mercury",
+    "wrong": ["Venus", "Mars", "Neptune"]
+  },
+  {
+    "question": "Which planet is the hottest in our solar system due to its thick, carbon-dioxide-rich greenhouse atmosphere?",
+    "correct": "Venus",
+    "wrong": ["Mercury", "Mars", "Jupiter"]
+  },
+  {
+    "question": "What is the largest known volcano in the solar system, located on Mars?",
+    "correct": "Olympus Mons",
+    "wrong": ["Mauna Kea", "Maxwell Montes", "Valles Marineris"]
+  },
+  {
+    "question": "Which planet in our solar system rotates on its side with an axial tilt of about 98 degrees?",
+    "correct": "Uranus",
+    "wrong": ["Neptune", "Saturn", "Venus"]
+  },
+  {
+    "question": "Which moon of Saturn has a thick nitrogen-rich atmosphere and liquid methane lakes on its surface?",
+    "correct": "Titan",
+    "wrong": ["Europa", "Ganymede", "Enceladus"]
+  },
+  {
+    "question": "Which moon of Jupiter is the largest moon in our solar system, even bigger than the planet Mercury?",
+    "correct": "Ganymede",
+    "wrong": ["Titan", "Callisto", "Io"]
+  },
+  {
+    "question": "What is the region of icy bodies beyond Neptune's orbit that includes Pluto called?",
+    "correct": "Kuiper Belt",
+    "wrong": ["Asteroid Belt", "Oort Cloud", "Van Allen Belt"]
+  },
+  {
+    "question": "What is one Astronomical Unit (AU) defined as?",
+    "correct": "Average distance between Earth and the Sun",
+    "wrong": [
+      "Distance light travels in one Earth year",
+      "Diameter of the Milky Way galaxy",
+      "Distance from Earth to the nearest star"
+    ]
+  },
+  {
+    "question": "What does a light-year measure in astronomy?",
+    "correct": "Distance",
+    "wrong": ["Time", "Luminosity", "Orbital velocity"]
+  },
+  {
+    "question": "What is the closest star system to our solar system, located about 4.24 light-years away?",
+    "correct": "Alpha Centauri (Proxima Centauri)",
+    "wrong": ["Sirius", "Barnard's Star", "Betelgeuse"]
+  },
+  {
+    "question": "What nuclear process powers stars like our Sun by combining hydrogen nuclei into helium?",
+    "correct": "Nuclear fusion",
+    "wrong": ["Nuclear fission", "Radioactive beta decay", "Chemical combustion"]
+  },
+  {
+    "question": "What is the boundary around a black hole beyond which nothing—not even light—can escape?",
+    "correct": "Event horizon",
+    "wrong": ["Singularity", "Schwarzschild radius", "Accretion disk"]
+  },
+  {
+    "question": "What is the supermassive black hole at the center of our Milky Way galaxy called?",
+    "correct": "Sagittarius A*",
+    "wrong": ["Cygnus X-1", "Messier 87*", "Centaurus A"]
+  },
+  {
+    "question": "What is a rapidly rotating neutron star that emits beams of electromagnetic radiation from its poles called?",
+    "correct": "Pulsar",
+    "wrong": ["Quasar", "White dwarf", "Protostar"]
+  },
+  {
+    "question": "What is the dense, Earth-sized stellar remnant left behind after a low-to-medium mass star sheds its outer layers?",
+    "correct": "White dwarf",
+    "wrong": ["Neutron star", "Black hole", "Brown dwarf"]
+  },
+  {
+    "question": "What is the powerful explosion that marks the death of a massive star at the end of its life cycle?",
+    "correct": "Supernova",
+    "wrong": ["Solar flare", "Coronal mass ejection", "Planetary nebula"]
+  },
+  {
+    "question": "What is the theoretical maximum mass (about 1.4 solar masses) of a stable white dwarf star called?",
+    "correct": "Chandrasekhar limit",
+    "wrong": ["Roche limit", "Eddington limit", "Hubble constant"]
+  },
+  {
+    "question": "Which astronomical diagram plots stars' luminosity against their surface temperature or spectral class?",
+    "correct": "Hertzsprung-Russell (H-R) diagram",
+    "wrong": ["Hubble tuning fork", "Feynman diagram", "Kepler orbit chart"]
+  },
+  {
+    "question": "What is the main visible surface layer of the Sun that emits most of its light called?",
+    "correct": "Photosphere",
+    "wrong": ["Corona", "Chromosphere", "Convective zone"]
+  },
+  {
+    "question": "What is the outermost part of the Sun's atmosphere, visible as a white halo during a total solar eclipse?",
+    "correct": "Corona",
+    "wrong": ["Photosphere", "Radiative zone", "Magnetosphere"]
+  },
+  {
+    "question": "Which law states that planets move in elliptical orbits with the Sun at one focus?",
+    "correct": "Kepler's First Law",
+    "wrong": [
+      "Kepler's Second Law",
+      "Newton's Law of Cooling",
+      "Hubble's Law"
+    ]
+  },
+  {
+    "question": "What phenomenon stretches the wavelength of light toward longer wavelengths as galaxies move away from us?",
+    "correct": "Redshift",
+    "wrong": ["Blueshift", "Gravitational lensing", "Parallax"]
+  },
+  {
+    "question": "What is the faint thermal radiation left over from the early universe about 380,000 years after the Big Bang?",
+    "correct": "Cosmic Microwave Background (CMB)",
+    "wrong": ["Hawking radiation", "Solar wind", "Cherenkov radiation"]
+  },
+  {
+    "question": "What invisible form of matter does not emit or absorb light but exerts gravitational pull on galaxies?",
+    "correct": "Dark matter",
+    "wrong": ["Antimatter", "Plasma", "Degenerate matter"]
+  },
+  {
+    "question": "What phenomenon occurs when a massive galaxy bends light from a more distant object behind it?",
+    "correct": "Gravitational lensing",
+    "wrong": ["Atmospheric refraction", "Rayleigh scattering", "Chromatic dispersion"]
+  },
+  {
+    "question": "What is the closest large spiral galaxy to the Milky Way, located about 2.5 million light-years away?",
+    "correct": "Andromeda Galaxy (M31)",
+    "wrong": ["Triangulum Galaxy", "Whirlpool Galaxy", "Sombrero Galaxy"]
+  },
+  {
+    "question": "What is the minimum speed an object needs to break free from a celestial body's gravitational pull without further propulsion?",
+    "correct": "Escape velocity",
+    "wrong": ["Orbital velocity", "Terminal velocity", "Angular velocity"]
+  },
+  {
+    "question": "What is the minimum distance to which a celestial body held together only by gravity can approach a second body without disintegrating?",
+    "correct": "Roche limit",
+    "wrong": ["Chandrasekhar limit", "Event horizon", "Lagrange point"]
+  },
+  {
+    "question": "What do you call a planet that orbits a star outside our solar system?",
+    "correct": "Exoplanet",
+    "wrong": ["Dwarf planet", "Rogue moon", "Planetesimal"]
+  },
+  {
+    "question": "What is a giant cloud of dust and gas in space where new stars are often born called?",
+    "correct": "Nebula",
+    "wrong": ["Asteroid", "Quasar", "Magnetar"]
+  },
+  {
+    "question": "Which type of rock is formed from the cooling and solidification of magma or lava?",
+    "correct": "Igneous rock",
+    "wrong": ["Sedimentary rock", "Metamorphic rock", "Foliated shale"]
+  },
+  {
+    "question": "Which type of rock forms from layers of weathered particles compacted and cemented together over time?",
+    "correct": "Sedimentary rock",
+    "wrong": ["Igneous rock", "Metamorphic rock", "Basaltic glass"]
+  },
+  {
+    "question": "Which type of rock forms when existing rock is transformed by intense heat and pressure without melting?",
+    "correct": "Metamorphic rock",
+    "wrong": ["Sedimentary rock", "Igneous rock", "Pyroclastic tuff"]
+  },
+  {
+    "question": "Which scale ranks minerals from 1 (talc) to 10 (diamond) based on scratch resistance?",
+    "correct": "Mohs hardness scale",
+    "wrong": ["Richter scale", "Beaufort scale", "Saffir-Simpson scale"]
+  },
+  {
+    "question": "What is the hardest naturally occurring mineral on the Mohs scale, rated at 10?",
+    "correct": "Diamond",
+    "wrong": ["Corundum", "Quartz", "Topaz"]
+  },
+  {
+    "question": "Which layer of Earth lies directly beneath the crust and makes up most of Earth's volume?",
+    "correct": "Mantle",
+    "wrong": ["Outer core", "Inner core", "Stratosphere"]
+  },
+  {
+    "question": "Which layer of Earth is liquid iron and nickel and generates our planet's magnetic field?",
+    "correct": "Outer core",
+    "wrong": ["Inner core", "Asthenosphere", "Lithosphere"]
+  },
+  {
+    "question": "What is the rigid outer shell of Earth consisting of the crust and uppermost mantle called?",
+    "correct": "Lithosphere",
+    "wrong": ["Asthenosphere", "Troposphere", "Mesosphere"]
+  },
+  {
+    "question": "What was the name of the supercontinent that existed roughly 300 to 200 million years ago?",
+    "correct": "Pangaea",
+    "wrong": ["Gondwana", "Laurasia", "Rodinia"]
+  },
+  {
+    "question": "Who proposed the theory of continental drift in 1912?",
+    "correct": "Alfred Wegener",
+    "wrong": ["Charles Richter", "Harry Hess", "James Hutton"]
+  },
+  {
+    "question": "What type of tectonic plate boundary occurs where two plates move away from each other, such as at mid-ocean ridges?",
+    "correct": "Divergent boundary",
+    "wrong": ["Convergent boundary", "Transform boundary", "Subduction zone"]
+  },
+  {
+    "question": "What process occurs at a convergent boundary when one dense oceanic plate sinks beneath another plate into the mantle?",
+    "correct": "Subduction",
+    "wrong": ["Rifting", "Erosion", "Lithification"]
+  },
+  {
+    "question": "What type of tectonic plate boundary occurs where two plates slide horizontally past one another, like the San Andreas Fault?",
+    "correct": "Transform boundary",
+    "wrong": ["Divergent boundary", "Convergent boundary", "Rift valley"]
+  },
+  {
+    "question": "What is the point on Earth's surface directly above an earthquake's underground origin (focus) called?",
+    "correct": "Epicenter",
+    "wrong": ["Hypocenter", "Fault scarp", "Caldera"]
+  },
+  {
+    "question": "Which scale is commonly used today by seismologists to measure the total energy released by large earthquakes?",
+    "correct": "Moment magnitude scale",
+    "wrong": ["Mercalli intensity scale", "Fujita scale", "Kelvin scale"]
+  },
+  {
+    "question": "What is molten rock beneath Earth's surface called before it erupts onto the surface as lava?",
+    "correct": "Magma",
+    "wrong": ["Tephra", "Pumice", "Obsidian"]
+  },
+  {
+    "question": "What is the horse-shoe-shaped zone around the Pacific Ocean famous for frequent earthquakes and volcanic eruptions?",
+    "correct": "Ring of Fire",
+    "wrong": ["Mid-Atlantic Ridge", "Mariana Trench", "Great Rift Valley"]
+  },
+  {
+    "question": "Which lowest layer of Earth's atmosphere contains nearly all weather phenomena and about 75% of atmospheric mass?",
+    "correct": "Troposphere",
+    "wrong": ["Stratosphere", "Mesosphere", "Thermosphere"]
+  },
+  {
+    "question": "Which atmospheric layer contains the ozone layer that absorbs most of the Sun's harmful ultraviolet radiation?",
+    "correct": "Stratosphere",
+    "wrong": ["Troposphere", "Exosphere", "Ionosphere"]
+  },
+  {
+    "question": "What is the most abundant gas in Earth's dry atmosphere, making up about 78% of the air?",
+    "correct": "Nitrogen",
+    "wrong": ["Oxygen", "Argon", "Carbon dioxide"]
+  },
+  {
+    "question": "Which meteorological instrument is used to measure atmospheric air pressure?",
+    "correct": "Barometer",
+    "wrong": ["Anemometer", "Hygrometer", "Seismograph"]
+  },
+  {
+    "question": "Which weather instrument measures wind speed?",
+    "correct": "Anemometer",
+    "wrong": ["Barometer", "Thermometer", "Psychrometer"]
+  },
+  {
+    "question": "Which weather instrument measures the humidity or moisture content of the air?",
+    "correct": "Hygrometer",
+    "wrong": ["Anemometer", "Altimeter", "Spectrometer"]
+  },
+  {
+    "question": "What is the temperature to which air must be cooled at constant pressure for water vapor to condense into dew?",
+    "correct": "Dew point",
+    "wrong": ["Boiling point", "Frost line", "Lapse rate"]
+  },
+  {
+    "question": "Which tall, dense vertical cloud type is associated with thunderstorms, lightning, and hail?",
+    "correct": "Cumulonimbus",
+    "wrong": ["Cirrus", "Stratus", "Altocumulus"]
+  },
+  {
+    "question": "Which high-altitude, thin, wispy clouds are composed primarily of ice crystals?",
+    "correct": "Cirrus",
+    "wrong": ["Cumulus", "Nimbostratus", "Stratocumulus"]
+  },
+  {
+    "question": "What effect caused by Earth's rotation deflects moving air and ocean currents to the right in the Northern Hemisphere?",
+    "correct": "Coriolis effect",
+    "wrong": ["Greenhouse effect", "Albedo effect", "Venturi effect"]
+  },
+  {
+    "question": "What term measures the fraction of incoming solar radiation reflected by a surface such as snow or ice?",
+    "correct": "Albedo",
+    "wrong": ["Insolation", "Barometric pressure", "Salinity"]
+  },
+  {
+    "question": "What is the climate pattern characterized by unusual warming of surface waters in the central and eastern tropical Pacific?",
+    "correct": "El Nino",
+    "wrong": ["La Nina", "Polar vortex", "Monsoon"]
+  },
+  {
+    "question": "Which scale classifies hurricanes from Category 1 to Category 5 based on sustained wind speed?",
+    "correct": "Saffir-Simpson scale",
+    "wrong": ["Enhanced Fujita scale", "Beaufort scale", "Richter scale"]
+  },
+  {
+    "question": "What is the largest and deepest ocean on Earth, covering more than 30% of the planet's surface?",
+    "correct": "Pacific Ocean",
+    "wrong": ["Atlantic Ocean", "Indian Ocean", "Southern Ocean"]
+  },
+  {
+    "question": "What is the deepest known oceanic trench on Earth, located in the western Pacific Ocean?",
+    "correct": "Mariana Trench",
+    "wrong": ["Tonga Trench", "Java Trench", "Puerto Rico Trench"]
+  },
+  {
+    "question": "Which ocean separates North and South America from Europe and Africa?",
+    "correct": "Atlantic Ocean",
+    "wrong": ["Pacific Ocean", "Indian Ocean", "Arctic Ocean"]
+  },
+  {
+    "question": "Which is the smallest and shallowest of the world's five major oceans?",
+    "correct": "Arctic Ocean",
+    "wrong": ["Southern Ocean", "Indian Ocean", "Atlantic Ocean"]
+  },
+  {
+    "question": "Which river in northeastern Africa is traditionally regarded as the longest river in the world?",
+    "correct": "Nile River",
+    "wrong": ["Amazon River", "Congo River", "Zambezi River"]
+  },
+  {
+    "question": "Which South American river carries the largest volume of water of any river in the world?",
+    "correct": "Amazon River",
+    "wrong": ["Parana River", "Orinoco River", "Mississippi River"]
+  },
+  {
+    "question": "What is the longest river in Asia, flowing entirely within China to the East China Sea?",
+    "correct": "Yangtze River",
+    "wrong": ["Yellow River", "Mekong River", "Ganges River"]
+  },
+  {
+    "question": "Which major European river flows through ten countries, including Germany, Austria, Hungary, and Romania?",
+    "correct": "Danube River",
+    "wrong": ["Rhine River", "Volga River", "Seine River"]
+  },
+  {
+    "question": "What is the longest river in Europe, flowing through central Russia into the Caspian Sea?",
+    "correct": "Volga River",
+    "wrong": ["Danube River", "Dnieper River", "Ural River"]
+  },
+  {
+    "question": "Which mountain range in Asia contains Mount Everest and the world's highest peaks?",
+    "correct": "Himalayas",
+    "wrong": ["Karakoram", "Andes", "Alps"]
+  },
+  {
+    "question": "What is the longest continental mountain range in the world, stretching along South America's western edge?",
+    "correct": "Andes",
+    "wrong": ["Rocky Mountains", "Himalayas", "Great Dividing Range"]
+  },
+  {
+    "question": "Which mountain range stretches over 3,000 miles from British Columbia in Canada to New Mexico in the United States?",
+    "correct": "Rocky Mountains",
+    "wrong": ["Appalachian Mountains", "Sierra Nevada", "Cascade Range"]
+  },
+  {
+    "question": "What is the highest mountain peak in Africa, located in Tanzania?",
+    "correct": "Mount Kilimanjaro",
+    "wrong": ["Mount Kenya", "Mount Elgon", "Mount Stanley"]
+  },
+  {
+    "question": "What is the highest mountain peak in North America, located in Alaska?",
+    "correct": "Denali",
+    "wrong": ["Mount Logan", "Mount Rainier", "Mount Whitney"]
+  },
+  {
+    "question": "Which mountain range forms a natural border between France and Spain?",
+    "correct": "Pyrenees",
+    "wrong": ["Alps", "Apennines", "Carpathians"]
+  },
+  {
+    "question": "Which mountain range in Russia is traditionally considered the boundary between Europe and Asia?",
+    "correct": "Ural Mountains",
+    "wrong": ["Caucasus Mountains", "Altai Mountains", "Zagros Mountains"]
+  },
+  {
+    "question": "What is the largest hot desert in the world, covering much of North Africa?",
+    "correct": "Sahara Desert",
+    "wrong": ["Arabian Desert", "Gobi Desert", "Kalahari Desert"]
+  },
+  {
+    "question": "What is the largest island in the world that is not classified as a continent?",
+    "correct": "Greenland",
+    "wrong": ["New Guinea", "Borneo", "Madagascar"]
+  },
+  {
+    "question": "What is the largest inland body of water in the world by surface area, bordered by five countries?",
+    "correct": "Caspian Sea",
+    "wrong": ["Lake Superior", "Lake Victoria", "Aral Sea"]
+  },
+  {
+    "question": "What is the largest freshwater lake in the world by surface area?",
+    "correct": "Lake Superior",
+    "wrong": ["Lake Victoria", "Lake Baikal", "Lake Huron"]
+  },
+  {
+    "question": "Which Siberian lake is the deepest and oldest freshwater lake on Earth?",
+    "correct": "Lake Baikal",
+    "wrong": ["Lake Tanganyika", "Lake Superior", "Lake Titicaca"]
+  },
+  {
+    "question": "Which narrow waterway connects the Mediterranean Sea to the Atlantic Ocean between Spain and Morocco?",
+    "correct": "Strait of Gibraltar",
+    "wrong": ["Strait of Hormuz", "Bosporus Strait", "Strait of Malacca"]
+  },
+  {
+    "question": "Which human-made waterway in Egypt connects the Mediterranean Sea to the Red Sea?",
+    "correct": "Suez Canal",
+    "wrong": ["Panama Canal", "Kiel Canal", "Erie Canal"]
+  },
+  {
+    "question": "Which narrow strip of land connects North and South America and separates the Pacific and Atlantic Oceans?",
+    "correct": "Isthmus of Panama",
+    "wrong": ["Sinai Peninsula", "Strait of Magellan", "Yucatan Peninsula"]
+  },
+  {
+    "question": "Which imaginary line of latitude at 0 degrees divides Earth into the Northern and Southern Hemispheres?",
+    "correct": "Equator",
+    "wrong": ["Prime Meridian", "Tropic of Cancer", "International Date Line"]
+  },
+  {
+    "question": "Which line of longitude at 0 degrees passes through Greenwich, England?",
+    "correct": "Prime Meridian",
+    "wrong": ["Equator", "Tropic of Capricorn", "International Date Line"]
+  },
+  {
+    "question": "What is the triangular or fan-shaped landform deposited where a river meets a slower body of water called?",
+    "correct": "River delta",
+    "wrong": ["Estuary", "Fjord", "Atoll"]
+  },
+  {
+    "question": "What is a deep, narrow coastal inlet carved by glacial erosion, famously common in Norway, called?",
+    "correct": "Fjord",
+    "wrong": ["Lagoon", "Peninsula", "Archipelago"]
+  },
+  {
+    "question": "What do you call a group or chain of islands clustered together in a body of water?",
+    "correct": "Archipelago",
+    "wrong": ["Isthmus", "Atoll", "Plateau"]
+  },
+  {
+    "question": "Which country spans the most time zones in the world (12 including overseas territories, or 11 contiguous)?",
+    "correct": "France",
+    "wrong": ["Russia", "United States", "China"]
+  },
+  {
+    "question": "Which ancient Mesopotamian writing system used wedge-shaped marks pressed into clay tablets?",
+    "correct": "Cuneiform",
+    "wrong": ["Hieroglyphics", "Linear B", "Sanskrit"]
+  },
+  {
+    "question": "Which Babylonian king is famous for creating one of the earliest surviving written legal codes around 1754 BCE?",
+    "correct": "Hammurabi",
+    "wrong": ["Nebuchadnezzar II", "Sargon of Akkad", "Ashurbanipal"]
+  },
+  {
+    "question": "Which ancient Egyptian artifact, discovered in 1799, enabled scholars to decipher Egyptian hieroglyphics?",
+    "correct": "Rosetta Stone",
+    "wrong": ["Behistun Inscription", "Palermo Stone", "Code of Ur-Nammu"]
+  },
+  {
+    "question": "Which ancient city-state is widely considered the birthplace of democracy in the 5th century BCE?",
+    "correct": "Athens",
+    "wrong": ["Sparta", "Corinth", "Thebes"]
+  },
+  {
+    "question": "Who was the Macedonian king who created an empire stretching from Greece to northwestern India by age 32?",
+    "correct": "Alexander the Great",
+    "wrong": ["Philip II of Macedon", "Cyrus the Great", "Darius I"]
+  },
+  {
+    "question": "Which ancient trade network connected East Asia with the Mediterranean world for centuries?",
+    "correct": "Silk Road",
+    "wrong": ["Amber Road", "Spice Route", "Royal Road"]
+  },
+  {
+    "question": "Which Roman general's crossing of the Rubicon River in 49 BCE sparked a civil war that ended the Roman Republic?",
+    "correct": "Julius Caesar",
+    "wrong": ["Augustus", "Pompey the Great", "Mark Antony"]
+  },
+  {
+    "question": "What was the roughly 200-year period of relative peace and stability across the Roman Empire starting under Augustus called?",
+    "correct": "Pax Romana",
+    "wrong": ["Pax Britannica", "Golden Age of Pericles", "Renaissance"]
+  },
+  {
+    "question": "Which Incan citadel built in the 15th century sits high in the Andes Mountains of Peru?",
+    "correct": "Machu Picchu",
+    "wrong": ["Chichen Itza", "Teotihuacan", "Tikal"]
+  },
+  {
+    "question": "Which Mesoamerican civilization built the capital city of Tenochtitlan on an island in Lake Texcoco?",
+    "correct": "Aztec Empire",
+    "wrong": ["Maya civilization", "Olmec civilization", "Inca Empire"]
+  },
+  {
+    "question": "Which English royal charter signed by King John in 1215 established that everyone, including the king, was subject to the law?",
+    "correct": "Magna Carta",
+    "wrong": ["Domesday Book", "Bill of Rights", "Petition of Right"]
+  },
+  {
+    "question": "Which devastating pandemic killed an estimated 30% to 60% of Europe's population in the mid-14th century?",
+    "correct": "Black Death (Bubonic Plague)",
+    "wrong": ["Spanish Flu", "Justinianic Plague", "Antonine Plague"]
+  },
+  {
+    "question": "Who invented the movable-type printing press in Europe around 1440, sparking a revolution in book production?",
+    "correct": "Johannes Gutenberg",
+    "wrong": ["Leonardo da Vinci", "Martin Luther", "Galileo Galilei"]
+  },
+  {
+    "question": "Which cultural and intellectual movement began in 14th-century Italy and marked the transition from the Middle Ages to modernity?",
+    "correct": "The Renaissance",
+    "wrong": ["The Enlightenment", "The Reformation", "The Industrial Revolution"]
+  },
+  {
+    "question": "Who nailed his 95 Theses to a church door in Wittenberg in 1517, sparking the Protestant Reformation?",
+    "correct": "Martin Luther",
+    "wrong": ["John Calvin", "Henry VIII", "Erasmus"]
+  },
+  {
+    "question": "Which 1494 treaty divided newly discovered lands outside Europe between Portugal and Spain?",
+    "correct": "Treaty of Tordesillas",
+    "wrong": ["Treaty of Westphalia", "Treaty of Utrecht", "Treaty of Versailles"]
+  },
+  {
+    "question": "In what year did the French Revolution begin with the storming of the Bastille prison in Paris?",
+    "correct": "1789",
+    "wrong": ["1776", "1799", "1815"]
+  },
+  {
+    "question": "Which 1815 battle in modern-day Belgium marked the final defeat of Napoleon Bonaparte?",
+    "correct": "Battle of Waterloo",
+    "wrong": ["Battle of Trafalgar", "Battle of Austerlitz", "Battle of Leipzig"]
+  },
+  {
+    "question": "In which country did the Industrial Revolution begin in the late 18th century?",
+    "correct": "Great Britain",
+    "wrong": ["United States", "Germany", "France"]
+  },
+  {
+    "question": "Which 1869 engineering milestone in Egypt dramatically shortened sea voyages between Europe and Asia?",
+    "correct": "Opening of the Suez Canal",
+    "wrong": [
+      "Opening of the Panama Canal",
+      "Completion of the Aswan Dam",
+      "Trans-Siberian Railway"
+    ]
+  },
+  {
+    "question": "Whose assassination in Sarajevo in June 1914 triggered the outbreak of World War I?",
+    "correct": "Archduke Franz Ferdinand",
+    "wrong": ["Kaiser Wilhelm II", "Tsar Nicholas II", "Woodrow Wilson"]
+  },
+  {
+    "question": "Which 1919 peace treaty formally ended World War I between Germany and the Allied Powers?",
+    "correct": "Treaty of Versailles",
+    "wrong": ["Treaty of Brest-Litovsk", "Treaty of Paris", "Treaty of Vienna"]
+  },
+  {
+    "question": "In what year did World War II end?",
+    "correct": "1945",
+    "wrong": ["1944", "1946", "1939"]
+  },
+  {
+    "question": "Which international organization was founded in 1945 to maintain international peace and security after World War II?",
+    "correct": "United Nations",
+    "wrong": ["League of Nations", "NATO", "European Union"]
+  },
+  {
+    "question": "In what year did the Berlin Wall fall, symbolizing the end of the Cold War division of Europe?",
+    "correct": "1989",
+    "wrong": ["1991", "1985", "1961"]
+  },
+  {
+    "question": "In what year did the Soviet Union (USSR) officially dissolve into 15 independent republics?",
+    "correct": "1991",
+    "wrong": ["1989", "1990", "1993"]
+  },
+  {
+    "question": "Who became South Africa's first Black president in 1994 after spending 27 years imprisoned for opposing apartheid?",
+    "correct": "Nelson Mandela",
+    "wrong": ["Desmond Tutu", "F. W. de Klerk", "Kwame Nkrumah"]
+  },
+  {
+    "question": "Who was the first human to travel into outer space aboard Vostok 1 in April 1961?",
+    "correct": "Yuri Gagarin",
+    "wrong": ["Neil Armstrong", "John Glenn", "Alan Shepard"]
+  },
+  {
+    "question": "Which ancient wonder of the world is the only one still largely intact today?",
+    "correct": "Great Pyramid of Giza",
+    "wrong": [
+      "Hanging Gardens of Babylon",
+      "Colossus of Rhodes",
+      "Lighthouse of Alexandria"
+    ]
   }
 ]
