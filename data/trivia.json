@@ -120,6 +120,81 @@
     "wrong": ["catch", "error", "rescue"]
   },
   {
+    "question": "Which Python keyword is used to create an anonymous inline function?",
+    "correct": "lambda",
+    "wrong": ["anon", "func", "inline"]
+  },
+  {
+    "question": "What does the Python expression 10 // 3 evaluate to?",
+    "correct": "3",
+    "wrong": ["3.33", "1", "4"]
+  },
+  {
+    "question": "Which Python operator returns the remainder of a division?",
+    "correct": "%",
+    "wrong": ["//", "/", "**"]
+  },
+  {
+    "question": "Which built-in Python data type stores unique, unordered elements?",
+    "correct": "set",
+    "wrong": ["list", "tuple", "str"]
+  },
+  {
+    "question": "Which Python keyword pauses a generator function and returns a value?",
+    "correct": "yield",
+    "wrong": ["return", "pass", "await"]
+  },
+  {
+    "question": "What does the 'pass' statement do in Python?",
+    "correct": "Acts as a null placeholder that does nothing",
+    "wrong": ["Skips to the next loop iteration", "Exits the current function", "Raises a silent warning"]
+  },
+  {
+    "question": "Which string method removes leading and trailing whitespace in Python?",
+    "correct": "strip()",
+    "wrong": ["trim()", "clean()", "cut()"]
+  },
+  {
+    "question": "Which Python keyword is used to include an external module?",
+    "correct": "import",
+    "wrong": ["include", "require", "using"]
+  },
+  {
+    "question": "What does 'abc'[::-1] evaluate to in Python?",
+    "correct": "'cba'",
+    "wrong": ["'abc'", "'c'", "IndexError"]
+  },
+  {
+    "question": "Which dictionary method safely fetches a key's value without raising KeyError?",
+    "correct": "get()",
+    "wrong": ["fetch()", "find()", "lookup()"]
+  },
+  {
+    "question": "Which Python keyword is used to manage resources with automatic cleanup?",
+    "correct": "with",
+    "wrong": ["using", "defer", "auto"]
+  },
+  {
+    "question": "What does type(3.14) return in Python?",
+    "correct": "float",
+    "wrong": ["double", "decimal", "number"]
+  },
+  {
+    "question": "Which built-in function pairs items from two lists into tuples?",
+    "correct": "zip()",
+    "wrong": ["pair()", "merge()", "join()"]
+  },
+  {
+    "question": "Which Python keyword exits a loop immediately?",
+    "correct": "break",
+    "wrong": ["stop", "exit", "continue"]
+  },
+  {
+    "question": "What is the default return value of a Python function with no return statement?",
+    "correct": "None",
+    "wrong": ["0", "False", "null"]
+  },
+  {
     "question": "Which Git command stages changes for the next commit?",
     "correct": "git add",
     "wrong": ["git stage", "git commit", "git push"]
@@ -314,6 +389,81 @@
     "wrong": ["Venus", "Jupiter", "Mercury"]
   },
   {
+    "question": "What is the largest planet in our solar system?",
+    "correct": "Jupiter",
+    "wrong": ["Saturn", "Neptune", "Uranus"]
+  },
+  {
+    "question": "Which galaxy contains Earth and our solar system?",
+    "correct": "Milky Way",
+    "wrong": ["Andromeda", "Triangulum", "Sombrero"]
+  },
+  {
+    "question": "What is the closest star to Earth?",
+    "correct": "The Sun",
+    "wrong": ["Proxima Centauri", "Sirius", "Betelgeuse"]
+  },
+  {
+    "question": "Which planet in our solar system is famous for its prominent ring system?",
+    "correct": "Saturn",
+    "wrong": ["Mercury", "Mars", "Venus"]
+  },
+  {
+    "question": "What is the chemical symbol for gold?",
+    "correct": "Au",
+    "wrong": ["Ag", "Gd", "Go"]
+  },
+  {
+    "question": "What is the most abundant gas in Earth's atmosphere?",
+    "correct": "Nitrogen",
+    "wrong": ["Oxygen", "Carbon dioxide", "Argon"]
+  },
+  {
+    "question": "What is the pH of pure water at room temperature?",
+    "correct": "7",
+    "wrong": ["0", "5", "14"]
+  },
+  {
+    "question": "Which element has the atomic number 1 on the periodic table?",
+    "correct": "Hydrogen",
+    "wrong": ["Helium", "Oxygen", "Carbon"]
+  },
+  {
+    "question": "Which subatomic particle carries a negative electrical charge?",
+    "correct": "Electron",
+    "wrong": ["Proton", "Neutron", "Positron"]
+  },
+  {
+    "question": "What is the SI unit of electrical resistance?",
+    "correct": "Ohm",
+    "wrong": ["Volt", "Ampere", "Watt"]
+  },
+  {
+    "question": "In a vacuum, what travels at approximately 299,792 kilometers per second?",
+    "correct": "Light",
+    "wrong": ["Sound", "Alpha particles", "Gravity waves in air"]
+  },
+  {
+    "question": "Which organelle is known as the powerhouse of the cell?",
+    "correct": "Mitochondria",
+    "wrong": ["Nucleus", "Ribosome", "Golgi apparatus"]
+  },
+  {
+    "question": "What does DNA stand for?",
+    "correct": "Deoxyribonucleic acid",
+    "wrong": ["Diribonucleic acid", "Dynamic nuclear assembly", "Deoxygenated nitrogen acid"]
+  },
+  {
+    "question": "What is the largest organ of the human body?",
+    "correct": "Skin",
+    "wrong": ["Liver", "Brain", "Lungs"]
+  },
+  {
+    "question": "How many chambers does a human heart have?",
+    "correct": "4",
+    "wrong": ["2", "3", "6"]
+  },
+  {
     "question": "How many sides does a triangle have?",
     "correct": "3",
     "wrong": ["2", "4", "5"]
@@ -394,9 +544,159 @@
     "wrong": ["Atlantic", "Indian", "Arctic"]
   },
   {
+    "question": "What is the capital city of Japan?",
+    "correct": "Tokyo",
+    "wrong": ["Kyoto", "Osaka", "Seoul"]
+  },
+  {
+    "question": "Which river is the longest in Africa?",
+    "correct": "Nile",
+    "wrong": ["Congo", "Zambezi", "Niger"]
+  },
+  {
+    "question": "What is the capital city of Australia?",
+    "correct": "Canberra",
+    "wrong": ["Sydney", "Melbourne", "Brisbane"]
+  },
+  {
+    "question": "Which mountain range separates Europe from Asia?",
+    "correct": "Ural Mountains",
+    "wrong": ["Alps", "Carpathians", "Caucasus Mountains"]
+  },
+  {
+    "question": "What is the smallest independent country in the world by area?",
+    "correct": "Vatican City",
+    "wrong": ["Monaco", "San Marino", "Liechtenstein"]
+  },
+  {
+    "question": "In which country is the ancient Incan citadel of Machu Picchu located?",
+    "correct": "Peru",
+    "wrong": ["Chile", "Bolivia", "Colombia"]
+  },
+  {
+    "question": "What is the capital city of Canada?",
+    "correct": "Ottawa",
+    "wrong": ["Toronto", "Vancouver", "Montreal"]
+  },
+  {
+    "question": "Which desert is the largest hot desert in the world?",
+    "correct": "Sahara",
+    "wrong": ["Arabian", "Gobi", "Kalahari"]
+  },
+  {
+    "question": "In which city is the Colosseum located?",
+    "correct": "Rome",
+    "wrong": ["Athens", "Naples", "Milan"]
+  },
+  {
+    "question": "Which canal connects the Atlantic Ocean and the Pacific Ocean?",
+    "correct": "Panama Canal",
+    "wrong": ["Suez Canal", "Erie Canal", "Kiel Canal"]
+  },
+  {
+    "question": "In what year did the Berlin Wall fall?",
+    "correct": "1989",
+    "wrong": ["1985", "1991", "1979"]
+  },
+  {
+    "question": "Which ancient civilization built the Great Pyramid of Giza?",
+    "correct": "Ancient Egyptians",
+    "wrong": ["Mesopotamians", "Romans", "Mayans"]
+  },
+  {
+    "question": "In what year did Apollo 11 land the first humans on the Moon?",
+    "correct": "1969",
+    "wrong": ["1965", "1971", "1967"]
+  },
+  {
+    "question": "Which European country gifted the Statue of Liberty to the United States?",
+    "correct": "France",
+    "wrong": ["United Kingdom", "Spain", "Netherlands"]
+  },
+  {
+    "question": "What was the name of the ancient trade network connecting East Asia with the Mediterranean?",
+    "correct": "Silk Road",
+    "wrong": ["Spice Route", "Amber Road", "Incense Trail"]
+  },
+  {
     "question": "What does HTML stand for?",
     "correct": "HyperText Markup Language",
     "wrong": ["HighText Machine Language", "HyperTool Markup Language", "Hyperlink Text Management Language"]
+  },
+  {
+    "question": "What does CSS stand for?",
+    "correct": "Cascading Style Sheets",
+    "wrong": ["Computer Style Syntax", "Creative Sheet System", "Colorful Style Scripts"]
+  },
+  {
+    "question": "Which HTML tag is used to create a hyperlink?",
+    "correct": "<a>",
+    "wrong": ["<link>", "<href>", "<url>"]
+  },
+  {
+    "question": "Which JavaScript keyword declares a block-scoped variable that cannot be reassigned?",
+    "correct": "const",
+    "wrong": ["let", "var", "static"]
+  },
+  {
+    "question": "Which CSS property controls the text size of an element?",
+    "correct": "font-size",
+    "wrong": ["text-size", "font-style", "text-scale"]
+  },
+  {
+    "question": "What does DOM stand for in web development?",
+    "correct": "Document Object Model",
+    "wrong": ["Data Object Management", "Document Order Map", "Dynamic Output Mode"]
+  },
+  {
+    "question": "Which HTTP status code means 'Not Found'?",
+    "correct": "404",
+    "wrong": ["200", "403", "500"]
+  },
+  {
+    "question": "Which JavaScript method converts a JSON string into a JavaScript object?",
+    "correct": "JSON.parse()",
+    "wrong": ["JSON.stringify()", "JSON.decode()", "JSON.toObject()"]
+  },
+  {
+    "question": "Which CSS symbol selects an element by its unique id attribute?",
+    "correct": "#",
+    "wrong": [".", "@", "*"]
+  },
+  {
+    "question": "Which HTML attribute specifies alternate text for an image if it cannot load?",
+    "correct": "alt",
+    "wrong": ["title", "src", "caption"]
+  },
+  {
+    "question": "What does typeof null return in JavaScript?",
+    "correct": "'object'",
+    "wrong": ["'null'", "'undefined'", "'boolean'"]
+  },
+  {
+    "question": "Which built-in browser API is commonly used to make HTTP requests in modern JavaScript?",
+    "correct": "fetch()",
+    "wrong": ["request()", "httpGet()", "ajax()"]
+  },
+  {
+    "question": "Which CSS layout model aligns items in one dimension along a row or column?",
+    "correct": "Flexbox",
+    "wrong": ["Grid", "Float", "Block"]
+  },
+  {
+    "question": "Which HTTP method is typically used to retrieve data without modifying server resources?",
+    "correct": "GET",
+    "wrong": ["POST", "PUT", "DELETE"]
+  },
+  {
+    "question": "Which JavaScript array method creates a new array with elements that pass a test?",
+    "correct": "filter()",
+    "wrong": ["map()", "reduce()", "forEach()"]
+  },
+  {
+    "question": "What does JSON stand for?",
+    "correct": "JavaScript Object Notation",
+    "wrong": ["Java Standard Output Network", "JavaScript Online Namespace", "Joined Syntax Object Node"]
   },
   {
     "question": "What is 7 x 8?",
@@ -497,5 +797,88 @@
     "question": "What year did Discord launch?",
     "correct": "2015",
     "wrong": ["2013", "2017", "2019"]
+  },
+  {
+    "question": "What was Mario's original name in the 1981 arcade game Donkey Kong?",
+    "correct": "Jumpman",
+    "wrong": ["Mr. Video", "Plumber Boy", "Red Cap"]
+  },
+  {
+    "question": "Which classic arcade game features four ghosts named Blinky, Pinky, Inky, and Clyde?",
+    "correct": "Pac-Man",
+    "wrong": ["Galaga", "Dig Dug", "Centipede"]
+  },
+  {
+    "question": "What is the name of the main protagonist you control in The Legend of Zelda?",
+    "correct": "Link",
+    "wrong": ["Zelda", "Ganon", "Epona"]
+  },
+  {
+    "question": "What is the famous Konami Code button sequence?",
+    "correct": "Up, Up, Down, Down, Left, Right, Left, Right, B, A",
+    "wrong": [
+      "Up, Down, Up, Down, Left, Right, A, B",
+      "Up, Up, Down, Down, A, B, A, B",
+      "Left, Right, Left, Right, Up, Down, B, A"
+    ]
+  },
+  {
+    "question": "Which sandbox video game holds the record as the best-selling game of all time?",
+    "correct": "Minecraft",
+    "wrong": ["Grand Theft Auto V", "Tetris", "Terraria"]
+  },
+  {
+    "question": "What is the name of the AI companion who assists Master Chief in the Halo series?",
+    "correct": "Cortana",
+    "wrong": ["GLaDOS", "EDI", "SHODAN"]
+  },
+  {
+    "question": "In Portal, what reward is repeatedly promised to the player throughout the test chambers?",
+    "correct": "Cake",
+    "wrong": ["Pie", "Ice cream", "A trophy"]
+  },
+  {
+    "question": "In The Hitchhiker's Guide to the Galaxy, what is the Answer to the Ultimate Question of Life, the Universe, and Everything?",
+    "correct": "42",
+    "wrong": ["24", "7", "101"]
+  },
+  {
+    "question": "In Dungeons & Dragons, how many sides does a standard d20 die have?",
+    "correct": "20",
+    "wrong": ["12", "10", "100"]
+  },
+  {
+    "question": "What is the name of the handheld gaming console released by Nintendo in 1989?",
+    "correct": "Game Boy",
+    "wrong": ["Game Gear", "Nintendo DS", "Virtual Boy"]
+  },
+  {
+    "question": "Which video game company created Sonic the Hedgehog as its mascot?",
+    "correct": "Sega",
+    "wrong": ["Nintendo", "Atari", "Capcom"]
+  },
+  {
+    "question": "In Pokemon Red and Blue, which three starter Pokemon can players choose from?",
+    "correct": "Bulbasaur, Charmander, and Squirtle",
+    "wrong": [
+      "Pikachu, Eevee, and Meowth",
+      "Chikorita, Cyndaquil, and Totodile",
+      "Treecko, Torchic, and Mudkip"
+    ]
+  },
+  {
+    "question": "What does 'NPC' stand for in video games and tabletop RPGs?",
+    "correct": "Non-Player Character",
+    "wrong": ["New Playable Class", "Network Party Controller", "Neutral Path Creature"]
+  },
+  {
+    "question": "Which classic 1972 arcade game is widely considered the first commercially successful video game?",
+    "correct": "Pong",
+    "wrong": ["Space Invaders", "Asteroids", "Breakout"]
+  },
+  {
+    "question": "In Star Wars, what ship made the Kessel Run in less than twelve parsecs?",
+    "correct": "Millennium Falcon",
+    "wrong": ["X-Wing", "Slave I", "Enterprise"]
   }
 ]
