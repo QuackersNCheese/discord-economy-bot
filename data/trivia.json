@@ -1,0 +1,62 @@
+[
+  {
+    "question": "What does CPU stand for?",
+    "correct": "Central Processing Unit",
+    "wrong": ["Computer Personal Unit", "Central Program Utility", "Core Processing Utility"]
+  },
+  {
+    "question": "Which planet is known as the Red Planet?",
+    "correct": "Mars",
+    "wrong": ["Venus", "Jupiter", "Mercury"]
+  },
+  {
+    "question": "What language is this bot written in?",
+    "correct": "Python",
+    "wrong": ["JavaScript", "Java", "C++"]
+  },
+  {
+    "question": "How many sides does a hexagon have?",
+    "correct": "6",
+    "wrong": ["5", "7", "8"]
+  },
+  {
+    "question": "What is the largest ocean on Earth?",
+    "correct": "Pacific",
+    "wrong": ["Atlantic", "Indian", "Arctic"]
+  },
+  {
+    "question": "What does HTML stand for?",
+    "correct": "HyperText Markup Language",
+    "wrong": ["HighText Machine Language", "HyperTool Markup Language", "Hyperlink Text Management Language"]
+  },
+  {
+    "question": "What is 7 x 8?",
+    "correct": "56",
+    "wrong": ["54", "63", "48"]
+  },
+  {
+    "question": "Which animal is the fastest on land?",
+    "correct": "Cheetah",
+    "wrong": ["Lion", "Horse", "Greyhound"]
+  },
+  {
+    "question": "What number is 101 in binary?",
+    "correct": "5",
+    "wrong": ["3", "6", "10"]
+  },
+  {
+    "question": "Which gas do plants take in from the air?",
+    "correct": "Carbon dioxide",
+    "wrong": ["Oxygen", "Nitrogen", "Helium"]
+  },
+  {
+    "question": "What year did Discord launch?",
+    "correct": "2015",
+    "wrong": ["2013", "2017", "2019"]
+  },
+  {
+    "question": "What does MLH stand for?",
+    "correct": "Major League Hacking",
+    "wrong": ["Mega Linux Hub", "Main Line Hackers", "Modern Language Hub"]
+  }
+]

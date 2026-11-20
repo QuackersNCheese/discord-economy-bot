@@ -1,4 +1,8 @@
 """All the tunable numbers for the economy live here."""
+import json
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent
 
 CURRENCY = "🪙"
 STARTING_BALANCE = 100
@@ -10,7 +14,6 @@ DAILY_COOLDOWN = 24 * 60 * 60  # seconds
 WORK_MIN = 50
 WORK_MAX = 200
 WORK_COOLDOWN = 60 * 60
-
 JOBS = [
     "flipped burgers",
     "walked some dogs",
@@ -63,24 +66,15 @@ BANK_INTEREST_CAP = 1_000
 TRIVIA_REWARD = 100
 TRIVIA_COOLDOWN = 2 * 60
 TRIVIA_TIMEOUT = 20  # seconds to answer
-# (question, correct answer, [wrong answers])
-TRIVIA_QUESTIONS = [
-    ("What does CPU stand for?", "Central Processing Unit",
-     ["Computer Personal Unit", "Central Program Utility", "Core Processing Utility"]),
-    ("Which planet is known as the Red Planet?", "Mars", ["Venus", "Jupiter", "Mercury"]),
-    ("What language is this bot written in?", "Python", ["JavaScript", "Java", "C++"]),
-    ("How many sides does a hexagon have?", "6", ["5", "7", "8"]),
-    ("What is the largest ocean on Earth?", "Pacific", ["Atlantic", "Indian", "Arctic"]),
-    ("What does HTML stand for?", "HyperText Markup Language",
-     ["HighText Machine Language", "HyperTool Markup Language", "Hyperlink Text Management Language"]),
-    ("What is 7 x 8?", "56", ["54", "63", "48"]),
-    ("Which animal is the fastest on land?", "Cheetah", ["Lion", "Horse", "Greyhound"]),
-    ("What number is 101 in binary?", "5", ["3", "6", "10"]),
-    ("Which gas do plants take in from the air?", "Carbon dioxide", ["Oxygen", "Nitrogen", "Helium"]),
-    ("What year did Discord launch?", "2015", ["2013", "2017", "2019"]),
-    ("What does MLH stand for?", "Major League Hacking",
-     ["Mega Linux Hub", "Main Line Hackers", "Modern Language Hub"]),
-]
+
+
+def _load_trivia_questions() -> list[tuple[str, str, list[str]]]:
+    trivia_path = BASE_DIR / "data" / "trivia.json"
+    raw = json.loads(trivia_path.read_text(encoding="utf-8"))
+    return [(item["question"], item["correct"], item["wrong"]) for item in raw]
+
+
+TRIVIA_QUESTIONS = _load_trivia_questions()
 
 # Rock paper scissors against the bot, no betting
 RPS_REWARD = 30
