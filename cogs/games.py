@@ -1,5 +1,4 @@
 """Mini-games that earn coins. No betting."""
-
 import random
 
 import discord
@@ -74,7 +73,6 @@ class TriviaView(discord.ui.View):
             return
         self.answered = True
         self.stop()
-
         self._reveal(chosen_button)
 
         if chosen_button.is_correct:
@@ -82,8 +80,8 @@ class TriviaView(discord.ui.View):
             new_balance, _ = self.db.get_balance(self.author_id)
             result_text = (
                 f"**{self.question}**\n\n"
-                f"✅ Correct! You earned **{self.reward:,}** coins "
-                f"(New balance: **{new_balance:,}**)."
+                f"✅ Correct! You earned **{fmt(self.reward)}** "
+                f"(New balance: **{fmt(new_balance)}**)."
             )
         else:
             result_text = (
@@ -99,7 +97,6 @@ class TriviaView(discord.ui.View):
             return
         self.answered = True
         self._reveal(chosen_button=None)
-
         if self.message:
             try:
                 await self.message.edit(
@@ -114,13 +111,22 @@ class Games(commands.Cog):
     def __init__(self, bot: commands.Bot):
         self.bot = bot
         self.db = bot.db
+        self._user_pools: dict[int, list[tuple[str, str, list[str]]]] = {}
+
+    def _next_question(self, user_id: int) -> tuple[str, str, list[str]]:
+        pool = self._user_pools.get(user_id)
+        if not pool:
+            pool = list(config.TRIVIA_QUESTIONS)
+            random.shuffle(pool)
+            self._user_pools[user_id] = pool
+        return pool.pop()
 
     @app_commands.command(description="Answer a multiple-choice question to win coins.")
     async def trivia(self, interaction: discord.Interaction):
         if await check_cooldown(self.db, interaction, "trivia", config.TRIVIA_COOLDOWN):
             return
 
-        question, correct, wrongs = random.choice(config.TRIVIA_QUESTIONS)
+        question, correct, wrongs = self._next_question(interaction.user.id)
         options = [correct, *wrongs]
         random.shuffle(options)
 
@@ -142,8 +148,7 @@ class Games(commands.Cog):
         self.db.set_cooldown(interaction.user.id, "trivia")
         view.message = await interaction.original_response()
 
-
-# TODO: /rps <rock|paper|scissors>     - beat the bot for RPS_REWARD
+    # TODO: /rps <rock|paper|scissors>     - beat the bot for RPS_REWARD
 
 
 async def setup(bot: commands.Bot):
