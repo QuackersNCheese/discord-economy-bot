@@ -5,19 +5,388 @@
     "wrong": ["Computer Personal Unit", "Central Program Utility", "Core Processing Utility"]
   },
   {
+    "question": "What does RAM stand for?",
+    "correct": "Random Access Memory",
+    "wrong": ["Read Always Memory", "Rapid Application Module", "Run Active Memory"]
+  },
+  {
+    "question": "Which type of memory is cleared when a computer shuts down?",
+    "correct": "RAM",
+    "wrong": ["SSD", "Hard Drive", "ROM"]
+  },
+  {
+    "question": "What does URL stand for?",
+    "correct": "Uniform Resource Locator",
+    "wrong": ["Universal Routing Link", "Uniform Reference List", "User Resource Link"]
+  },
+  {
+    "question": "What does the 'S' in HTTPS stand for?",
+    "correct": "Secure",
+    "wrong": ["Server", "Standard", "System"]
+  },
+  {
+    "question": "How many bits are in a single byte?",
+    "correct": "8",
+    "wrong": ["4", "16", "32"]
+  },
+  {
+    "question": "Which keyboard shortcut copies selected text on Windows?",
+    "correct": "Ctrl + C",
+    "wrong": ["Ctrl + V", "Ctrl + X", "Ctrl + Z"]
+  },
+  {
+    "question": "Which keyboard shortcut undoes the last action on Windows?",
+    "correct": "Ctrl + Z",
+    "wrong": ["Ctrl + Y", "Ctrl + U", "Ctrl + R"]
+  },
+  {
+    "question": "What does PDF stand for?",
+    "correct": "Portable Document Format",
+    "wrong": ["Public Data File", "Printed Document File", "Personal Digital Form"]
+  },
+  {
+    "question": "What does SSD stand for?",
+    "correct": "Solid State Drive",
+    "wrong": ["System Storage Disk", "Super Speed Drive", "Static Storage Device"]
+  },
+  {
+    "question": "Which unit of data is larger?",
+    "correct": "Terabyte",
+    "wrong": ["Gigabyte", "Megabyte", "Kilobyte"]
+  },
+  {
+    "question": "What is a deceptive email designed to steal passwords called?",
+    "correct": "Phishing",
+    "wrong": ["Spoofing", "DDoS", "Defragging"]
+  },
+  {
+    "question": "What does VPN stand for?",
+    "correct": "Virtual Private Network",
+    "wrong": ["Verified Public Node", "Virtual Protocol Number", "Variable Private Network"]
+  },
+  {
+    "question": "What does BIOS stand for?",
+    "correct": "Basic Input/Output System",
+    "wrong": ["Binary Internal Operating System", "Boot Integrated OS", "Base Interface Output Service"]
+  },
+  {
+    "question": "Which file extension is commonly used for compressed archive folders?",
+    "correct": ".zip",
+    "wrong": [".exe", ".txt", ".png"]
+  },
+  {
+    "question": "What does GUI stand for?",
+    "correct": "Graphical User Interface",
+    "wrong": ["General Utility Input", "Global User Integration", "Guided Unit Interface"]
+  },
+  {
+    "question": "Which Python keyword is used to define a function?",
+    "correct": "def",
+    "wrong": ["func", "function", "define"]
+  },
+  {
+    "question": "Which built-in Python data type is immutable?",
+    "correct": "tuple",
+    "wrong": ["list", "dict", "set"]
+  },
+  {
+    "question": "What does len([10, 20, 30]) return in Python?",
+    "correct": "3",
+    "wrong": ["2", "30", "4"]
+  },
+  {
+    "question": "Which operator checks value equality in Python?",
+    "correct": "==",
+    "wrong": ["=", "===", "!="]
+  },
+  {
+    "question": "What is the data type of True in Python?",
+    "correct": "bool",
+    "wrong": ["int", "str", "bit"]
+  },
+  {
+    "question": "Which Python method adds a single item to the end of a list?",
+    "correct": "append()",
+    "wrong": ["add()", "push()", "insert()"]
+  },
+  {
+    "question": "What symbol starts a single-line comment in Python?",
+    "correct": "#",
+    "wrong": ["//", "/*", "--"]
+  },
+  {
+    "question": "Which Python keyword handles exceptions caught in a try block?",
+    "correct": "except",
+    "wrong": ["catch", "error", "rescue"]
+  },
+  {
+    "question": "Which Git command stages changes for the next commit?",
+    "correct": "git add",
+    "wrong": ["git stage", "git commit", "git push"]
+  },
+  {
+    "question": "Which Git command downloads commits from a remote without merging?",
+    "correct": "git fetch",
+    "wrong": ["git pull", "git clone", "git sync"]
+  },
+  {
+    "question": "Which Git command shows modified files in your working directory?",
+    "correct": "git status",
+    "wrong": ["git log", "git diff", "git check"]
+  },
+  {
+    "question": "Which Git command creates a local copy of a remote repository?",
+    "correct": "git clone",
+    "wrong": ["git fork", "git init", "git copy"]
+  },
+  {
+    "question": "Which Git command initializes a brand-new repository in a folder?",
+    "correct": "git init",
+    "wrong": ["git start", "git create", "git new"]
+  },
+  {
+    "question": "Which Git command displays the commit history?",
+    "correct": "git log",
+    "wrong": ["git history", "git commits", "git show-all"]
+  },
+  {
+    "question": "Which file tells Git which files or folders to leave untracked?",
+    "correct": ".gitignore",
+    "wrong": [".gitconfig", ".gitexclude", ".gitkeep"]
+  },
+  {
+    "question": "What does SQL stand for?",
+    "correct": "Structured Query Language",
+    "wrong": ["Simple Query Logic", "Sequential Query Language", "System Query Layer"]
+  },
+  {
+    "question": "Which SQL clause filters rows before any grouping occurs?",
+    "correct": "WHERE",
+    "wrong": ["HAVING", "GROUP BY", "ORDER BY"]
+  },
+  {
+    "question": "Which SQL clause filters groups created by GROUP BY?",
+    "correct": "HAVING",
+    "wrong": ["WHERE", "FILTER", "DISTINCT"]
+  },
+  {
+    "question": "Which SQL keyword removes duplicate rows from a result set?",
+    "correct": "DISTINCT",
+    "wrong": ["UNIQUE", "SINGLE", "FILTER"]
+  },
+  {
+    "question": "Which constraint uniquely identifies each row in a relational table?",
+    "correct": "PRIMARY KEY",
+    "wrong": ["FOREIGN KEY", "INDEX", "DEFAULT"]
+  },
+  {
+    "question": "Which constraint links a column to a primary key in another table?",
+    "correct": "FOREIGN KEY",
+    "wrong": ["PRIMARY KEY", "CHECK", "UNIQUE"]
+  },
+  {
+    "question": "Which SQL JOIN returns only rows with matching values in both tables?",
+    "correct": "INNER JOIN",
+    "wrong": ["LEFT JOIN", "FULL OUTER JOIN", "CROSS JOIN"]
+  },
+  {
+    "question": "Which SQL statement removes all rows from a table without deleting the table itself?",
+    "correct": "DELETE",
+    "wrong": ["DROP", "REMOVE", "ALTER"]
+  },
+  {
+    "question": "Which SQL keyword sorts query results in descending order?",
+    "correct": "DESC",
+    "wrong": ["ASC", "DOWN", "REVERSE"]
+  },
+  {
+    "question": "Which SQL operator matches a pattern using % and _ wildcards?",
+    "correct": "LIKE",
+    "wrong": ["MATCH", "REGEX", "SIMILAR"]
+  },
+  {
+    "question": "How is an entire SQLite database stored on disk?",
+    "correct": "In a single cross-platform file",
+    "wrong": ["Across separate files per table", "In a background server daemon", "Only in system RAM"]
+  },
+  {
+    "question": "Which SQLite command-line dot-command lists all tables in a database?",
+    "correct": ".tables",
+    "wrong": [".show", ".list", ".schema-all"]
+  },
+  {
+    "question": "Which SQLite PRAGMA turns on foreign key constraint enforcement?",
+    "correct": "PRAGMA foreign_keys = ON;",
+    "wrong": ["PRAGMA enforce_fk = TRUE;", "PRAGMA keys = STRICT;", "PRAGMA constraints = ON;"]
+  },
+  {
+    "question": "Which SQL aggregate function returns the total number of rows?",
+    "correct": "COUNT()",
+    "wrong": ["SUM()", "TOTAL()", "ROWS()"]
+  },
+  {
+    "question": "What do the four letters in ACID database transactions stand for?",
+    "correct": "Atomicity, Consistency, Isolation, Durability",
+    "wrong": [
+      "Accuracy, Concurrency, Integrity, Dependency",
+      "Availability, Consistency, Isolation, Distribution",
+      "Atomicity, Concurrency, Indexing, Durability"
+    ]
+  },
+  {
+    "question": "Which Linux command prints the full path of your current working directory?",
+    "correct": "pwd",
+    "wrong": ["cwd", "dir", "whereami"]
+  },
+  {
+    "question": "Which flag with 'ls' shows hidden files starting with a dot?",
+    "correct": "-a",
+    "wrong": ["-h", "-l", "-r"]
+  },
+  {
+    "question": "Which command changes the access permissions of a file in Linux?",
+    "correct": "chmod",
+    "wrong": ["chown", "chgrp", "chperm"]
+  },
+  {
+    "question": "In Linux numeric file permissions, what does the digit 7 represent?",
+    "correct": "Read, write, and execute",
+    "wrong": ["Read and write only", "Read and execute only", "Full root ownership"]
+  },
+  {
+    "question": "Which numeric permission mode sets rwxr-xr-x on a file?",
+    "correct": "755",
+    "wrong": ["644", "777", "700"]
+  },
+  {
+    "question": "Which Linux command searches for matching text patterns inside files?",
+    "correct": "grep",
+    "wrong": ["find", "locate", "awk"]
+  },
+  {
+    "question": "What does the pipe symbol '|' do between two Linux commands?",
+    "correct": "Sends stdout of the first to stdin of the second",
+    "wrong": ["Runs both commands in parallel", "Appends output to a log file", "Runs the second only if the first fails"]
+  },
+  {
+    "question": "Which Linux directory typically stores system configuration files?",
+    "correct": "/etc",
+    "wrong": ["/bin", "/var", "/tmp"]
+  },
+  {
+    "question": "Which command displays real-time running processes and CPU usage?",
+    "correct": "top",
+    "wrong": ["ps -a", "jobs", "stat"]
+  },
+  {
+    "question": "Which protocol translates domain names like example.com into IP addresses?",
+    "correct": "DNS",
+    "wrong": ["DHCP", "ARP", "HTTP"]
+  },
+  {
+    "question": "What is the standard IPv4 loopback address for localhost?",
+    "correct": "127.0.0.1",
+    "wrong": ["192.168.1.1", "0.0.0.0", "255.255.255.0"]
+  },
+  {
+    "question": "Which default TCP port does SSH use for secure remote connections?",
+    "correct": "22",
+    "wrong": ["21", "80", "443"]
+  },
+  {
+    "question": "Which default TCP port is used by standard HTTPS web traffic?",
+    "correct": "443",
+    "wrong": ["80", "8080", "22"]
+  },
+  {
+    "question": "Which protocol automatically assigns IP addresses to devices on a network?",
+    "correct": "DHCP",
+    "wrong": ["DNS", "ICMP", "SMTP"]
+  },
+  {
+    "question": "Which command tests network reachability using ICMP echo packets?",
+    "correct": "ping",
+    "wrong": ["curl", "netstat", "dig"]
+  },
+  {
     "question": "Which planet is known as the Red Planet?",
     "correct": "Mars",
     "wrong": ["Venus", "Jupiter", "Mercury"]
   },
   {
-    "question": "What language is this bot written in?",
-    "correct": "Python",
-    "wrong": ["JavaScript", "Java", "C++"]
+    "question": "How many sides does a triangle have?",
+    "correct": "3",
+    "wrong": ["2", "4", "5"]
+  },
+  {
+    "question": "How many sides does a quadrilateral have?",
+    "correct": "4",
+    "wrong": ["3", "5", "6"]
+  },
+  {
+    "question": "How many sides does a pentagon have?",
+    "correct": "5",
+    "wrong": ["4", "6", "7"]
   },
   {
     "question": "How many sides does a hexagon have?",
     "correct": "6",
     "wrong": ["5", "7", "8"]
+  },
+  {
+    "question": "How many sides does a heptagon have?",
+    "correct": "7",
+    "wrong": ["6", "8", "9"]
+  },
+  {
+    "question": "How many sides does an octagon have?",
+    "correct": "8",
+    "wrong": ["6", "7", "10"]
+  },
+  {
+    "question": "How many sides does a nonagon have?",
+    "correct": "9",
+    "wrong": ["7", "8", "10"]
+  },
+  {
+    "question": "How many sides does a decagon have?",
+    "correct": "10",
+    "wrong": ["8", "9", "12"]
+  },
+  {
+    "question": "How many sides does a hendecagon have?",
+    "correct": "11",
+    "wrong": ["9", "10", "12"]
+  },
+  {
+    "question": "How many sides does a dodecagon have?",
+    "correct": "12",
+    "wrong": ["10", "11", "20"]
+  },
+  {
+    "question": "How many faces does a tetrahedron have?",
+    "correct": "4",
+    "wrong": ["3", "6", "8"]
+  },
+  {
+    "question": "How many faces does a cube have?",
+    "correct": "6",
+    "wrong": ["4", "8", "12"]
+  },
+  {
+    "question": "How many faces does an octahedron have?",
+    "correct": "8",
+    "wrong": ["6", "10", "12"]
+  },
+  {
+    "question": "How many faces does a dodecahedron have?",
+    "correct": "12",
+    "wrong": ["10", "16", "20"]
+  },
+  {
+    "question": "How many faces does an icosahedron have?",
+    "correct": "20",
+    "wrong": ["12", "18", "24"]
   },
   {
     "question": "What is the largest ocean on Earth?",
@@ -40,9 +409,84 @@
     "wrong": ["Lion", "Horse", "Greyhound"]
   },
   {
-    "question": "What number is 101 in binary?",
+    "question": "What number is 0000 in binary?",
+    "correct": "0",
+    "wrong": ["1", "2", "4"]
+  },
+  {
+    "question": "What number is 0001 in binary?",
+    "correct": "1",
+    "wrong": ["0", "2", "10"]
+  },
+  {
+    "question": "What number is 0010 in binary?",
+    "correct": "2",
+    "wrong": ["1", "4", "10"]
+  },
+  {
+    "question": "What number is 0011 in binary?",
+    "correct": "3",
+    "wrong": ["2", "5", "11"]
+  },
+  {
+    "question": "What number is 0100 in binary?",
+    "correct": "4",
+    "wrong": ["2", "8", "100"]
+  },
+  {
+    "question": "What number is 0101 in binary?",
     "correct": "5",
     "wrong": ["3", "6", "10"]
+  },
+  {
+    "question": "What number is 0110 in binary?",
+    "correct": "6",
+    "wrong": ["4", "7", "12"]
+  },
+  {
+    "question": "What number is 0111 in binary?",
+    "correct": "7",
+    "wrong": ["5", "8", "15"]
+  },
+  {
+    "question": "What number is 1000 in binary?",
+    "correct": "8",
+    "wrong": ["4", "10", "16"]
+  },
+  {
+    "question": "What number is 1001 in binary?",
+    "correct": "9",
+    "wrong": ["7", "11", "17"]
+  },
+  {
+    "question": "What number is 1010 in binary?",
+    "correct": "10",
+    "wrong": ["6", "12", "20"]
+  },
+  {
+    "question": "What number is 1011 in binary?",
+    "correct": "11",
+    "wrong": ["9", "13", "15"]
+  },
+  {
+    "question": "What number is 1100 in binary?",
+    "correct": "12",
+    "wrong": ["10", "14", "24"]
+  },
+  {
+    "question": "What number is 1101 in binary?",
+    "correct": "13",
+    "wrong": ["11", "14", "15"]
+  },
+  {
+    "question": "What number is 1110 in binary?",
+    "correct": "14",
+    "wrong": ["12", "13", "15"]
+  },
+  {
+    "question": "What number is 1111 in binary?",
+    "correct": "15",
+    "wrong": ["14", "16", "31"]
   },
   {
     "question": "Which gas do plants take in from the air?",
@@ -53,10 +497,5 @@
     "question": "What year did Discord launch?",
     "correct": "2015",
     "wrong": ["2013", "2017", "2019"]
-  },
-  {
-    "question": "What does MLH stand for?",
-    "correct": "Major League Hacking",
-    "wrong": ["Mega Linux Hub", "Main Line Hackers", "Modern Language Hub"]
   }
 ]
