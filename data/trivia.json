@@ -699,6 +699,491 @@
     "wrong": ["Java Standard Output Network", "JavaScript Online Namespace", "Joined Syntax Object Node"]
   },
   {
+    "question": "What does LLM stand for in artificial intelligence?",
+    "correct": "Large Language Model",
+    "wrong": ["Linear Logic Machine", "Layered Learning Module", "Local Language Matrix"]
+  },
+  {
+    "question": "What does NLP stand for in AI?",
+    "correct": "Natural Language Processing",
+    "wrong": ["Neural Logic Programming", "Network Layer Protocol", "Numerical Learning Process"]
+  },
+  {
+    "question": "What is the basic unit of text that a large language model reads and generates?",
+    "correct": "Token",
+    "wrong": ["Pixel", "Neuron", "Bytecode"]
+  },
+  {
+    "question": "What term describes an AI model generating confident but false information?",
+    "correct": "Hallucination",
+    "wrong": ["Overfitting", "Quantization", "Gradient descent"]
+  },
+  {
+    "question": "What does RAG stand for in modern AI applications?",
+    "correct": "Retrieval-Augmented Generation",
+    "wrong": ["Recursive Algorithm Graph", "Reinforced Agent Guidance", "Random Attention Generator"]
+  },
+  {
+    "question": "Which neural network architecture introduced the self-attention mechanism in 2017?",
+    "correct": "Transformer",
+    "wrong": ["Perceptron", "Autoencoder", "Random Forest"]
+  },
+  {
+    "question": "What does GPU stand for, the hardware widely used to train AI models?",
+    "correct": "Graphics Processing Unit",
+    "wrong": ["General Protocol Unit", "Global Processing Utility", "Guided Parallel Unit"]
+  },
+  {
+    "question": "Which test evaluates whether a machine can exhibit human-like conversational intelligence?",
+    "correct": "Turing Test",
+    "wrong": ["Voight-Kampff Test", "Fermi Paradox", "Bellman Test"]
+  },
+  {
+    "question": "What happens when a machine learning model memorizes training data and fails on new data?",
+    "correct": "Overfitting",
+    "wrong": ["Underfitting", "Tokenization", "Pruning"]
+  },
+  {
+    "question": "Which type of machine learning trains models using labeled input-output pairs?",
+    "correct": "Supervised learning",
+    "wrong": ["Unsupervised learning", "Reinforcement learning", "Zero-shot learning"]
+  },
+  {
+    "question": "Which type of machine learning trains an agent using rewards and penalties?",
+    "correct": "Reinforcement learning",
+    "wrong": ["Supervised learning", "Clustering", "Dimensionality reduction"]
+  },
+  {
+    "question": "What are dense numerical vectors used to represent the semantic meaning of text called?",
+    "correct": "Embeddings",
+    "wrong": ["Hyperparameters", "Checkpoints", "Logits"]
+  },
+  {
+    "question": "Which LLM setting controls randomness and creativity in generated responses?",
+    "correct": "Temperature",
+    "wrong": ["Batch size", "Epoch", "Stride"]
+  },
+  {
+    "question": "What is one complete pass through the entire training dataset called?",
+    "correct": "Epoch",
+    "wrong": ["Token", "Inference", "Context window"]
+  },
+  {
+    "question": "What is the maximum amount of text an LLM can process in a single prompt and response called?",
+    "correct": "Context window",
+    "wrong": ["Embedding space", "Latent buffer", "Attention head"]
+  },
+  {
+    "question": "What term describes using a trained AI model to make predictions on new inputs?",
+    "correct": "Inference",
+    "wrong": ["Backpropagation", "Fine-tuning", "Tokenization"]
+  },
+  {
+    "question": "Which optimization algorithm adjusts model weights by moving down the loss slope?",
+    "correct": "Gradient descent",
+    "wrong": ["K-means clustering", "Beam search", "Dropout"]
+  },
+  {
+    "question": "What algorithm computes gradients backward through a neural network during training?",
+    "correct": "Backpropagation",
+    "wrong": ["Forward pass", "Cross-validation", "Data augmentation"]
+  },
+  {
+    "question": "What is the process of adapting a pre-trained model to a specific task with extra training?",
+    "correct": "Fine-tuning",
+    "wrong": ["Prompt injection", "Quantization", "Web scraping"]
+  },
+  {
+    "question": "What technique reduces model precision (e.g., from 16-bit to 4-bit) to save memory?",
+    "correct": "Quantization",
+    "wrong": ["Tokenization", "Regularization", "Normalization"]
+  },
+  {
+    "question": "What is asking an LLM to solve a task without giving it any prior examples called?",
+    "correct": "Zero-shot prompting",
+    "wrong": ["Few-shot prompting", "Chain-of-thought", "Model distillation"]
+  },
+  {
+    "question": "Which prompting technique encourages an LLM to reason step-by-step before answering?",
+    "correct": "Chain-of-thought",
+    "wrong": ["Zero-shot", "System masking", "Greedy decoding"]
+  },
+  {
+    "question": "What does RLHF stand for in aligning language models with human preferences?",
+    "correct": "Reinforcement Learning from Human Feedback",
+    "wrong": [
+      "Recursive Logic for Hybrid Functions",
+      "Real-Time Language Heuristic Filtering",
+      "Reinforced Layer Heuristic Framework"
+    ]
+  },
+  {
+    "question": "Which type of neural network is specialized for processing grid-like data such as images?",
+    "correct": "Convolutional Neural Network",
+    "wrong": ["Recurrent Neural Network", "Decision Tree", "Naive Bayes"]
+  },
+  {
+    "question": "What does GAN stand for in generative AI?",
+    "correct": "Generative Adversarial Network",
+    "wrong": ["General Artificial Node", "Global Attention Network", "Guided Autoencoder Network"]
+  },
+  {
+    "question": "Which class of generative models creates images by gradually removing random noise?",
+    "correct": "Diffusion models",
+    "wrong": ["Support Vector Machines", "Linear regression models", "Markov chains"]
+  },
+  {
+    "question": "What are user-configured settings like learning rate that are set before training starts?",
+    "correct": "Hyperparameters",
+    "wrong": ["Weights", "Biases", "Activations"]
+  },
+  {
+    "question": "What is the simplest single-layer artificial neuron model invented in 1958 called?",
+    "correct": "Perceptron",
+    "wrong": ["Transformer", "LSTM", "ResNet"]
+  },
+  {
+    "question": "What security vulnerability tricks an LLM into ignoring its instructions via crafted input?",
+    "correct": "Prompt injection",
+    "wrong": ["SQL injection", "Buffer overflow", "Man-in-the-middle"]
+  },
+  {
+    "question": "What does OCR stand for when AI extracts text from scanned documents or images?",
+    "correct": "Optical Character Recognition",
+    "wrong": [
+      "Online Content Retrieval",
+      "Object Classification Routine",
+      "Optical Code Rendering"
+    ]
+  },
+  {
+    "question": "What does 2FA stand for in account security?",
+    "correct": "Two-Factor Authentication",
+    "wrong": ["Two-File Authorization", "Twin Firewall Access", "Total Filter Authentication"]
+  },
+  {
+    "question": "What type of malware encrypts a victim's files and demands payment to unlock them?",
+    "correct": "Ransomware",
+    "wrong": ["Spyware", "Adware", "Rootkit"]
+  },
+  {
+    "question": "What does DDoS stand for?",
+    "correct": "Distributed Denial of Service",
+    "wrong": [
+      "Direct Data Operating System",
+      "Dynamic Domain Overload Service",
+      "Decentralized Disk Override System"
+    ]
+  },
+  {
+    "question": "In public-key cryptography, which key is kept secret by the owner?",
+    "correct": "Private key",
+    "wrong": ["Public key", "Session key", "Shared salt"]
+  },
+  {
+    "question": "What is a random string added to a password before hashing to defend against rainbow tables?",
+    "correct": "Salt",
+    "wrong": ["Pepper", "Nonce", "Cipher"]
+  },
+  {
+    "question": "What does SQL injection exploit in a web application?",
+    "correct": "Unsanitized user input in database queries",
+    "wrong": [
+      "Weak Wi-Fi encryption",
+      "Expired SSL certificates",
+      "Unpatched BIOS firmware"
+    ]
+  },
+  {
+    "question": "What type of attack tricks users into revealing sensitive information through psychological manipulation?",
+    "correct": "Social engineering",
+    "wrong": ["Brute force", "Packet sniffing", "Port scanning"]
+  },
+  {
+    "question": "What is a previously unknown software vulnerability that has no patch available yet called?",
+    "correct": "Zero-day vulnerability",
+    "wrong": ["Backdoor", "Buffer overflow", "Logic bomb"]
+  },
+  {
+    "question": "What does XSS stand for in web application security?",
+    "correct": "Cross-Site Scripting",
+    "wrong": ["External System Spoofing", "Cross-Server Synchronization", "Extended Security Socket"]
+  },
+  {
+    "question": "Which security principle states that users should only have the minimum access needed for their role?",
+    "correct": "Principle of least privilege",
+    "wrong": ["Security through obscurity", "Defense in depth", "Zero trust routing"]
+  },
+  {
+    "question": "What is a decoy system designed to attract and monitor cyberattackers called?",
+    "correct": "Honeypot",
+    "wrong": ["Sandbox", "Firewall", "Proxy"]
+  },
+  {
+    "question": "Which type of malware disguises itself as legitimate software to trick users into installing it?",
+    "correct": "Trojan horse",
+    "wrong": ["Worm", "Keylogger", "Botnet"]
+  },
+  {
+    "question": "What is trying every possible password combination until the correct one is found called?",
+    "correct": "Brute-force attack",
+    "wrong": ["Man-in-the-middle attack", "Replay attack", "ARP spoofing"]
+  },
+  {
+    "question": "What does AES stand for in modern symmetric encryption?",
+    "correct": "Advanced Encryption Standard",
+    "wrong": [
+      "Automated Encoding System",
+      "Asymmetric Encryption Service",
+      "Authenticated Entry Standard"
+    ]
+  },
+  {
+    "question": "Why are cryptographic hash functions like SHA-256 described as one-way functions?",
+    "correct": "You cannot reverse the hash to recover the original input",
+    "wrong": [
+      "They only work on single-character strings",
+      "They require an internet connection to compute",
+      "They delete the original file after hashing"
+    ]
+  },
+  {
+    "question": "What does ALU stand for inside a CPU?",
+    "correct": "Arithmetic Logic Unit",
+    "wrong": ["Application Layer Unit", "Automated Logic Utility", "Address Lookup Unit"]
+  },
+  {
+    "question": "What are the tiny, ultra-fast storage locations built directly inside a CPU called?",
+    "correct": "Registers",
+    "wrong": ["Sectors", "Clusters", "Partitions"]
+  },
+  {
+    "question": "Which level of CPU cache is typically the fastest and smallest?",
+    "correct": "L1 cache",
+    "wrong": ["L2 cache", "L3 cache", "Page file"]
+  },
+  {
+    "question": "What does GHz measure when describing a CPU's clock speed?",
+    "correct": "Billions of cycles per second",
+    "wrong": ["Millions of instructions per minute", "Gigabytes of cache memory", "Watts of thermal power"]
+  },
+  {
+    "question": "What does NVMe stand for in modern high-speed solid-state drives?",
+    "correct": "Non-Volatile Memory Express",
+    "wrong": ["Network Virtual Memory Engine", "Next-Gen Video Media Extension", "New Volatile Module Entry"]
+  },
+  {
+    "question": "What does PSU stand for in a desktop PC build?",
+    "correct": "Power Supply Unit",
+    "wrong": ["Primary System Utility", "Peripheral Storage Unit", "Processor Speed Upgrade"]
+  },
+  {
+    "question": "Which motherboard slot is commonly used to connect modern graphics cards?",
+    "correct": "PCIe",
+    "wrong": ["DIMM", "SATA", "AGP"]
+  },
+  {
+    "question": "What does ROM stand for?",
+    "correct": "Read-Only Memory",
+    "wrong": ["Random Operating Memory", "Rapid Output Module", "Runtime Object Memory"]
+  },
+  {
+    "question": "What is the main circuit board that connects all internal components of a computer called?",
+    "correct": "Motherboard",
+    "wrong": ["Backplane", "Daughterboard", "Heat sink"]
+  },
+  {
+    "question": "Which type of storage device uses spinning magnetic platters to read and write data?",
+    "correct": "Hard Disk Drive (HDD)",
+    "wrong": ["Solid State Drive (SSD)", "SRAM Cache", "Optical Blu-ray Disc"]
+  },
+  {
+    "question": "What is applied between a CPU and its cooler to improve heat transfer?",
+    "correct": "Thermal paste",
+    "wrong": ["Dielectric grease", "Flux", "Soldering rosin"]
+  },
+  {
+    "question": "What does UEFI stand for, the modern replacement for legacy BIOS?",
+    "correct": "Unified Extensible Firmware Interface",
+    "wrong": [
+      "Universal External File Integration",
+      "User Environment Firmware Index",
+      "Unified Electronic Flash Interface"
+    ]
+  },
+  {
+    "question": "What does ECC stand for in server-grade ECC RAM?",
+    "correct": "Error-Correcting Code",
+    "wrong": ["Enhanced Clock Cycle", "External Cache Controller", "Electronic Circuit Check"]
+  },
+  {
+    "question": "How many bytes are in one kibibyte (KiB)?",
+    "correct": "1,024",
+    "wrong": ["1,000", "512", "2,048"]
+  },
+  {
+    "question": "What does RAID stand for in multi-drive storage arrays?",
+    "correct": "Redundant Array of Independent Disks",
+    "wrong": [
+      "Rapid Access Internal Drives",
+      "Random Allocation of Indexed Data",
+      "Remote Array of Integrated Devices"
+    ]
+  },
+  {
+    "question": "What is the name of Discord's friendly mascot?",
+    "correct": "Wumpus",
+    "wrong": ["Clyde", "Nelly", "Mee6"]
+  },
+  {
+    "question": "Which symbol is typed in Discord chat to trigger a built-in slash command?",
+    "correct": "/",
+    "wrong": ["!", "?", "$"]
+  },
+  {
+    "question": "In Discord, what do you call a message reply that is only visible to the person who ran the command?",
+    "correct": "Ephemeral message",
+    "wrong": ["Whisper thread", "Ghost ping", "Direct embed"]
+  },
+  {
+    "question": "Which Markdown syntax hides spoiler text in Discord until clicked?",
+    "correct": "||spoiler||",
+    "wrong": ["~~spoiler~~", "__spoiler__", "**spoiler**"]
+  },
+  {
+    "question": "Which permissive open-source license requires only preservation of copyright and license notices?",
+    "correct": "MIT License",
+    "wrong": ["GNU GPLv3", "AGPLv3", "Creative Commons BY-NC"]
+  },
+  {
+    "question": "Which copyleft open-source license requires derivative works to also be distributed under the same license?",
+    "correct": "GNU General Public License (GPL)",
+    "wrong": ["MIT License", "BSD 2-Clause License", "Apache License 2.0"]
+  },
+  {
+    "question": "Which open-source license includes an explicit patent grant from contributors to users?",
+    "correct": "Apache License 2.0",
+    "wrong": ["MIT License", "ISC License", "Unlicense"]
+  },
+  {
+    "question": "What does FOSS stand for in software development?",
+    "correct": "Free and Open-Source Software",
+    "wrong": [
+      "Fast Online System Software",
+      "Federated Open Standard Services",
+      "Free Operating System Suite"
+    ]
+  },
+  {
+    "question": "Who created the Linux kernel and the Git version control system?",
+    "correct": "Linus Torvalds",
+    "wrong": ["Richard Stallman", "Guido van Rossum", "Ken Thompson"]
+  },
+  {
+    "question": "Who created the Python programming language?",
+    "correct": "Guido van Rossum",
+    "wrong": ["Bjarne Stroustrup", "James Gosling", "Brendan Eich"]
+  },
+  {
+    "question": "In software development, what does 'rubber duck debugging' involve?",
+    "correct": "Explaining code line-by-line aloud to find bugs",
+    "wrong": [
+      "Running automated fuzz tests overnight",
+      "Deleting random lines until tests pass",
+      "Deploying untested code on Fridays"
+    ]
+  },
+  {
+    "question": "What does 'LGTM' commonly stand for in GitHub pull request reviews?",
+    "correct": "Looks Good To Me",
+    "wrong": ["Let's Get This Merged", "Local Git Test Mode", "Live Global Deployment"]
+  },
+  {
+    "question": "What is the annual October event encouraging developers to contribute to open-source repositories?",
+    "correct": "Hacktoberfest",
+    "wrong": ["CodeJam", "PyCon", "Ludum Dare"]
+  },
+  {
+    "question": "In Semantic Versioning (SemVer), what do the three numbers in 2.4.1 represent?",
+    "correct": "MAJOR.MINOR.PATCH",
+    "wrong": ["YEAR.MONTH.DAY", "BUILD.TEST.RELEASE", "CORE.FEATURE.FIX"]
+  },
+  {
+    "question": "What is the time complexity of binary search on a sorted array?",
+    "correct": "O(log n)",
+    "wrong": ["O(n)", "O(1)", "O(n log n)"]
+  },
+  {
+    "question": "Which data structure follows the Last-In, First-Out (LIFO) principle?",
+    "correct": "Stack",
+    "wrong": ["Queue", "Linked list", "Binary heap"]
+  },
+  {
+    "question": "Which data structure follows the First-In, First-Out (FIFO) principle?",
+    "correct": "Queue",
+    "wrong": ["Stack", "Priority queue", "Hash table"]
+  },
+  {
+    "question": "What is the average-case time complexity of looking up a key in a hash table?",
+    "correct": "O(1)",
+    "wrong": ["O(log n)", "O(n)", "O(n^2)"]
+  },
+  {
+    "question": "Which sorting algorithm repeatedly divides an array in half, sorts each half, and merges them?",
+    "correct": "Merge sort",
+    "wrong": ["Bubble sort", "Selection sort", "Insertion sort"]
+  },
+  {
+    "question": "What is the worst-case time complexity of Bubble Sort?",
+    "correct": "O(n^2)",
+    "wrong": ["O(n log n)", "O(n)", "O(log n)"]
+  },
+  {
+    "question": "What is the average-case time complexity of Quicksort?",
+    "correct": "O(n log n)",
+    "wrong": ["O(n^2)", "O(n)", "O(log n)"]
+  },
+  {
+    "question": "In a Binary Search Tree (BST), where are values smaller than a node stored?",
+    "correct": "In its left subtree",
+    "wrong": ["In its right subtree", "At the root node", "In a separate overflow list"]
+  },
+  {
+    "question": "Which tree traversal visits the left subtree, then the current node, then the right subtree?",
+    "correct": "In-order traversal",
+    "wrong": ["Pre-order traversal", "Post-order traversal", "Level-order traversal"]
+  },
+  {
+    "question": "What is the time complexity of accessing an element by index in a standard array?",
+    "correct": "O(1)",
+    "wrong": ["O(n)", "O(log n)", "O(n log n)"]
+  },
+  {
+    "question": "Which graph traversal algorithm explores neighbors level by level using a queue?",
+    "correct": "Breadth-First Search (BFS)",
+    "wrong": ["Depth-First Search (DFS)", "Dijkstra's algorithm", "Topological sort"]
+  },
+  {
+    "question": "What occurs when two different keys produce the same index in a hash table?",
+    "correct": "Hash collision",
+    "wrong": ["Stack overflow", "Cache miss", "Deadlock"]
+  },
+  {
+    "question": "Which tree-based data structure is commonly used to implement a priority queue?",
+    "correct": "Binary heap",
+    "wrong": ["Trie", "B-tree", "Singly linked list"]
+  },
+  {
+    "question": "What is a tree data structure specialized for storing strings by shared prefixes called?",
+    "correct": "Trie",
+    "wrong": ["AVL tree", "Red-black tree", "Fenwick tree"]
+  },
+  {
+    "question": "What is the time complexity of searching for an unsorted value in a singly linked list?",
+    "correct": "O(n)",
+    "wrong": ["O(1)", "O(log n)", "O(n^2)"]
+  },
+  {
     "question": "What is 7 x 8?",
     "correct": "56",
     "wrong": ["54", "63", "48"]
