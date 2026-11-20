@@ -1184,6 +1184,235 @@
     "wrong": ["O(1)", "O(log n)", "O(n^2)"]
   },
   {
+    "question": "Which C standard library function allocates a block of uninitialized memory on the heap?",
+    "correct": "malloc()",
+    "wrong": ["free()", "sizeof()", "alloc_stack()"]
+  },
+  {
+    "question": "Which C standard library function releases previously allocated heap memory?",
+    "correct": "free()",
+    "wrong": ["delete()", "release()", "clear()"]
+  },
+  {
+    "question": "Which C operator retrieves the memory address of a variable?",
+    "correct": "&",
+    "wrong": ["*", "->", "@"]
+  },
+  {
+    "question": "Which C operator dereferences a pointer to access the value stored at its address?",
+    "correct": "*",
+    "wrong": ["&", "%", "$"]
+  },
+  {
+    "question": "What character marks the end of a standard C-style string in memory?",
+    "correct": "\\0 (null terminator)",
+    "wrong": ["\\n (newline)", "\\t (tab)", "EOF"]
+  },
+  {
+    "question": "What happens when dynamically allocated heap memory is never freed before all pointers to it are lost?",
+    "correct": "Memory leak",
+    "wrong": ["Stack overflow", "Integer overflow", "Deadlock"]
+  },
+  {
+    "question": "What is a pointer that still references memory after that memory has been freed called?",
+    "correct": "Dangling pointer",
+    "wrong": ["Null pointer", "Void pointer", "Smart pointer"]
+  },
+  {
+    "question": "Which region of memory stores local variables and function call frames in C?",
+    "correct": "The stack",
+    "wrong": ["The heap", "The BSS segment", "Read-only data"]
+  },
+  {
+    "question": "Which C allocation function allocates memory for an array and initializes all bytes to zero?",
+    "correct": "calloc()",
+    "wrong": ["malloc()", "realloc()", "memset()"]
+  },
+  {
+    "question": "Which C operator returns the size in bytes of a data type or variable at compile time?",
+    "correct": "sizeof",
+    "wrong": ["len()", "bytes()", "countof"]
+  },
+  {
+    "question": "Which C operator accesses a struct member through a pointer to that struct?",
+    "correct": "->",
+    "wrong": [".", "::", "&>"]
+  },
+  {
+    "question": "What is a pointer declared as 'void *' in C?",
+    "correct": "A generic pointer with no associated data type",
+    "wrong": [
+      "A pointer that cannot be reassigned",
+      "A pointer guaranteed to be NULL",
+      "A pointer to a function with no return value"
+    ]
+  },
+  {
+    "question": "Which C header file declares malloc(), calloc(), realloc(), and free()?",
+    "correct": "<stdlib.h>",
+    "wrong": ["<stdio.h>", "<string.h>", "<math.h>"]
+  },
+  {
+    "question": "What error commonly occurs when a program tries to dereference a NULL or invalid memory address?",
+    "correct": "Segmentation fault",
+    "wrong": ["Syntax error", "Division by zero", "Linker warning"]
+  },
+  {
+    "question": "Which C keyword defines a custom alias for an existing data type?",
+    "correct": "typedef",
+    "wrong": ["define", "alias", "using"]
+  },
+  {
+    "question": "What is the core component of an operating system that manages hardware and system resources?",
+    "correct": "Kernel",
+    "wrong": ["Shell", "Bootloader", "Desktop environment"]
+  },
+  {
+    "question": "What situation occurs when two or more processes wait forever for resources held by each other?",
+    "correct": "Deadlock",
+    "wrong": ["Race condition", "Thrashing", "Context switch"]
+  },
+  {
+    "question": "What is the process of saving one process's state and loading another's so they can share a CPU?",
+    "correct": "Context switch",
+    "wrong": ["Page fault", "System call", "Interrupt masking"]
+  },
+  {
+    "question": "What technique allows an operating system to use disk space as an extension of physical RAM?",
+    "correct": "Virtual memory",
+    "wrong": ["Cache coherency", "Direct Memory Access", "Bus mastering"]
+  },
+  {
+    "question": "What event occurs when a program tries to access a memory page not currently mapped in physical RAM?",
+    "correct": "Page fault",
+    "wrong": ["Segmentation fault", "Stack overflow", "Bus error"]
+  },
+  {
+    "question": "What is the first program that runs after firmware (BIOS/UEFI) to load the operating system into memory?",
+    "correct": "Bootloader",
+    "wrong": ["Init daemon", "Hypervisor", "Task scheduler"]
+  },
+  {
+    "question": "Which CPU scheduling algorithm executes processes in the exact order they arrive?",
+    "correct": "First-Come, First-Served (FCFS)",
+    "wrong": ["Round Robin", "Shortest Job Next", "Multilevel Feedback Queue"]
+  },
+  {
+    "question": "Which preemptive CPU scheduling algorithm assigns each process a fixed time slice (quantum) in a cycle?",
+    "correct": "Round Robin",
+    "wrong": ["First-Come, First-Served", "Shortest Remaining Time", "Priority Scheduling"]
+  },
+  {
+    "question": "What is a program currently loaded into memory and being executed by the CPU called?",
+    "correct": "Process",
+    "wrong": ["Binary", "Daemon", "Interrupt"]
+  },
+  {
+    "question": "What is the smallest unit of execution within a process that shares the same memory space?",
+    "correct": "Thread",
+    "wrong": ["Subprocess", "Fiber", "Socket"]
+  },
+  {
+    "question": "What is a process that has finished execution but still has an entry in the process table called?",
+    "correct": "Zombie process",
+    "wrong": ["Orphan process", "Daemon process", "Ghost thread"]
+  },
+  {
+    "question": "What synchronization primitive restricts access to a shared resource to only one thread at a time?",
+    "correct": "Mutex",
+    "wrong": ["Spinlock buffer", "Pipe", "Symbolic link"]
+  },
+  {
+    "question": "What interface allows user-space programs to request privileged services from the OS kernel?",
+    "correct": "System call",
+    "wrong": ["Hardware interrupt", "Environment variable", "Dynamic library"]
+  },
+  {
+    "question": "What happens when an OS spends more time swapping pages between RAM and disk than executing instructions?",
+    "correct": "Thrashing",
+    "wrong": ["Fragmentation", "Starvation", "Spooling"]
+  },
+  {
+    "question": "Which file system has been the default for modern Windows installations since Windows XP?",
+    "correct": "NTFS",
+    "wrong": ["ext4", "APFS", "FAT32"]
+  },
+  {
+    "question": "What does JVM stand for in Java development?",
+    "correct": "Java Virtual Machine",
+    "wrong": ["Java Variable Manager", "Joint Vector Module", "Java Version Monitor"]
+  },
+  {
+    "question": "Which Java keyword prevents a class from being subclassed or a variable from being reassigned?",
+    "correct": "final",
+    "wrong": ["static", "const", "sealed"]
+  },
+  {
+    "question": "Which OOP principle bundles data and the methods that operate on it while restricting direct access?",
+    "correct": "Encapsulation",
+    "wrong": ["Polymorphism", "Inheritance", "Abstraction"]
+  },
+  {
+    "question": "Which OOP concept allows different subclasses to respond differently to the same method call?",
+    "correct": "Polymorphism",
+    "wrong": ["Encapsulation", "Composition", "Serialization"]
+  },
+  {
+    "question": "Which Java keyword is used by a class to adopt an interface?",
+    "correct": "implements",
+    "wrong": ["extends", "inherits", "uses"]
+  },
+  {
+    "question": "Which Java keyword is used by a subclass to inherit from a superclass?",
+    "correct": "extends",
+    "wrong": ["implements", "super", "inherits"]
+  },
+  {
+    "question": "What is the root superclass of all classes in Java?",
+    "correct": "Object",
+    "wrong": ["Class", "Base", "System"]
+  },
+  {
+    "question": "Which Java access modifier makes a member visible only within its own class?",
+    "correct": "private",
+    "wrong": ["protected", "public", "package-private"]
+  },
+  {
+    "question": "What is the automatic memory reclamation process that frees unused objects in Java called?",
+    "correct": "Garbage collection",
+    "wrong": ["Reference counting", "Manual deallocation", "Stack unwinding"]
+  },
+  {
+    "question": "Which creational design pattern ensures a class has only one instance and provides global access to it?",
+    "correct": "Singleton",
+    "wrong": ["Factory Method", "Builder", "Prototype"]
+  },
+  {
+    "question": "Which behavioral design pattern notifies dependent objects automatically when a subject's state changes?",
+    "correct": "Observer",
+    "wrong": ["Adapter", "Decorator", "Facade"]
+  },
+  {
+    "question": "Which structural design pattern converts the interface of a class into another interface clients expect?",
+    "correct": "Adapter",
+    "wrong": ["Strategy", "Singleton", "Command"]
+  },
+  {
+    "question": "Which Java collection class stores unique elements with no guaranteed ordering?",
+    "correct": "HashSet",
+    "wrong": ["ArrayList", "LinkedList", "TreeMap"]
+  },
+  {
+    "question": "What is defining multiple methods in the same Java class with the same name but different parameters called?",
+    "correct": "Method overloading",
+    "wrong": ["Method overriding", "Method shadowing", "Dynamic dispatch"]
+  },
+  {
+    "question": "Which creational design pattern constructs complex objects step by step using fluent method calls?",
+    "correct": "Builder",
+    "wrong": ["Observer", "Proxy", "Flyweight"]
+  },
+  {
     "question": "What is 7 x 8?",
     "correct": "56",
     "wrong": ["54", "63", "48"]
