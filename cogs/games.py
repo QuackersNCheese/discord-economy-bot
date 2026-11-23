@@ -77,11 +77,9 @@ class TriviaView(discord.ui.View):
 
         if chosen_button.is_correct:
             self.db.add_wallet(self.author_id, self.reward)
-            new_balance, _ = self.db.get_balance(self.author_id)
             result_text = (
                 f"**{self.question}**\n\n"
-                f"✅ Correct! You earned **{fmt(self.reward)}** "
-                f"(New balance: **{fmt(new_balance)}**)."
+                f"✅ Correct! You earned {fmt(self.reward)}."
             )
         else:
             result_text = (
