@@ -19,7 +19,7 @@ Built live in a 2 hour Discord bot [workshop stream](https://www.youtube.com/wat
 
 | Command | What it does |
 |---------|--------------|
-| `/balance [member]` | Show wallet, bank and net worth |
+| `/balance` | Show your wallet, bank and net worth |
 | `/daily` | Claim 100 coins once every 24 hours, plus 2% interest on your bank (charms boost the per diem, not the interest) |
 | `/work` | Earn 50–200 coins once an hour (a 💻 Laptop and charms pay more) |
 | `/fish` | Catch something to sell (needs a 🎣 Fishing Rod, which can break; charms boost the sale value) |
@@ -41,7 +41,7 @@ Built live in a 2 hour Discord bot [workshop stream](https://www.youtube.com/wat
 |---------|--------------|
 | `/shop` | Browse items |
 | `/buy <item> [quantity]` | Buy an item |
-| `/inventory [member]` | See what someone owns |
+| `/inventory` | See what you own |
 
 | Item | Price | Effect |
 |------|-------|--------|

@@ -34,19 +34,20 @@ class Shop(commands.Cog):
             )
         await interaction.response.send_message(embed=embed)
 
-    @app_commands.command(description="See what you or someone else owns.")
-    async def inventory(self, interaction: discord.Interaction, member: discord.Member = None):
-        member = member or interaction.user
-        items = self.db.get_inventory(member.id)
+    @app_commands.command(description="See what you own.")
+    async def inventory(self, interaction: discord.Interaction):
+        items = self.db.get_inventory(interaction.user.id)
         if not items:
-            await interaction.response.send_message(f"📦 {member.mention} doesn't own anything yet.")
+            await interaction.response.send_message(
+                "📦 You don't own anything yet.", ephemeral=True
+            )
             return
         lines = []
         for item_id, count in items:
             item = config.SHOP_ITEMS.get(item_id, {"name": item_id, "emoji": "📦"})
             lines.append(f"{item['emoji']} **{item['name']}** x{count}")
         await interaction.response.send_message(
-            f"📦 {member.mention} owns:\n" + "\n".join(lines)
+            "📦 You own:\n" + "\n".join(lines), ephemeral=True
         )
 
     @app_commands.command(description="Buy an item from the shop.")
