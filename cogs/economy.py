@@ -38,7 +38,7 @@ class Economy(commands.Cog):
         )
 
     # /daily - DAILY_AMOUNT, 24h cooldown, plus bank interest (BANK_INTEREST_RATE)
-    @app_commands.command(description="Don't claim this, trust me.")
+    @app_commands.command(description="Claim your per diem.")
     async def daily(self, interaction: discord.Interaction):
         if await check_cooldown(self.db, interaction, "daily", 24 * 60 * 60):
             return
