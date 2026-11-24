@@ -1,4 +1,5 @@
 """Mini-games that earn coins. No betting."""
+import asyncio
 import random
 
 import discord
@@ -7,6 +8,16 @@ from discord.ext import commands
 
 import config
 from utils import check_cooldown, fmt
+
+
+def _question_embed(question: str, timeout: float, reward: int, color: discord.Color):
+    return discord.Embed(
+        description=(
+            f"🧠 **Trivia:** {question}\n"
+            f"You have {timeout:g}s to answer for {fmt(reward)}!"
+        ),
+        color=color,
+    )
 
 
 class TriviaButton(discord.ui.Button):
@@ -44,6 +55,7 @@ class TriviaView(discord.ui.View):
         self.reward = reward
         self.answered = False
         self.message: discord.Message | None = None
+        self.countdown_task: asyncio.Task | None = None
 
         for option in options:
             self.add_item(TriviaButton(answer=option, is_correct=(option == correct)))
@@ -56,6 +68,30 @@ class TriviaView(discord.ui.View):
             )
             return False
         return True
+
+    def _cancel_countdown(self):
+        if self.countdown_task is not None:
+            self.countdown_task.cancel()
+            self.countdown_task = None
+
+    async def _set_bar_color(self, color: discord.Color):
+        if self.answered or self.message is None:
+            return
+        try:
+            await self.message.edit(
+                embed=_question_embed(self.question, self.timeout, self.reward, color)
+            )
+        except discord.HTTPException:
+            pass
+
+    async def countdown(self):
+        """Turn the embed bar yellow, then red, as time runs low."""
+        yellow_at = self.timeout - config.TRIVIA_WARN_YELLOW
+        red_at = self.timeout - config.TRIVIA_WARN_RED
+        await asyncio.sleep(max(yellow_at, 0))
+        await self._set_bar_color(discord.Color.gold())
+        await asyncio.sleep(max(red_at - yellow_at, 0))
+        await self._set_bar_color(discord.Color.red())
 
     def _reveal(self, chosen_button: TriviaButton | None = None):
         for child in self.children:
@@ -72,6 +108,7 @@ class TriviaView(discord.ui.View):
         if self.answered:
             return
         self.answered = True
+        self._cancel_countdown()
         self.stop()
         self._reveal(chosen_button)
 
@@ -90,17 +127,21 @@ class TriviaView(discord.ui.View):
                 f"but the correct answer was **{self.correct}**."
             )
 
-        await interaction.response.edit_message(content=result_text, view=self)
+        await interaction.response.edit_message(
+            content=result_text, embed=None, view=self
+        )
 
     async def on_timeout(self):
         if self.answered:
             return
         self.answered = True
+        self._cancel_countdown()
         self._reveal(chosen_button=None)
         if self.message:
             try:
                 await self.message.edit(
                     content=f"**{self.question}**\n\n⏰ Time's up! The correct answer was **{self.correct}**.",
+                    embed=None,
                     view=self,
                 )
             except discord.HTTPException:
@@ -140,13 +181,18 @@ class Games(commands.Cog):
             timeout=config.TRIVIA_TIMEOUT,
         )
         await interaction.response.send_message(
-            f"🧠 **Trivia:** {question}\n"
-            f"You have {config.TRIVIA_TIMEOUT}s to answer for {fmt(config.TRIVIA_REWARD)}!",
+            embed=_question_embed(
+                question,
+                config.TRIVIA_TIMEOUT,
+                config.TRIVIA_REWARD,
+                discord.Color.blurple(),
+            ),
             view=view,
         )
         # Only start the cooldown once the question was actually delivered
         self.db.set_cooldown(interaction.user.id, "trivia")
         view.message = await interaction.original_response()
+        view.countdown_task = asyncio.create_task(view.countdown())
 
     # TODO: /rps <rock|paper|scissors>     - beat the bot for RPS_REWARD
 

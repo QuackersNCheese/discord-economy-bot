@@ -66,6 +66,8 @@ BANK_INTEREST_CAP = 1_000
 TRIVIA_REWARD = 100
 TRIVIA_COOLDOWN = 2 * 60
 TRIVIA_TIMEOUT = 20  # seconds to answer
+TRIVIA_WARN_YELLOW = 8  # seconds left when the embed bar turns yellow
+TRIVIA_WARN_RED = 3  # seconds left when the embed bar turns red
 
 
 def _load_trivia_questions() -> list[tuple[str, str, list[str]]]:
