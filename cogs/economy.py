@@ -20,11 +20,10 @@ class Economy(commands.Cog):
     async def ping(self, interaction: discord.Interaction):
         await interaction.response.send_message(f"🏓 Pong! {round(self.bot.latency * 1000)}ms")
 
-    # /balance [member] - embed with wallet, bank, net worth
-    @app_commands.command(description="Check your or another member's balance.")
-    async def balance(self, interaction: discord.Interaction, member: discord.Member = None):
-        member = member or interaction.user
-        wallet, bank = self.db.get_balance(member.id)
+    # /balance - your own wallet, bank, net worth
+    @app_commands.command(description="Check your balance.")
+    async def balance(self, interaction: discord.Interaction):
+        wallet, bank = self.db.get_balance(interaction.user.id)
         total = wallet + bank
         if total > 1000:
             compliment = "💰 You're minted!"
@@ -33,7 +32,7 @@ class Economy(commands.Cog):
         else:
             compliment = "💵 Not bad, not bad."
         await interaction.response.send_message(
-            f"{member.mention} has ${wallet} in their wallet 👛 and ${bank} in their bank 🏦, for a total of ${total}. {compliment}",
+            f"You have ${wallet} in your wallet 👛 and ${bank} in your bank 🏦, for a total of ${total}. {compliment}",
             ephemeral=True,
         )
 
