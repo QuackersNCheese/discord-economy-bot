@@ -41,7 +41,7 @@ Built live in a 2 hour Discord bot [workshop stream](https://www.youtube.com/wat
 |---------|--------------|
 | `/shop` | Browse items |
 | `/buy <item> [quantity]` | Buy an item |
-| `/inventory` | See what you own |
+| `/inventory [member]` | See what someone owns |
 
 | Item | Price | Effect |
 |------|-------|--------|
